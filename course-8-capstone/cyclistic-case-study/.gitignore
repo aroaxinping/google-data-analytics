@@ -1,0 +1,12 @@
+# Datos de Divvy (demasiado grandes para GitHub, ~1GB)
+data/
+*.csv
+*.zip
+
+# Output renderizado (generado localmente)
+*.html
+
+# Archivos temporales de R
+.Rhistory
+.RData
+.Rproj.user/
