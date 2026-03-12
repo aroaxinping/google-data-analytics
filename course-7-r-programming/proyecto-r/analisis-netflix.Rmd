@@ -1,0 +1,286 @@
+---
+title: "Análisis del Catálogo de Netflix"
+author: "aroaxinping"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    theme: flatly
+    toc: true
+    toc_float: true
+    code_folding: show
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  fig.width = 10,
+  fig.height = 6
+)
+```
+
+## Introducción
+
+Este análisis explora el catálogo de Netflix usando R y ggplot2. El dataset
+proviene de Kaggle (Netflix Movies and TV Shows, por Shivam Bansal) y contiene
+información sobre más de 8,000 títulos disponibles en la plataforma.
+
+**Preguntas que respondemos:**
+
+1. ¿Qué porcentaje del catálogo son películas vs series?
+2. ¿Cómo ha crecido el catálogo a lo largo del tiempo?
+3. ¿Qué países producen más contenido?
+4. ¿Cuáles son los géneros más frecuentes?
+5. ¿Cómo se distribuye la duración de las películas?
+
+---
+
+## 1. Preparación del entorno
+
+```{r librerias}
+library(tidyverse)   # dplyr, ggplot2, readr, stringr, tidyr
+library(lubridate)   # manejo de fechas
+library(scales)      # formato de ejes
+library(ggthemes)    # temas adicionales para ggplot2
+```
+
+---
+
+## 2. Carga y limpieza de datos
+
+```{r carga-datos}
+# Cargar el dataset
+netflix <- read_csv("netflix_titles.csv")
+
+# Vista general
+glimpse(netflix)
+```
+
+```{r limpieza}
+netflix_clean <- netflix %>%
+  # Limpiar columna de fecha
+  mutate(
+    date_added = mdy(str_trim(date_added)),
+    year_added = year(date_added),
+    month_added = month(date_added, label = TRUE, abbr = FALSE)
+  ) %>%
+  # Separar duración: películas en minutos, series en temporadas
+  mutate(
+    duration_num = as.numeric(str_extract(duration, "\\d+")),
+    duration_unit = str_extract(duration, "[A-Za-z]+.*")
+  ) %>%
+  # Eliminar filas con clasificación incorrecta en rating
+  filter(!rating %in% c("74 min", "84 min", "66 min")) %>%
+  # Solo filas con fecha de alta
+  filter(!is.na(date_added))
+
+# Resumen de datos limpios
+cat("Filas totales:", nrow(netflix_clean), "\n")
+cat("Periodo cubierto:", min(netflix_clean$date_added, na.rm = TRUE),
+    "a", max(netflix_clean$date_added, na.rm = TRUE), "\n")
+```
+
+---
+
+## 3. Películas vs Series
+
+```{r tipo-contenido}
+tipo_resumen <- netflix_clean %>%
+  count(type) %>%
+  mutate(
+    porcentaje = n / sum(n),
+    etiqueta = paste0(type, "\n", scales::comma(n), " títulos\n(",
+                      scales::percent(porcentaje, accuracy = 0.1), ")")
+  )
+
+ggplot(tipo_resumen, aes(x = "", y = n, fill = type)) +
+  geom_col(width = 1, color = "white", linewidth = 1.5) +
+  coord_polar(theta = "y") +
+  geom_text(aes(label = etiqueta),
+            position = position_stack(vjust = 0.5),
+            color = "white", fontface = "bold", size = 4.5) +
+  scale_fill_manual(values = c("Movie" = "#E50914", "TV Show" = "#221F1F")) +
+  labs(
+    title = "Composición del catálogo de Netflix",
+    subtitle = "Las películas representan casi 7 de cada 10 títulos",
+    caption = "Fuente: Kaggle — Netflix Movies and TV Shows"
+  ) +
+  theme_void() +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 12, color = "gray40"),
+    plot.caption = element_text(color = "gray60", size = 9)
+  )
+```
+
+---
+
+## 4. Evolución del catálogo por año
+
+```{r evolucion}
+evolucion <- netflix_clean %>%
+  filter(!is.na(year_added), year_added >= 2008) %>%
+  count(year_added, type)
+
+ggplot(evolucion, aes(x = year_added, y = n, fill = type)) +
+  geom_area(alpha = 0.85, position = "stack") +
+  geom_vline(xintercept = 2019, linetype = "dashed", color = "gray50") +
+  annotate("text", x = 2019.2, y = 1800,
+           label = "Pico 2019", hjust = 0, color = "gray30", size = 3.5) +
+  scale_fill_manual(
+    values = c("Movie" = "#E50914", "TV Show" = "#221F1F"),
+    name = "Tipo"
+  ) +
+  scale_x_continuous(breaks = 2008:2021) +
+  scale_y_continuous(labels = scales::comma) +
+  labs(
+    title = "Crecimiento del catálogo de Netflix",
+    subtitle = "Títulos añadidos por año",
+    x = "Año",
+    y = "Títulos añadidos",
+    caption = "Fuente: Kaggle — Netflix Movies and TV Shows"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank(),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+```
+
+---
+
+## 5. Top 10 países productores
+
+```{r paises}
+paises <- netflix_clean %>%
+  filter(!is.na(country)) %>%
+  # Separar países múltiples y quedarse con el primero
+  mutate(pais_principal = str_trim(str_extract(country, "^[^,]+"))) %>%
+  count(pais_principal, sort = TRUE) %>%
+  slice_head(n = 10)
+
+ggplot(paises, aes(x = n, y = fct_reorder(pais_principal, n))) +
+  geom_col(fill = "#E50914", alpha = 0.85) +
+  geom_text(aes(label = scales::comma(n)), hjust = -0.1, size = 3.8) +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.1))) +
+  labs(
+    title = "Top 10 países con más títulos en Netflix",
+    subtitle = "Estados Unidos lidera con amplia ventaja",
+    x = "Número de títulos",
+    y = NULL,
+    caption = "Fuente: Kaggle — Netflix Movies and TV Shows"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    panel.grid.major.y = element_blank()
+  )
+```
+
+---
+
+## 6. Géneros más frecuentes
+
+```{r generos}
+generos <- netflix_clean %>%
+  filter(!is.na(listed_in)) %>%
+  separate_rows(listed_in, sep = ", ") %>%
+  count(listed_in, sort = TRUE) %>%
+  slice_head(n = 12) %>%
+  rename(genero = listed_in)
+
+ggplot(generos, aes(x = n, y = fct_reorder(genero, n))) +
+  geom_col(aes(fill = n), show.legend = FALSE) +
+  scale_fill_gradient(low = "#ff9999", high = "#E50914") +
+  geom_text(aes(label = scales::comma(n)), hjust = -0.1, size = 3.5) +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.12))) +
+  labs(
+    title = "Géneros más frecuentes en Netflix",
+    subtitle = "Top 12 por número de títulos etiquetados",
+    x = "Número de títulos",
+    y = NULL,
+    caption = "Fuente: Kaggle — Netflix Movies and TV Shows"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    panel.grid.major.y = element_blank()
+  )
+```
+
+---
+
+## 7. Distribución de duración de películas
+
+```{r duracion}
+peliculas <- netflix_clean %>%
+  filter(type == "Movie", !is.na(duration_num))
+
+# Estadísticas descriptivas
+peliculas %>%
+  summarise(
+    minutos_media    = round(mean(duration_num), 0),
+    minutos_mediana  = median(duration_num),
+    minutos_min      = min(duration_num),
+    minutos_max      = max(duration_num),
+    desviacion_std   = round(sd(duration_num), 0)
+  )
+```
+
+```{r histograma-duracion}
+ggplot(peliculas, aes(x = duration_num)) +
+  geom_histogram(binwidth = 5, fill = "#E50914", color = "white", alpha = 0.85) +
+  geom_vline(xintercept = median(peliculas$duration_num),
+             linetype = "dashed", color = "gray30", linewidth = 0.8) +
+  annotate("text",
+           x = median(peliculas$duration_num) + 2,
+           y = 350,
+           label = paste("Mediana:", median(peliculas$duration_num), "min"),
+           hjust = 0, color = "gray30", size = 3.5) +
+  scale_x_continuous(breaks = seq(0, 300, 30)) +
+  labs(
+    title = "Distribución de duración de películas en Netflix",
+    subtitle = "La mayoría de las películas dura entre 80 y 120 minutos",
+    x = "Duración (minutos)",
+    y = "Número de películas",
+    caption = "Fuente: Kaggle — Netflix Movies and TV Shows"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+```
+
+---
+
+## 8. Conclusiones
+
+```{r conclusiones, echo=FALSE}
+cat("RESUMEN DEL ANÁLISIS — Netflix Movies and TV Shows\n")
+cat("===================================================\n\n")
+
+tipo_resumen %>%
+  select(type, n, porcentaje) %>%
+  mutate(porcentaje = scales::percent(porcentaje, accuracy = 0.1)) %>%
+  print()
+```
+
+**Hallazgos principales:**
+
+- El **69.6% del catálogo** son películas y el **30.4%** series
+- El catálogo creció exponencialmente entre 2015 y 2019, con 2019 como año pico
+- **Estados Unidos** produce más del triple que el segundo país (India)
+- El género **International Movies** es el más frecuente, reflejando la expansión global de Netflix
+- La duración mediana de las películas es de aproximadamente **99 minutos**
+
+---
+
+## Entorno de trabajo
+
+```{r session-info}
+sessionInfo()
+```
