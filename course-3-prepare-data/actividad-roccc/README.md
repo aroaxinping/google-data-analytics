@@ -21,17 +21,17 @@ El framework ROCCC es la herramienta del curso para hacer esa evaluación.
 
 ## Evaluaciones prácticas
 
-### Divvy Bikes Trip Data — ✅ Pasa todo
+### Divvy Bikes Trip Data — Pasa todo
 Datos reales publicados por la empresa que opera el sistema de bicicletas.
 Fuente primaria, actualización mensual, licencia pública identificada.
 Limitación: no incluye datos demográficos del usuario por privacidad.
 
-### Netflix Movies and TV Shows (Kaggle) — ⚠️ Con matices
+### Netflix Movies and TV Shows (Kaggle) — Con matices
 Bueno para prácticas y portfolio. **No** adecuado para analizar el catálogo
 *actual* de Netflix — la última actualización es de 2021. Los datos no son
 fuente primaria (scraping de datos públicos), pero la metodología está documentada.
 
-### Encuesta compartida en un foro sin identificar — ❌ No usable
+### Encuesta compartida en un foro sin identificar — No usable
 Sin fuente verificable, sin fecha, sin contexto de cómo se recogió.
 Puede servir para practicar técnicas, nunca para tomar decisiones reales.
 

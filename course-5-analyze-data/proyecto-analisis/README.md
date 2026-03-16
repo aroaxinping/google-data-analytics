@@ -33,8 +33,8 @@ que puedes hacer.
 ```sql
 SELECT
   type,
-  COUNT(*) AS total,
-  ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 1) AS porcentaje
+COUNT(*) AS total,
+ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 1) AS porcentaje
 FROM `proyecto.dataset.netflix_titles`
 GROUP BY type
 ORDER BY total DESC;
@@ -50,12 +50,12 @@ global, lo que permite calcular porcentajes en una sola query.
 
 ```sql
 SELECT
-  TRIM(country_split) AS country,
-  COUNT(*) AS titulos
+TRIM(country_split) AS country,
+COUNT(*) AS titulos
 FROM `proyecto.dataset.netflix_titles`,
 UNNEST(SPLIT(country, ', ')) AS country_split
 WHERE country IS NOT NULL
-  AND TRIM(country_split) != ''
+AND TRIM(country_split) != ''
 GROUP BY country
 ORDER BY titulos DESC
 LIMIT 10;
@@ -69,9 +69,9 @@ de producción en la misma celda.
 
 ```sql
 SELECT
-  EXTRACT(YEAR FROM PARSE_DATE('%B %d, %Y', date_added)) AS anio,
-  COUNT(*) AS titulos_ese_anio,
-  SUM(COUNT(*)) OVER (
+EXTRACT(YEAR FROM PARSE_DATE('%B %d, %Y', date_added)) AS anio,
+COUNT(*) AS titulos_ese_anio,
+SUM(COUNT(*)) OVER (
     ORDER BY EXTRACT(YEAR FROM PARSE_DATE('%B %d, %Y', date_added))
   ) AS total_acumulado
 FROM `proyecto.dataset.netflix_titles`
@@ -84,8 +84,8 @@ ORDER BY anio;
 
 ```sql
 SELECT
-  TRIM(genero) AS genero,
-  COUNT(*) AS apariciones
+TRIM(genero) AS genero,
+COUNT(*) AS apariciones
 FROM `proyecto.dataset.netflix_titles`,
 UNNEST(SPLIT(listed_in, ', ')) AS genero
 GROUP BY genero
@@ -97,12 +97,12 @@ LIMIT 12;
 
 ```sql
 SELECT
-  ROUND(AVG(CAST(REPLACE(duration, ' min', '') AS INT64)), 0) AS media_minutos,
-  MIN(CAST(REPLACE(duration, ' min', '') AS INT64))           AS minimo,
-  MAX(CAST(REPLACE(duration, ' min', '') AS INT64))           AS maximo
+ROUND(AVG(CAST(REPLACE(duration, ' min', '') AS INT64)), 0) AS media_minutos,
+MIN(CAST(REPLACE(duration, ' min', '') AS INT64))           AS minimo,
+MAX(CAST(REPLACE(duration, ' min', '') AS INT64))           AS maximo
 FROM `proyecto.dataset.netflix_titles`
 WHERE type = 'Movie'
-  AND duration LIKE '%min%';
+AND duration LIKE '%min%';
 ```
 
 ---

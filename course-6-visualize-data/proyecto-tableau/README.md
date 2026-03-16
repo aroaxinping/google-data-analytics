@@ -1,7 +1,7 @@
 # Dashboard Netflix en Tableau Public
 
 **Curso:** Course 6 — Share Data Through the Art of Visualization
-**Estado:** 🔄 En progreso — diseño definido, pendiente de construir en Tableau
+**Estado:** En progreso — diseño definido, pendiente de construir en Tableau
 **Dataset:** Netflix Movies and TV Shows (analizado en course-5)
 
 > Cuando el dashboard esté publicado, añadiré el enlace de Tableau Public aquí.

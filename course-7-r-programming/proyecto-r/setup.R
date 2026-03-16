@@ -24,7 +24,7 @@ library(scales)
 library(ggthemes)
 
 message("
-✅ Setup completado. Pasos siguientes:
+ Setup completado. Pasos siguientes:
 
 1. Descarga el dataset desde Kaggle:
    https://www.kaggle.com/datasets/shivamb/netflix-shows

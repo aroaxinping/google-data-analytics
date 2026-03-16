@@ -42,8 +42,8 @@ FROM `bigquery-public-data.chicago_taxi_trips.taxi_trips`;
 -- Distribución por método de pago
 SELECT
   payment_type,
-  COUNT(*) AS total,
-  ROUND(AVG(tips), 2) AS propina_media
+COUNT(*) AS total,
+ROUND(AVG(tips), 2) AS propina_media
 FROM `bigquery-public-data.chicago_taxi_trips.taxi_trips`
 WHERE payment_type IS NOT NULL
 GROUP BY payment_type

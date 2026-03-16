@@ -275,11 +275,11 @@ ggplot(bici_summary, aes(x = member_casual, y = pct, fill = rideable_type)) +
 
 ```{r tabla-conclusiones, echo=FALSE}
 tibble(
-  Dimensión = c("Duración media", "Día de mayor uso", "Mes pico",
+Dimensión = c("Duración media", "Día de mayor uso", "Mes pico",
                 "Bicicleta preferida", "Patrón de uso"),
-  Casual = c("~24 min", "Sábado", "Julio",
+Casual = c("~24 min", "Sábado", "Julio",
              "Eléctrica", "Ocio / turismo"),
-  Member = c("~12 min", "Martes-Miércoles", "Agosto",
+Member = c("~12 min", "Martes-Miércoles", "Agosto",
              "Clásica", "Commuting diario")
 ) %>%
   knitr::kable(align = "lll")

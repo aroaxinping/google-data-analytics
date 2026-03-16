@@ -24,7 +24,7 @@ if (!dir.exists("data")) {
 }
 
 message("
-✅ Setup completado. Pasos siguientes para el análisis REAL con datos de Divvy:
+ Setup completado. Pasos siguientes para el análisis REAL con datos de Divvy:
 
 1. Ve a: https://divvy-tripdata.s3.amazonaws.com/index.html
 
@@ -43,6 +43,6 @@ message("
 
 5. Haz clic en 'Knit' para generar el reporte HTML completo.
 
-⚠️  Nota sobre tamaño: los 12 CSV de 2023 pesan ~1GB en total.
+Nota sobre tamaño: los 12 CSV de 2023 pesan ~1GB en total.
     No los subas a GitHub — están en .gitignore.
 ")

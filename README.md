@@ -1,278 +1,79 @@
-# 🎓 Google Data Analytics Certificate
+# Google Data Analytics Certificate
 
-> My journey completing the Google Data Analytics Professional Certificate on Coursera
-
-## ✨ About This Repository
-
-This repository documents my progress in the Google Data Analytics certification program. It includes projects from each course, exercises, and my final case study (capstone project).
-
-## 📚 Certification Program
-
-The certificate consists of 8 courses covering the complete data analysis cycle.
-
-### Courses & My Progress
-
-#### 📊 Course 1: Foundations - Data, Data, Everywhere
-**Status:** ✅ Completed  
-**Date:** MM/YYYY  
-**Key Learnings:**
-- What a data analyst does
-- The data analysis life cycle
-- Essential tools (spreadsheets, SQL, R, Tableau)
-- Analytical thinking
-
-[View course notes →](./course-1-foundations/)
+Documentación de mi progreso en el Google Data Analytics Professional Certificate de Coursera.
 
 ---
 
-#### 🤔 Course 2: Ask Questions to Make Data-Driven Decisions
-**Status:** ✅ Completed / 🔄 In progress  
-**Key Learnings:**
-- SMART questions
-- Types of problems and analysis
-- Effective stakeholder communication
-- Advanced spreadsheets
+## Sobre este repositorio
 
-[View projects →](./course-2-ask-questions/)
+Recoge notas de aprendizaje, ejercicios prácticos y el proyecto final (capstone)
+de los 8 cursos del certificado. No es solo un seguimiento — es un recurso para
+poder rehacer cualquier ejercicio desde cero.
+
+Para instrucciones de instalación y cómo replicar cada proyecto, ver [SETUP.md](./SETUP.md).
 
 ---
 
-#### 🧹 Course 3: Prepare Data for Exploration
-**Status:** 📝 Next  
-**Focus:**
-- How data is generated
-- Formats and structures
-- Bias and credibility
-- Databases and organization
-- Security and privacy
+## Progreso
+
+| Curso | Titulo | Estado | Contenido en el repo |
+|-------|--------|--------|----------------------|
+| 1 | Foundations: Data, Data, Everywhere | Completado | Notas de exploración en Sheets e intro a herramientas |
+| 2 | Ask Questions to Make Data-Driven Decisions | Completado | Preguntas SMART y ejercicios de Sheets |
+| 3 | Prepare Data for Exploration | En progreso | Kaggle datasets, BigQuery, ROCCC |
+| 4 | Process Data from Dirty to Clean | Ejercicio | Limpieza SQL con BigQuery |
+| 5 | Analyze Data to Answer Questions | Ejercicio | Análisis SQL de Netflix |
+| 6 | Share Data Through the Art of Visualization | Pendiente | Diseño de dashboard (Tableau WIP) |
+| 7 | Data Analysis with R Programming | Proyecto | R Markdown con ggplot2 (ejecutable) |
+| 8 | Google Data Analytics Capstone | Proyecto | Cyclistic case study (R Markdown completo) |
 
 ---
 
-#### 🔍 Course 4: Process Data from Dirty to Clean
-**Status:** 📝 Next  
-**Focus:**
-- Data integrity
-- SQL for cleaning
-- Verification and reporting
-- Process documentation
+## Estructura del repo
 
----
-
-#### 📊 Course 5: Analyze Data to Answer Questions
-**Status:** 📝 Next  
-**Focus:**
-- Data organization
-- Calculations and aggregations
-- Analysis with SQL
-- Temporary tables and joins
-
----
-
-#### 📈 Course 6: Share Data Through the Art of Visualization
-**Status:** 📝 Next  
-**Focus:**
-- Design principles
-- Tableau basics
-- Creating effective dashboards
-- Storytelling with data
-
----
-
-#### 📐 Course 7: Data Analysis with R Programming
-**Status:** 📝 Next  
-**Focus:**
-- R and RStudio
-- Data frames and visualization
-- ggplot2 and R Markdown
-- Documentation
-
----
-
-#### 🎯 Course 8: Google Data Analytics Capstone
-**Status:** 📝 Next  
-**Capstone Project:**
-- Final project integrating everything
-- Complete case study
-- Portfolio piece
-
----
-
-## 🛠️ Program Tools
-```python
-toolkit = {
-    "Spreadsheets": ["Google Sheets", "Excel"],
-    "Databases": ["SQL", "BigQuery"],
-    "Visualization": ["Tableau", "Data Studio"],
-    "Programming": ["R", "RStudio"],
-    "Documentation": ["Google Docs", "Markdown"]
-}
+```
+google-data-analytics/
+├── SETUP.md                          <- Instrucciones para reproducir desde cero
+├── course-1-foundations/
+│   ├── actividad-explorar-datos/     <- Notas: primera exploración en Sheets
+│   └── actividad-herramientas/       <- Notas: las 4 herramientas del certificado
+├── course-2-ask-questions/
+│   ├── actividad-smart-questions/    <- Notas: framework SMART
+│   └── actividad-spreadsheets/       <- Notas: Sheets (filtros, pivot, VLOOKUP)
+├── course-3-prepare-data/
+│   ├── week-3-kaggle-datasets/       <- Actividad completa: Kaggle + notebooks
+│   ├── actividad-bigquery/           <- Notas: primera vez con BigQuery y SQL
+│   └── actividad-roccc/              <- Notas: credibilidad de datos con ROCCC
+├── course-4-process-data/
+│   └── proyecto-limpieza/            <- limpieza.sql (BigQuery, ejecutable)
+├── course-5-analyze-data/
+│   └── proyecto-analisis/            <- analisis-netflix.sql (BigQuery, ejecutable)
+├── course-6-visualize-data/
+│   └── proyecto-tableau/             <- Diseño del dashboard (Tableau, WIP)
+├── course-7-r-programming/
+│   └── proyecto-r/                   <- analisis-netflix.Rmd + setup.R
+└── course-8-capstone/
+    └── cyclistic-case-study/         <- cyclistic-analysis.Rmd + setup.R
 ```
 
-## 📁 Repository Structure
-```
-/google-analytics-coursera/
-  ├── course-1-foundations/
-  │   ├── notes.md
-  │   └── exercises/
-  ├── course-2-ask-questions/
-  │   ├── week-1/
-  │   ├── week-2/
-  │   └── project/
-  ├── course-3-prepare-data/
-  ├── course-4-process-data/
-  ├── course-5-analyze-data/
-  ├── course-6-visualize-data/
-  ├── course-7-r-programming/
-  ├── course-8-capstone/
-  │   └── case-study/
-  └── certificate/
-```
+---
 
-## 🎯 My Capstone Project (Course 8)
+## Herramientas
 
-### 🚴 [Case Study Name]
-
-**Scenario:** [Brief description]  
-**Goal:** [Your analysis goal]  
-**Tools:** R, RStudio, ggplot2, Tableau
-
-**Project phases:**
-1. ❓ **Ask** - Define the business problem
-2. 📊 **Prepare** - Collect and organize data
-3. 🧹 **Process** - Clean and verify data
-4. 🔍 **Analyze** - Find patterns and insights
-5. 📈 **Share** - Create visualizations and presentation
-6. 🎯 **Act** - Propose recommendations
-
-[View complete case study →](./course-8-capstone/case-study/)
-
-## 📊 Featured Projects
-
-### Project 1: [Name]
-**Course:** Course X  
-**Tool:** SQL / R / Tableau  
-**Description:** [Brief description]
-
-![Screenshot placeholder]
-
-[View project →](./link/)
+- **Sheets / Excel** — cursos 1, 2, 4
+- **SQL / BigQuery** — cursos 3, 4, 5
+- **R / RStudio / ggplot2** — cursos 7, 8
+- **Tableau Public** — curso 6
 
 ---
 
-## 💡 Key Concepts Learned
+## El proceso de análisis (Ask → Act)
 
-### The Data Analysis Process
+Todo el certificado gira en torno a este framework:
+
 ```
 Ask → Prepare → Process → Analyze → Share → Act
 ```
 
-### SMART Questions
-- **S**pecific
-- **M**easurable
-- **A**ction-oriented
-- **R**elevant
-- **T**ime-bound
-
-### Types of Analysis
-- **Descriptive** - What happened?
-- **Diagnostic** - Why did it happen?
-- **Predictive** - What will happen?
-- **Prescriptive** - What should we do?
-
-[View all my notes →](./key-concepts.md)
-
-## 📈 My Timeline
-```r
-# Progress timeline
-timeline <- data.frame(
-  month = c("Month 1-2", "Month 3-4", "Month 5-6", "Month 7-8"),
-  courses = c("Courses 1-2", "Courses 3-4", "Courses 5-6", "Courses 7-8"),
-  status = c("✅", "🔄", "📝", "📝")
-)
-```
-
-**Start:** MM/YYYY  
-**Goal to complete:** MM/YYYY  
-**Current progress:** X/8 courses completed
-
-## 🌟 Additional Resources
-
-- 📖 [Coursera Course Link](https://www.coursera.org/professional-certificates/google-data-analytics)
-- 💬 [Google Data Analytics Community](https://www.cloudskillsboost.google/)
-- 📊 [Public datasets for practice](https://www.kaggle.com/datasets)
-- 🎥 Supplementary videos and tutorials
-
-## 🎓 Skills Developed
-
-| Skill | Pre-Course Level | Current Level | Goal |
-|-------|----------------|--------------|------|
-| Spreadsheets | ⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| SQL | ⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| R Programming | - | ⭐⭐ | ⭐⭐⭐⭐ |
-| Tableau | - | ⭐⭐ | ⭐⭐⭐⭐ |
-| Data Storytelling | ⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-
-## 💭 Reflections
-
-### Course 1-2
-> "Learning the analytical thinking framework helped me structure my approach to problems better. SMART questions are a game-changer."
-
-### Course 3-4
-> [Your reflections when you get here]
-
-### Capstone
-> [Your experience with the final project]
-
-## 🎯 Next Steps Post-Certification
-
-- [ ] Apply capstone project to my portfolio
-- [ ] Deepen R knowledge for advanced analysis
-- [ ] Create more visualizations in Tableau
-- [ ] Participate in Kaggle competitions
-- [ ] Look for junior analyst opportunities
-
-## 🎊 Certificate
-
-[Space for your certificate when you get it]
-
-**Verification Link:** [Link when you complete it]
-
----
-
-<div align="center">
-
-⭐ **Also taking this certificate? Let's connect!**
-
-*Learning data analytics, one course at a time* 🎓💚
-
-**Course Progress:** ██░░░░░░ 2/8
-
-</div>
-```
-
----
-
-## 💬 STATUS OPTIONS (rotate every 2-3 weeks)
-```
-🌱 Growing: Python fundamentals & pandas basics
-```
-```
-📊 Currently: Wrangling my first real datasets
-```
-```
-☕ Status: Converting caffeine into clean data
-```
-```
-🐼 Befriending: pandas library (it's complicated)
-```
-```
-📈 Learning: SQL queries & data visualization
-```
-```
-✨ Building: Analytics portfolio one project at a time
-```
-```
-🎯 Focus: PL-300 certification prep
-```
-```
-🔍 Exploring: EDA techniques & storytelling with data
+Cada curso cubre una o dos fases. El capstone (curso 8) las integra todas
+en un caso de negocio real.

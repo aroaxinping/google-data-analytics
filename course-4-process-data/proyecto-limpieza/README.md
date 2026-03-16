@@ -40,12 +40,12 @@ FROM `proyecto.dataset.ecommerce_ventas`;
 
 -- Cuántos nulos hay por columna
 SELECT
-  COUNTIF(order_id IS NULL)       AS nulos_order_id,
-  COUNTIF(customer_name IS NULL)  AS nulos_customer_name,
-  COUNTIF(order_date IS NULL)     AS nulos_order_date,
-  COUNTIF(category IS NULL)       AS nulos_category,
-  COUNTIF(sale_price IS NULL)     AS nulos_sale_price,
-  COUNTIF(region IS NULL)         AS nulos_region
+COUNTIF(order_id IS NULL)       AS nulos_order_id,
+COUNTIF(customer_name IS NULL)  AS nulos_customer_name,
+COUNTIF(order_date IS NULL)     AS nulos_order_date,
+COUNTIF(category IS NULL)       AS nulos_category,
+COUNTIF(sale_price IS NULL)     AS nulos_sale_price,
+COUNTIF(region IS NULL)         AS nulos_region
 FROM `proyecto.dataset.ecommerce_ventas`;
 ```
 
@@ -65,29 +65,29 @@ ORDER BY veces DESC;
 CREATE OR REPLACE TABLE `proyecto.dataset.ecommerce_ventas_limpio` AS
 
 WITH sin_duplicados AS (
-  SELECT *
-  FROM (
+SELECT *
+FROM (
     SELECT *,
       ROW_NUMBER() OVER (PARTITION BY order_id ORDER BY order_date) AS fila_num
     FROM `proyecto.dataset.ecommerce_ventas`
   )
-  WHERE fila_num = 1
+WHERE fila_num = 1
 )
 
 SELECT
   order_id,
-  INITCAP(TRIM(customer_name))               AS customer_name,
-  PARSE_DATE('%d/%m/%Y', order_date)         AS order_date,
-  LOWER(TRIM(category))                      AS category,
-  UPPER(TRIM(region))                        AS region,
-  CASE WHEN sale_price > 0 THEN sale_price
+INITCAP(TRIM(customer_name))               AS customer_name,
+PARSE_DATE('%d/%m/%Y', order_date)         AS order_date,
+LOWER(TRIM(category))                      AS category,
+UPPER(TRIM(region))                        AS region,
+CASE WHEN sale_price > 0 THEN sale_price
        ELSE NULL END                         AS sale_price,
   quantity,
   country
 FROM sin_duplicados
 WHERE order_id IS NOT NULL
-  AND order_date IS NOT NULL
-  AND sale_price > 0;
+AND order_date IS NOT NULL
+AND sale_price > 0;
 ```
 
 ### Paso 4 — Verificar que quedó bien

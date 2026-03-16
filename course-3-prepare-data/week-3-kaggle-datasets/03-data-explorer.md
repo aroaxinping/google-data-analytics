@@ -20,7 +20,7 @@ permite previsualizar cada archivo sin descargarlo.
 | Columna | Tipo de dato | Icono |
 |---------|-------------|-------|
 | Name | String (texto) | A |
-| DIY | Boolean | ✓ |
+| DIY | Boolean |  |
 | Buy | Numérico | # |
 | Sell | Numérico | # |
 | Color 1 | String (texto) | A |
@@ -58,4 +58,4 @@ permite previsualizar cada archivo sin descargarlo.
 En el explorador, cada columna tiene un icono que indica el tipo:
 - **A** → datos de texto (string)
 - **#** → datos numéricos (integer/float)
-- **✓** → datos booleanos (true/false)
+- **** → datos booleanos (true/false)
