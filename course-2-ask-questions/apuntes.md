@@ -170,6 +170,76 @@ COURSE 2: ASK QUESTIONS
 
 ---
 
+## Actividades del curso
+
+**Modulo 1 — Ask Effective Questions:**
+- Framework SMART para preguntas (video)
+- Tipos de problemas que resuelve un analista (video)
+- Pensamiento estructurado: problema, contexto, desafios (lectura)
+- Actividad practica: formular preguntas SMART para un escenario real (hands-on)
+- Desafio del modulo 1 (quiz calificado)
+
+**Modulo 2 — Make Data-Driven Decisions:**
+- Datos cualitativos vs cuantitativos (video)
+- Reports vs dashboards: cuando usar cada uno (video)
+- Metricas y KPIs (lectura)
+- Actividad practica: explorar ejemplos de dashboards reales (hands-on)
+- Desafio del modulo 2 (quiz calificado)
+
+**Modulo 3 — Spreadsheet Magic:**
+- Organizar datos en hojas de calculo (video)
+- Funciones esenciales: SUM, AVERAGE, COUNT, IF, COUNTIF (video)
+- VLOOKUP: buscar datos en otra tabla (video)
+- Actividad practica: crear una hoja de calculo con funciones y VLOOKUP (hands-on)
+- Tablas pivot (video + lectura)
+- Actividad practica: crear una tabla pivot (hands-on)
+- Errores comunes en Sheets (#DIV/0!, #N/A, #REF!) (lectura)
+- Desafio del modulo 3 (quiz calificado)
+
+**Modulo 4 — Always Remember the Stakeholder:**
+- Tipos de stakeholders y como comunicar con cada uno (video)
+- Lidiar con datos insuficientes (video)
+- Actividad practica: preparar una comunicacion para stakeholders (hands-on)
+- Evaluacion del curso (quiz calificado final)
+
+---
+
+## Cuando usar X vs Y
+
+**Report vs Dashboard:**
+Usar report cuando necesitas un analisis estatico para una decision concreta o para documentar hallazgos de un periodo especifico. Usar dashboard cuando necesitas monitoreo continuo de metricas que cambian con el tiempo y la audiencia consulta los datos con regularidad.
+
+**Cualitativo vs cuantitativo:**
+No son opciones excluyentes — se usan juntos. Los datos cuantitativos responden "cuanto" y "cuantos" y permiten calcular; los cualitativos responden "por que" y "como" y aportan contexto. Un analisis solo cuantitativo puede identificar que algo baja pero no por que; un analisis solo cualitativo no puede generalizar.
+
+**VLOOKUP vs JOIN:**
+VLOOKUP en Sheets para datasets pequenos que ya tienes en hojas de calculo y cuando la logica es sencilla (buscar un valor en una tabla). JOIN en SQL cuando los datasets son grandes, cuando hay multiples tablas relacionadas, o cuando necesitas combinar datos de una base de datos.
+
+**Metrica vs KPI:**
+Una metrica es cualquier medicion cuantificable. Un KPI (Key Performance Indicator) es una metrica vinculada directamente a un objetivo de negocio. Todas las KPIs son metricas, pero no todas las metricas son KPIs.
+
+---
+
+## Errores comunes
+
+- **Hacer preguntas demasiado amplias:** preguntas como "por que bajan las ventas?" sin acotar tiempo, segmento ni magnitud llevan a analisis indefinidos. Una buena pregunta SMART ya contiene las condiciones de respuesta: que, cuanto, cuando y para quien.
+- **Confundir metricas con KPIs:** una metrica es cualquier medicion; un KPI es una metrica vinculada a un objetivo estrategico. Reportar metricas que no conectan con ningun objetivo es trabajo que no ayuda a tomar decisiones.
+- **No identificar a todos los stakeholders antes de empezar:** descubrir a mitad del analisis que hay un stakeholder clave con requisitos distintos obliga a rehacerlo. Dedicar tiempo al principio a mapear quienes tienen interes en el resultado ahorra mucho mas tiempo despues.
+- **Asumir que el stakeholder quiere detalle tecnico:** ejecutivos y managers suelen necesitar el impacto en negocio, no la metodologia. Presentar demasiado detalle tecnico a la audiencia incorrecta es tan problematico como presentar demasiado poco.
+- **Ignorar errores de Sheets sin entenderlos:** ver #N/A en un VLOOKUP y dejarlo sin investigar es un error de validacion. Cada error tiene una causa especifica y hay que resolverla antes de continuar con el analisis.
+
+---
+
+## Conexion con otros cursos
+
+- Las preguntas SMART del modulo 1 definen directamente que datos necesitas preparar en el curso 3. Una pregunta mal formulada en esta fase lleva a preparar datos que no responden el problema real.
+- La distincion report vs dashboard del modulo 2 conecta con el curso 6 (visualizacion): entender para que sirve cada formato es prerequisito para elegir el tipo de grafico correcto.
+- VLOOKUP del modulo 3 es el precursor directo de los JOINs del curso 5. La logica es identica; cambia la herramienta y la escala de datos.
+- El modulo 4 (comunicacion con stakeholders) conecta directamente con el curso 6 (presentaciones de analisis) y con el curso 8 (como presentar el case study del capstone).
+- Las tablas pivot de Sheets del modulo 3 son el equivalente visual de GROUP BY en SQL, que se explora en profundidad en el curso 5.
+
+---
+
 ## Lo mas importante de este curso
 
 Dos cosas que se llevan de este curso y se usan en todos los demas:
