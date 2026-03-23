@@ -140,6 +140,56 @@ COURSE 1: FOUNDATIONS
 
 ---
 
+## Actividades del curso
+
+**Modulo 1 — Introducing Data Analytics and Analytical Thinking:**
+- Introduccion al analisis de datos (video)
+- Pensamiento analitico: los 5 aspectos (video)
+- Reflexion: como piensas sobre los datos (lectura)
+- Cuestionario de practica: pensamiento analitico (quiz)
+- Desafio del modulo 1 (quiz calificado)
+
+**Modulo 2 — The Wonderful World of Data:**
+- El ciclo de vida del dato (video)
+- El proceso de analisis Ask-Prepare-Process-Analyze-Share-Act (video)
+- Actividad practica: explorar conjuntos de datos reales (hands-on)
+- Glosario del modulo 2 (lectura)
+- Desafio del modulo 2 (quiz calificado)
+
+**Modulo 3 — Set Up Your Data Analytics Toolbox:**
+- Introduccion a las hojas de calculo (video)
+- Introduccion a SQL y BigQuery (video)
+- Actividad practica: crear una cuenta BigQuery y explorar datos publicos (hands-on)
+- Actividad practica: explorar herramientas de visualizacion (hands-on)
+- Desafio del modulo 3 (quiz calificado)
+
+**Modulo 4 — Become a Fair and Impactful Data Professional:**
+- Etica de datos: los 6 aspectos (video)
+- Privacidad y anonimizacion (video)
+- Tipos de analista segun tipo de empresa (lectura)
+- Desafio del modulo 4 (quiz calificado)
+- Evaluacion del curso (quiz calificado final)
+
+---
+
+## Errores comunes
+
+- **Confundir el ciclo de vida del dato con el proceso de analisis:** son dos marcos distintos. El ciclo de vida del dato describe lo que le pasa al dato (planificar, capturar, gestionar, analizar, archivar, destruir); el proceso de analisis describe lo que hace el analista (Ask, Prepare, Process, Analyze, Share, Act). Mezclarlos genera confusion sobre en que fase del trabajo estas.
+- **Asumir que correlacion implica causalidad:** el error estadistico mas frecuente en analisis de datos. Que dos variables se muevan juntas no significa que una cause la otra. Siempre hay que buscar factores de confusion y ser cuidadoso con como se comunican los hallazgos.
+- **Pensar que el analisis empieza con las herramientas:** el instinto de "voy a abrir Sheets y ver que hay" lleva a analisis sin direccion. El analisis empieza con una pregunta clara. Sin pregunta, los datos no tienen contexto y los hallazgos no tienen utilidad.
+- **Ignorar la etica desde el principio:** la privacidad y el consentimiento no son un paso final, son consideraciones que afectan a como recoges los datos, como los almacenas y como los presentas.
+
+---
+
+## Conexion con otros cursos
+
+- El framework Ask-Prepare-Process-Analyze-Share-Act introducido aqui es la columna vertebral de todos los cursos siguientes. Cada curso del certificado cubre una fase: curso 2 = Ask, curso 3 = Prepare, curso 4 = Process, curso 5 = Analyze, curso 6 = Share, curso 8 = Act (capstone).
+- Las herramientas presentadas en el modulo 3 (Sheets, SQL, Tableau, Python) se aprenden en profundidad en los cursos 2-3 (Sheets), 3-5 (SQL), 6 (Tableau) y 7 (Python).
+- Los principios de etica de datos del modulo 4 reaparecen en el curso 3 al evaluar fuentes con ROCCC y en el curso 8 al documentar las limitaciones del capstone.
+- El pensamiento analitico descrito en el modulo 1 es el marco mental que se aplica a cada decision de los cursos posteriores: formular la pregunta correcta (curso 2), evaluar credibilidad de datos (curso 3), elegir como limpiar (curso 4), interpretar hallazgos (curso 5).
+
+---
+
 ## Lo mas importante de este curso
 
 El framework Ask -> Prepare -> Process -> Analyze -> Share -> Act es la columna
