@@ -180,6 +180,86 @@ COURSE 6: SHARE (VISUALIZE)
 
 ---
 
+## Actividades del curso
+
+**Modulo 1 — Visualize Data:**
+- Por que la visualizacion funciona: como procesa el cerebro imagenes vs texto (video)
+- Tipos de visualizacion y cuando usarlos (video + lectura)
+- Principios de diseno: pre-atentivo, accesibilidad, simplicidad, jerarquia (video)
+- Cuando no usar un pie chart (lectura)
+- Design thinking aplicado a visualizacion de datos (video)
+- Actividad practica: elegir el tipo de grafico correcto para distintos escenarios (hands-on)
+- Desafio del modulo 1 (quiz calificado)
+
+**Modulo 2 — Create Data Visualizations with Tableau:**
+- Dimensions vs Measures en Tableau (video)
+- Marks card, Shelves, Show Me (video)
+- Flujo basico para crear una visualizacion en Tableau (lectura)
+- Medidas calculadas y LOD expressions (video)
+- Actividad practica: crear visualizaciones en Tableau Public (hands-on calificable)
+- Actividad practica: crear un dashboard interactivo con filtros (hands-on calificable)
+- Desafio del modulo 2 (quiz calificado)
+
+**Modulo 3 — Craft Data Stories:**
+- Los 3 elementos de una historia de datos: personajes, contexto, tension (video)
+- Estructura clasica para presentar resultados (video)
+- Dashboards en Tableau: combinar hojas, filtros globales y acciones (video)
+- Contexto para los numeros: comparativas y benchmarks (lectura)
+- Actividad practica: construir un dashboard narrativo en Tableau (hands-on calificable)
+- Desafio del modulo 3 (quiz calificado)
+
+**Modulo 4 — Develop Presentations and Slideshows:**
+- Estructura de una presentacion de analisis (video)
+- Comunicar limitaciones de los datos (lectura)
+- Manejar preguntas dificiles en presentaciones (video)
+- Actividad practica: crear una presentacion de analisis completa (hands-on calificable)
+- Evaluacion del curso (quiz calificado final)
+
+---
+
+## Cuando usar X vs Y
+
+**Barras vs lineas:**
+Barras para comparar categorias discretas entre si (ventas por producto, usuarios por pais). Lineas para mostrar la evolucion de una variable a lo largo del tiempo: el eje X es continuo y las lineas transmiten la idea de tendencia y cambio entre puntos.
+
+**Pie/Donut vs barras:**
+Pie o donut solo cuando hay 5-6 categorias como maximo y las diferencias entre ellas son visualmente distinguibles. En todos los demas casos usar barras: el ojo humano compara longitudes con mucha mas precision que angulos o areas. Con mas de 6 categorias un pie chart es practicamente ilegible.
+
+**Scatter vs linea:**
+Scatter para ver si existe una relacion entre dos variables numericas (precio vs demanda, edad vs ingresos) — cada punto es una observacion. Linea para ver como evoluciona una variable en el tiempo — los puntos estan conectados porque representan una secuencia.
+
+**Dashboard vs presentacion:**
+Dashboard para monitoreo continuo por personas que necesitan consultar el dato regularmente (operaciones, marketing). La audiencia vuelve al dashboard sola, sin necesidad de que alguien lo explique. Presentacion para comunicar hallazgos especificos a una audiencia en un momento concreto, con narrativa y contexto guiado por el analista.
+
+**Tableau Public vs Google Sheets:**
+Tableau para dashboards interactivos que se pueden publicar en la web, explorar con filtros y combinar multiples fuentes de datos. Sheets para analisis rapido y compartir con personas que no saben usar Tableau — la barrera de entrada es mucho menor pero las capacidades de interactividad son limitadas.
+
+**Mapa de calor vs tabla:**
+Mapa de calor cuando quieres ver patrones en una matriz de datos (actividad por hora y dia de la semana, correlaciones entre variables). Tabla cuando la audiencia necesita los valores exactos para tomar decisiones o hacer calculos adicionales.
+
+---
+
+## Errores comunes
+
+- **Usar el grafico que queda mas bonito en lugar del que comunica mejor:** la estetica es secundaria a la claridad. Un grafico de barras simple que comunica el hallazgoclaramente es mejor que un grafico 3D visualmente llamativo que confunde al lector.
+- **Pie charts con mas de 5-6 categorias:** el ojo no distingue angulos similares. Un pie chart con 10 categorias es inutil — nadie puede decir que diferencia hay entre una categoria al 8% y otra al 11%.
+- **Presentar un numero sin contexto:** "las ventas son 50.000" no significa nada sin saber si eso es bueno o malo, si sube o baja respecto al periodo anterior, y si esta por encima o por debajo del objetivo. Todo numero necesita una comparativa para tener significado.
+- **Usar rojo y verde como unico diferenciador:** el daltonismo rojo-verde afecta al 8% de los hombres. Combinar siempre el color con otra cue visual (forma, patron, etiqueta) para que la visualizacion sea accesible.
+- **Dashboards con demasiada informacion:** incluir todas las metricas disponibles no es mas util, es menos util. La jerarquia visual importa: lo critico debe verse inmediatamente, lo secundario debe ser accesible pero no competir por la atencion.
+- **No dar titulos descriptivos a los graficos:** un titulo como "Ventas" no aporta nada. Un titulo como "Ventas mensuales Q1 2024 vs Q1 2023 — caida del 18% en marzo" ya es un hallazgo.
+
+---
+
+## Conexion con otros cursos
+
+- Los tipos de datos del curso 3 (nominal, ordinal, continuo, discreto) determinan directamente que tipo de grafico es apropiado: datos continuos van bien en lineas e histogramas; datos nominales van bien en barras; datos ordinales pueden necesitar un orden especifico en el eje.
+- Los hallazgos que se obtienen con SQL en el curso 5 son el input de las visualizaciones de este curso. Un analisis sin visualizacion es dificil de comunicar a una audiencia no tecnica.
+- El curso 2 (stakeholders y comunicacion) conecta directamente con el modulo 4 de este curso: adaptar la presentacion a la audiencia es lo mismo que adaptar el nivel de detalle al stakeholder.
+- Los principios de storytelling del modulo 3 son fundamentales para el capstone del curso 8: el case study necesita una narrativa clara que conecte el problema de negocio con los hallazgos y las recomendaciones.
+- La distincion dashboard vs presentacion del modulo 1 conecta con report vs dashboard del curso 2: ambos conceptos describen el mismo trade-off entre monitoreo continuo y comunicacion puntual.
+
+---
+
 ## Lo mas importante de este curso
 
 **Elegir el grafico correcto** no es estetica — es claridad. El error mas
