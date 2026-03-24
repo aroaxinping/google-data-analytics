@@ -221,6 +221,86 @@ COURSE 4: PROCESS (CLEAN)
 
 ---
 
+## Actividades del curso
+
+**Modulo 1 — The Importance of Integrity:**
+- Integridad de datos: tipos de problemas (video)
+- Muestreo aleatorio y sesgo de muestreo (video)
+- Actividad practica: identificar problemas de integridad en un dataset (hands-on)
+- Desafio del modulo 1 (quiz calificado)
+
+**Modulo 2 — Clean Data for More Accurate Insights:**
+- Tipos de datos sucios: tipograficos, espacios, duplicados, nulos (video)
+- Funciones de limpieza en Sheets: TRIM, LOWER, UPPER, PROPER, SUBSTITUTE (video)
+- Actividad practica: limpiar un dataset en Sheets (hands-on)
+- Eliminar duplicados con Data > Remove duplicates (lectura)
+- Desafio del modulo 2 (quiz calificado)
+
+**Modulo 3 — Data Cleaning with SQL:**
+- Detectar nulos y duplicados con SQL (video)
+- Limpiar texto: TRIM, LOWER, REPLACE (video)
+- COALESCE para manejar NULLs (lectura)
+- ROW_NUMBER() para eliminar duplicados conservando el registro correcto (video)
+- CAST y SAFE_CAST para conversion de tipos (lectura)
+- Actividad practica: limpieza completa de un dataset en BigQuery (hands-on calificable)
+- Desafio del modulo 3 (quiz calificado)
+
+**Modulo 4 — Verify and Report on Cleaning Results:**
+- Proceso de verificacion: comparar antes/despues (video)
+- Estadisticas de validacion (lectura)
+- Documentar el proceso de limpieza: que es un log de limpieza (video)
+- Actividad practica: crear un log de limpieza documentado (hands-on)
+- Desafio del modulo 4 (quiz calificado)
+
+**Modulo 5 — Add Data to Your Resume:**
+- Habilidades de datos en el CV (lectura)
+- Evaluacion del curso (quiz calificado final)
+
+**Modulo 6 — Optional: Advanced cleaning techniques:**
+- Limpieza avanzada con SQL: patrones con REGEXP (lectura)
+- Actividad practica: tecnicas avanzadas de limpieza (hands-on)
+
+---
+
+## Cuando usar X vs Y
+
+**Eliminar vs rellenar nulos:**
+Eliminar la fila cuando el registro sin ese dato no tiene valor analitico y su ausencia no distorsiona la muestra. Rellenar cuando el nulo tiene un significado interpretable (cero ventas, valor mas frecuente, mediana) y eliminar esas filas reduciria la muestra de forma significativa o introduciria sesgo.
+
+**TRIM vs CLEAN en Sheets:**
+TRIM elimina espacios extra al inicio, fin y entre palabras (los dobles espacios). CLEAN elimina caracteres no imprimibles que a veces vienen de exportaciones de otros sistemas. Usarlos juntos cubre ambos casos: primero CLEAN para limpiar caracteres invisibles, luego TRIM para los espacios.
+
+**ROW_NUMBER vs DISTINCT para duplicados:**
+DISTINCT es mas simple pero elimina todas las filas duplicadas indiscriminadamente, sin control sobre cual conservar. ROW_NUMBER() OVER (PARTITION BY id ORDER BY fecha) te permite especificar exactamente cual fila de cada grupo de duplicados quieres conservar (la mas reciente, la mas completa, la primera), lo que es necesario cuando las filas duplicadas tienen diferencias entre si.
+
+**Documentar en el script vs en un documento externo:**
+Preferible documentar directamente en el script como comentarios. Si el codigo y la documentacion estan separados, siempre acaban desincronizados: se actualiza el codigo y se olvida actualizar la documentacion, o viceversa. Un comentario inline en el script es imposible de desincronizar.
+
+**CAST vs SAFE_CAST:**
+CAST falla con un error si el valor no puede convertirse al tipo destino. SAFE_CAST devuelve NULL en lugar de error cuando la conversion falla. Usar SAFE_CAST cuando el dato puede ser inconsistente (texto mezclado con numeros en una columna que deberia ser numerica); usar CAST solo cuando estas seguro de que todos los valores son convertibles.
+
+---
+
+## Errores comunes
+
+- **Limpiar sin documentar las decisiones:** si no hay registro de que se elimino, que se reemplazo y por que, el analisis no es reproducible ni auditable. Un analisis cuya limpieza no se puede explicar no es un analisis profesional.
+- **Eliminar datos que deberian analizarse:** los valores nulos a veces son el hallazgo, no el problema. Un nulo en "fecha de baja" puede significar "cliente activo". Eliminar esas filas sin entender su significado destruye informacion valiosa.
+- **No verificar despues de limpiar:** la limpieza puede introducir errores nuevos. Reemplazar NULLs con un valor incorrecto, o convertir un tipo de dato con CAST de forma incorrecta, produce datos erroneos que parecen limpios. Siempre verificar estadisticas descriptivas despues de cada operacion de limpieza.
+- **Limpiar y analizar en el mismo paso:** mezclar las fases hace el proceso opaco. Si el analisis final es incorrecto, es imposible saber si el error viene de una decision de limpieza o de un error de analisis.
+- **Ignorar outliers en lugar de investigarlos:** un outlier puede ser un error de datos (hay que limpiar) o un caso real extremo (hay que conservar y mencionar). La decision de que hacer con el requiere entender el contexto del negocio.
+
+---
+
+## Conexion con otros cursos
+
+- La integridad de datos del modulo 1 conecta directamente con ROCCC del curso 3: ROCCC evalua la fuente antes de empezar; la verificacion de integridad evalua el dataset una vez que lo tienes.
+- Las funciones de limpieza de Sheets del modulo 2 (TRIM, LOWER, SUBSTITUTE) tienen equivalentes directos en SQL del modulo 3, que se usan de nuevo en el curso 5 al preparar datos para el analisis.
+- ROW_NUMBER() OVER() del modulo 3 es la primera window function del certificado. La misma sintaxis OVER() se usa en el curso 5 para calculos mucho mas complejos como totales acumulados, rankings y LAG.
+- El log de limpieza del modulo 4 es la base de la seccion "Process" del case study del capstone en el curso 8. Los reclutadores miran especificamente como se documenta la limpieza en el portfolio.
+- Las decisiones de limpieza tomadas aqui afectan directamente a la validez de los hallazgos del curso 5: si se limpiaron mal los datos, el analisis producira resultados incorrectos aunque las queries sean perfectas.
+
+---
+
 ## Lo mas importante de este curso
 
 **ROW_NUMBER() OVER (PARTITION BY id ORDER BY fecha)** es la tecnica SQL
