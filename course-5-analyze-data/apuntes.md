@@ -259,6 +259,101 @@ COURSE 5: ANALYZE DATA
 
 ---
 
+## Actividades del curso
+
+**Modulo 1 — Organizar los datos para un analisis mas eficaz:**
+- Introduccion a organizar datos (video)
+- El proceso de analisis: repaso contextual (video)
+- Filtrar datos con SQL: paso a paso (lectura)
+- Filtrar datos con SQL (video)
+- Actividad practica: consultas de ordenacion SQL (hands-on calificable)
+- Actividad practica: analizar datos meteorologicos en BigQuery (hands-on calificable)
+- Ordenacion de datos en hojas de calculo: paso a paso (lectura)
+- Ordenacion con la funcion SORT (video + lectura)
+- Actividad practica: ordenacion SQL (hands-on calificable)
+- Glosario del modulo 1 (lectura)
+- Desafio del modulo 1 (quiz calificado — ya completado al 85%)
+
+**Modulo 2 — Formatear y ajustar datos:**
+- Conversion de tipos: CAST y SAFE_CAST (video)
+- Convertir datos en hojas de calculo (lectura)
+- Validacion y formato condicional (video)
+- Combinar strings para estadisticas (video + lectura)
+- Actividad practica: combinar multiples datos (hands-on calificable)
+- Manipular cadenas con SQL (lectura)
+- Glosario del modulo 2 (lectura)
+- Desafio del modulo 2 (quiz calificado)
+
+**Modulo 3 — Agregacion de datos para analisis:**
+- VLOOKUP: preparar, usar y solucionar errores comunes (video x4)
+- Actividad practica: usar VLOOKUP para realizar una tarea (hands-on calificable)
+- JOINs: como funcionan INNER, LEFT, RIGHT, FULL OUTER (video)
+- Actividad practica: consultas para JOINs (hands-on calificable)
+- Actividad practica: COUNT y COUNT DISTINCT (hands-on calificable)
+- Subconsultas: consultas dentro de consultas (video x2)
+- Actividad practica: subconsultas para refinar datos (hands-on calificable x2)
+- Glosario del modulo 3 (lectura)
+- Desafio del modulo 3 (quiz calificado)
+
+**Modulo 4 — Realizar calculos de datos:**
+- Formulas de calculo habituales en Sheets (video)
+- Funciones con condiciones multiples: SUMIF, COUNTIFS, AVERAGEIF (video + lectura)
+- Actividad practica: trabajar con condiciones (hands-on calificable)
+- Tablas dinamicas: introduccion y elementos (video x2 + lectura x2)
+- Actividad practica: explorar datos de peliculas con tablas dinamicas (hands-on calificable)
+- Calculos con SQL: incrustar calculos sencillos (video + lectura)
+- Actividad practica: calculos con SQL (hands-on calificable)
+- Tablas temporales en SQL (video + lectura)
+- Actividad practica: crear tablas temporales (hands-on calificable)
+- Glosario del modulo 4 (lectura)
+- Desafio del modulo 4 (quiz calificado)
+
+---
+
+## Cuando usar X vs Y
+
+**INNER JOIN vs LEFT JOIN:**
+Usar INNER JOIN cuando solo te interesan las filas que tienen coincidencia en ambas tablas — las filas sin coincidencia desaparecen del resultado. Usar LEFT JOIN cuando necesitas conservar todas las filas de la tabla principal aunque no haya coincidencia en la segunda tabla: las filas sin match aparecen con NULL en las columnas de la tabla derecha.
+
+**WHERE vs HAVING:**
+WHERE filtra filas individuales antes de que se aplique GROUP BY — no puede referenciar alias de agregacion ni funciones de grupo. HAVING filtra grupos despues de agrupar con GROUP BY, por lo que si puede referenciar COUNT(*) u otras funciones de agregacion. No se pueden intercambiar: usar WHERE con COUNT(*) genera un error.
+
+**Window functions vs GROUP BY:**
+GROUP BY colapsa todas las filas de cada grupo en una sola fila de resultado — se pierde el detalle individual. Las window functions con OVER() calculan sobre grupos pero conservan cada fila individual en el resultado. Usar GROUP BY cuando solo necesitas el resumen; usar OVER() cuando necesitas el calculo por grupo pero manteniendo las filas originales (rankings, totales acumulados, comparacion con fila anterior).
+
+**CTE vs subquery:**
+Funcionalmente equivalentes en la mayoria de casos, pero los CTEs (WITH) son mucho mas legibles cuando hay mas de un paso intermedio: cada bloque WITH tiene un nombre descriptivo que actua como documentacion. Las subqueries anidadas son dificiles de debuggear porque hay que leer de dentro hacia afuera. Preferir CTEs para cualquier query con mas de un nivel de logica.
+
+**ORDER BY dentro de OVER() vs ORDER BY global:**
+El ORDER BY dentro de OVER() determina como se calcula la funcion de ventana: para LAG define cual es la "fila anterior", para SUM acumulado define el orden en que se acumulan los valores. El ORDER BY al final de la query determina el orden visual de las filas en el resultado. Son independientes y pueden apuntar a columnas distintas.
+
+**VLOOKUP vs JOIN:**
+VLOOKUP en Sheets cuando el dataset es pequeno y ya tienes los datos en hojas de calculo — es mas rapido para exploracion puntual. JOIN en SQL cuando los datos estan en una base de datos, cuando los datasets son grandes, o cuando necesitas combinar mas de dos tablas. VLOOKUP solo mira hacia la derecha y a la primera coincidencia; JOIN es mas flexible y potente.
+
+---
+
+## Errores comunes
+
+- **Usar INNER JOIN cuando se necesita LEFT JOIN:** se pierden silenciosamente todos los registros sin coincidencia, sin ningun error ni advertencia. El resultado parece correcto pero esta incompleto. Antes de elegir el tipo de JOIN hay que pensar si importa conservar los registros sin match.
+- **Olvidar ORDER BY dentro de OVER() para funciones de ventana:** para funciones como LAG, LEAD o totales acumulados, el ORDER BY dentro de OVER() es obligatorio para que el calculo tenga sentido. Sin el, el resultado es indeterminado y puede variar entre ejecuciones.
+- **Confundir HAVING con WHERE:** intentar usar WHERE para filtrar por el resultado de una funcion de agregacion genera un error en SQL. HAVING es el unico lugar donde se pueden filtrar resultados de GROUP BY.
+- **No usar SAFE_CAST cuando el dato puede ser inconsistente:** CAST falla con error si encuentra un valor que no puede convertir; SAFE_CAST devuelve NULL en lugar de romper la query. En datasets reales donde una columna "numerica" puede tener algun texto, CAST hace fallar toda la query.
+- **Escribir queries largas sin CTEs:** legibles para el autor en el momento de escribirlas, ilegibles para cualquiera (incluido el mismo autor) semanas despues. Los CTEs no son un lujo de estilo, son una herramienta de mantenibilidad.
+- **Confundir VLOOKUP con una busqueda de texto:** VLOOKUP busca coincidencia exacta en la primera columna del rango (con FALSE como ultimo parametro). Si el tipo de dato del valor buscado no coincide con el de la tabla (numero vs texto), no encuentra nada y devuelve #N/A aunque visualmente parezca igual.
+
+---
+
+## Conexion con otros cursos
+
+- Los JOINs de este curso son la version SQL del VLOOKUP del curso 2: el concepto de combinar datos de distintas fuentes usando una clave comun es identico, solo cambia la escala y la herramienta.
+- Las funciones de ventana (ROW_NUMBER, LAG) se introdujeron en el curso 4 para eliminar duplicados. Aqui se amplian para calculos analiticos mas ricos, lo que muestra que la misma sintaxis OVER() tiene multiples usos.
+- El proceso de verificacion del curso 4 (comprobar que los datos estan limpios) es un prerequisito directo para este curso: si los datos llegaron sucios al analisis, los resultados del JOIN o del GROUP BY seran incorrectos aunque las queries sean perfectas.
+- Las tablas dinamicas de Sheets de este modulo 4 son el equivalente visual de GROUP BY en SQL, que se exploro tambien en el curso 2. El concepto de agrupar y agregar es el mismo en todas las herramientas.
+- Los hallazgos que se obtienen aqui con SQL son los que se visualizan en el curso 6 con Tableau. El output de las queries de este curso es el input de las visualizaciones del siguiente.
+- En el capstone del curso 8, todas las habilidades de este curso (JOINs, GROUP BY, window functions, CTEs) se usan combinadas para el analisis del caso Cyclistic.
+
+---
+
 ## Lo mas importante de este curso
 
 **Las funciones de ventana** son lo que mas distingue a alguien que "sabe SQL"
