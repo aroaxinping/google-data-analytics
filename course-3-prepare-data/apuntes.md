@@ -217,39 +217,92 @@ COURSE 3: PREPARE DATA
 ## Actividades del curso
 
 **Modulo 1 — Data Types and Structures:**
-- Datos estructurados vs no estructurados vs semi-estructurados (video)
-- Tipos de datos: string, numerico, booleano, fecha (video)
-- Datos discretos vs continuos, nominales vs ordinales (lectura)
-- Actividad practica: explorar tipos de datos en un dataset real (hands-on)
-- Desafio del modulo 1 (quiz calificado)
+
+Actividades practicas:
+- Autorreflexion opcional: Datos no estructurados: reflexionar sobre ejemplos de datos no estructurados del entorno propio (emails, fotos, textos) y como se podrian estructurar
+
+Lecturas clave:
+- Formatos de datos en la practica: ejemplos reales de datos en formato CSV, JSON, bases de datos y hojas de calculo — como identificar el formato adecuado para cada caso
+- Los efectos de las diferentes estructuras: por que importa elegir la estructura correcta (tabla, JSON, no estructurado) antes de recoger datos — impacto en el analisis posterior
+
+Otras actividades:
+- Introduccion a la exploracion de datos (video, 3 min): presentacion del modulo
+- Recogida de datos en nuestro mundo (video, 3 min): como se generan y recogen datos en distintos contextos
+- Determinar que datos recopilar (video, 3 min): criterios para elegir que datos recoger — relevancia, completitud, fiabilidad
+- Descubra los formatos de datos (video, 5 min): datos estructurados vs no estructurados vs semi-estructurados con ejemplos visuales
+- Seguir explorando los datos estructurados (video, 1 min): profundizacion en tablas, bases de datos y CSVs
+- Desafio del modulo 1 (quiz calificado — completado)
 
 **Modulo 2 — Data Responsibility:**
-- Framework ROCCC para evaluar credibilidad (video)
-- Tipos de sesgo en datos (video)
-- Etica de datos: consentimiento, privacidad, anonimizacion (video)
-- Datos abiertos y fuentes publicas (lectura)
-- Actividad practica: evaluar un dataset con ROCCC (hands-on)
-- Desafio del modulo 2 (quiz calificado)
+
+Lecturas clave:
+- Anonimizacion de datos: tecnicas de anonimizacion (generalizacion, supresion, perturbacion) y cuando aplicar cada una para proteger PII
+
+Otras actividades:
+- Introduccion al sesgo, la credibilidad, la privacidad y la Etica (video, 1 min): presentacion del modulo
+- Sesgo: de las preguntas a las conclusiones (video, 3 min): como el sesgo puede entrar en cada fase del proceso de analisis
+- Datos sesgados y no sesgados (video, 2 min): ejemplos de datasets con sesgo de muestreo y como identificarlo
+- Comprender el sesgo de los datos (video, 3 min): sesgo de confirmacion, sesgo de observador y sesgo de interpretacion
+- Identificar fuentes de datos correctas (video, 2 min): ROCCC — Reliable, Original, Comprehensive, Current, Cited
+- Que son los Datos "malos" (video, 2 min): datos incorrectos, inconsistentes, duplicados o incompletos
+- Etica de los datos esenciales (video, 4 min): consentimiento informado, privacidad, apertura y transparencia
+- Dar prioridad a la privacidad de los datos (video, 1 min): diferencia entre anonimizacion y privacidad
+- Desafio del modulo 2 (quiz calificado — completado)
 
 **Modulo 3 — Database Essentials:**
-- Bases de datos relacionales: primary key, foreign key, schema (video)
-- Introduccion a SQL: SELECT, FROM, WHERE, ORDER BY, LIMIT (video)
-- Actividad practica: primera query en BigQuery (hands-on)
-- Funciones de agregacion: COUNT, SUM, AVG, MAX, MIN (video)
-- Filtrar con WHERE: condiciones multiples, IN, BETWEEN, LIKE (lectura)
-- Actividad practica: queries de filtracion en BigQuery (hands-on)
-- Paso a paso: configurar BigQuery y cargar un dataset (lectura)
-- Desafio del modulo 3 (quiz calificado)
+
+Actividades practicas:
+- Actividad practica: Datos limpios en hojas de calculo con ordenacion y filtrado: ordenar un dataset en Sheets con Data > Sort range y aplicar filtros con Data > Create a filter para aislar subconjuntos de datos
+- Actividad practica: Introduccion a BigQuery: navegar la interfaz de BigQuery, localizar un dataset publico (bigquery-public-data) y ejecutar la primera query SELECT * FROM tabla LIMIT 10
+- Actividad practica: Crear una tabla personalizada en BigQuery: subir un CSV propio a BigQuery, crear un dataset y una tabla, y ejecutar queries sobre ella
+- Actividad practica: Elegir la herramienta adecuada para el trabajo: dado un escenario de datos concreto, decidir si usar Sheets o BigQuery y justificarlo
+- Actividad practica: Mas practica con SQL: escribir queries con WHERE, ORDER BY, LIMIT y funciones de agregacion sobre datasets publicos de BigQuery
+
+Lecturas clave:
+- Paso a paso: Importar datos de hojas de calculo y bases de datos: como importar un CSV a Sheets (File > Import), como conectar Sheets a BigQuery, y como exportar resultados de BigQuery a CSV
+- Paso a paso: BigQuery en accion: navegar BigQuery, seleccionar un proyecto publico (bigquery-public-data), explorar un schema de tabla, y escribir una query SELECT basica con WHERE y ORDER BY
+- Guia en profundidad: Las mejores practicas de SQL: convenciones de estilo SQL (mayusculas en keywords, indentacion), comentarios con --, como escribir queries legibles y como documentar el trabajo
+
+Otras actividades:
+- Todo sobre bases de datos (video, 2 min): introduccion a bases de datos relacionales
+- Caracteristicas y componentes de la base de datos (video, 3 min): tablas, filas, columnas, primary key, foreign key
+- Inspeccion de un Conjunto de datos: Una visita guiada y practica (lectura, 8 min): como explorar un dataset nuevo sistematicamente — schema, tipos de columnas, valores unicos, nulos
+- Desmitificar los metadatos (video, 3 min): que son los metadatos y por que importan
+- Los metadatos son tan importantes como los propios Datos (lectura, 8 min): tipos de metadatos (descriptivos, estructurales, administrativos) y su papel en la gestion de datos
+- Repositorios de metadatos y metadatos (lectura, 8 min): catalogo de datos, data dictionaries y como usarlos para entender un dataset nuevo
+- Tantos lugares donde encontrar datos (video, 3 min): fuentes publicas de datos — Google Dataset Search, Kaggle, datos.gob.es, BigQuery Public Datasets
+- Importar datos de hojas de calculo y bases de datos (video, 3 min): importar CSV a BigQuery y conectar Sheets a datos externos
+- Explorar conjuntos de datos publicos (lectura, 8 min): catalogo de datasets publicos en BigQuery y como localizarlos
+- Ordenacion y filtrado para centrarse en los datos relevantes (video, 5 min): Data > Sort y Data > Filter en Sheets como primera exploracion de un dataset
+- Conocza BigQuery, incluidas las opciones de sandbox y facturacion (video, 2 min): diferencias entre sandbox (gratuito) y cuenta de facturacion, limite de 1TB/mes en sandbox
+- BigQuery en accion (video, 6 min): demostracion completa de una query SELECT-WHERE-ORDER BY en BigQuery
+- Desafio del modulo 3 (quiz calificado — completado al 100%)
 
 **Modulo 4 — Organize and Protect Data:**
-- Convencion de nombres de archivos (video)
-- Niveles de acceso y seguridad basica (video)
-- Actividad practica: organizar archivos y carpetas de un proyecto (hands-on)
-- Desafio del modulo 4 (quiz calificado)
+
+Actividades practicas:
+- Autorreflexion: Proteja sus Recursos: analizar un escenario de manejo de datos de empresa y proponer medidas de seguridad (permisos, cifrado, nomenclatura)
+
+Lecturas clave:
+- Pautas para la organizacion de archivos: estructura de carpetas recomendada para proyectos de datos (raw/, processed/, outputs/, docs/), y convencion de nombres YYYY-MM-DD_descripcion_v01
+
+Otras actividades:
+- Sientase seguro de sus datos (video, 53 seg): introduccion al modulo
+- Organicemonos (video, 4 min): como crear una estructura de carpetas para un proyecto de datos y por que importa la consistencia
+- Caracteristicas de seguridad en las hojas de calculo (video, 3 min): proteger hojas con contrasena en Sheets, bloquear celdas y gestionar permisos de colaboradores
+- Equilibrio entre seguridad y analisis (lectura, 4 min): cuando aplicar restricciones de acceso sin bloquear el trabajo de analisis
+- Desafio del modulo 4 (quiz calificado — completado al 93.75%)
 
 **Modulo 5 — Engage in the Data Community:**
-- Networking y presencia profesional en datos (video)
-- Kaggle y comunidades open data (lectura)
+
+Actividades practicas:
+- Autorreflexion: Anade Kaggle a su presencia en linea: crear o actualizar perfil de Kaggle y explorar notebooks publicos de otros analistas
+
+Lecturas clave:
+- Desarrollar una red: estrategias de networking para analistas de datos — LinkedIn, Kaggle, meetups, comunidades online
+
+Otras actividades:
+- Reflexionar y conectar con los companeros (lectura, 4 min): reflexion sobre lo aprendido en el curso y conexion con la comunidad del certificado
 - Evaluacion del curso (quiz calificado final)
 
 ---
