@@ -179,6 +179,51 @@ SELECT
 FROM tabla;
 ```
 
+**Subconsultas (subqueries):**
+
+Una subconsulta es una query dentro de otra query. Se escribe entre parentesis.
+Puede aparecer en tres lugares distintos:
+
+```sql
+-- 1. En SELECT: para calcular un valor agregado por cada fila
+SELECT
+  station_id,
+  num_bikes_available,
+  (SELECT AVG(num_bikes_available) FROM citibike_stations) AS avg_num_bikes_available
+FROM citibike_stations;
+
+-- 2. En FROM: para crear una tabla auxiliar con la que hacer JOIN
+SELECT
+  stations.station_id,
+  stations.name,
+  trips_by_station.number_of_rides AS number_of_rides_starting_at_station
+FROM citibike_stations AS stations
+INNER JOIN (
+  SELECT
+    CAST(start_station_id AS STRING) AS start_station_id_str,
+    COUNT(*) AS number_of_rides
+  FROM citibike_trips
+  GROUP BY start_station_id
+) AS trips_by_station
+ON stations.station_id = trips_by_station.start_station_id_str
+ORDER BY number_of_rides_starting_at_station DESC;
+
+-- 3. En WHERE: para filtrar con valores calculados en otra tabla
+SELECT
+  station_id,
+  name
+FROM citibike_stations
+WHERE station_id IN (
+  SELECT CAST(start_station_id AS STRING)
+  FROM citibike_trips
+  WHERE usertype = 'Subscriber'
+);
+```
+
+Las subconsultas son funcionalmente similares a los JOINs pero a veces
+mas legibles para logica de filtrado puntual. Para logica compleja con
+multiples pasos, los CTEs (WITH) son mas legibles que subconsultas anidadas.
+
 **UNNEST para columnas con listas:**
 
 ```sql
@@ -261,52 +306,112 @@ COURSE 5: ANALYZE DATA
 
 ## Actividades del curso
 
-**Modulo 1 — Organizar los datos para un analisis mas eficaz:**
-- Introduccion a organizar datos (video)
-- El proceso de analisis: repaso contextual (video)
-- Filtrar datos con SQL: paso a paso (lectura)
-- Filtrar datos con SQL (video)
-- Actividad practica: consultas de ordenacion SQL (hands-on calificable)
-- Actividad practica: analizar datos meteorologicos en BigQuery (hands-on calificable)
-- Ordenacion de datos en hojas de calculo: paso a paso (lectura)
-- Ordenacion con la funcion SORT (video + lectura)
-- Actividad practica: ordenacion SQL (hands-on calificable)
-- Glosario del modulo 1 (lectura)
-- Desafio del modulo 1 (quiz calificado — ya completado al 85%)
+**Modulo 1 — Organizar los Datos para un analisis mas eficaz:**
+
+Actividades practicas:
+- Actividad practica: Consultas de ordenacion SQL: ejecutar queries ORDER BY sobre un dataset de peliculas en BigQuery
+- Actividad practica: Analizar datos meteorologicos en BigQuery: filtrar y ordenar datos de clima con WHERE y ORDER BY
+
+Lecturas clave:
+- Paso a Paso: Filtrar Datos con SQL: uso de WHERE con condiciones multiples sobre el dataset de peliculas (bigquery-public-data)
+- Paso a paso: Ordenacion de conjuntos de datos en hojas de calculo: usar Data > Sort range con multiples columnas en Sheets
+- Paso a paso: Utilizar la funcion SORT en las hojas de calculo: sintaxis =SORT(rango, columna_orden, ascendente) para ordenar dinamicamente
+- Paso a Paso: Ordenacion de Datos con SQL: ORDER BY con una y multiples columnas, ASC/DESC
+
+Otras actividades:
+- Introduccion a organizarse (video, 3 min): presenta la importancia de organizar datos antes de analizar
+- El proceso de analisis (video, 4 min): recorrido por las fases del analisis de datos
+- Siempre hay que organizar (video, 2 min): ejemplos reales de por que importa el orden
+- Filtrar Datos con SQL (video, 5 min): demuestra WHERE con IN, LIKE, BETWEEN, IS NOT NULL
+- Ordenacion de datos en hojas de calculo (video, 4 min): Data > Sort range en Sheets
+- Utilizar la funcion SORT en las hojas de calculo (video, 5 min): funcion SORT dinamica vs ordenacion manual
+- Ordenacion de Datos con SQL (video, 7 min): ORDER BY avanzado con multiples columnas
+- Desafio del modulo 1 (quiz calificado — completado al 85%)
 
 **Modulo 2 — Formatear y ajustar datos:**
-- Conversion de tipos: CAST y SAFE_CAST (video)
-- Convertir datos en hojas de calculo (lectura)
-- Validacion y formato condicional (video)
-- Combinar strings para estadisticas (video + lectura)
-- Actividad practica: combinar multiples datos (hands-on calificable)
-- Manipular cadenas con SQL (lectura)
-- Glosario del modulo 2 (lectura)
-- Desafio del modulo 2 (quiz calificado)
 
-**Modulo 3 — Agregacion de datos para analisis:**
-- VLOOKUP: preparar, usar y solucionar errores comunes (video x4)
-- Actividad practica: usar VLOOKUP para realizar una tarea (hands-on calificable)
-- JOINs: como funcionan INNER, LEFT, RIGHT, FULL OUTER (video)
-- Actividad practica: consultas para JOINs (hands-on calificable)
-- Actividad practica: COUNT y COUNT DISTINCT (hands-on calificable)
-- Subconsultas: consultas dentro de consultas (video x2)
-- Actividad practica: subconsultas para refinar datos (hands-on calificable x2)
-- Glosario del modulo 3 (lectura)
-- Desafio del modulo 3 (quiz calificado)
+Actividades practicas:
+- Actividad practica: Combinar varios datos: usar CONCAT y funciones de cadena en SQL/Sheets para combinar columnas de texto
+
+Lecturas clave:
+- Paso a paso: DE UN TIPO A OTRO: conversion de tipos con CAST/SAFE_CAST en BigQuery y conversion de formatos en Sheets
+- Paso a paso: Combinar cadenas de texto para obtener estadisticas: uso de CONCAT en SQL para combinar campos y calcular metricas textuales
+- Paso a paso: Cadenas en hojas de calculo: funciones CONCATENATE, LEFT, RIGHT, MID, LEN, FIND en Sheets
+
+Otras actividades:
+- Comenzar con el formateo de datos (video, 1 min): introduccion al modulo
+- DE UN TIPO A OTRO (video, 5 min): demuestra CAST y SAFE_CAST en BigQuery
+- Convertir datos en hojas de calculo (lectura, 8 min): VALUE, TEXT, DATEVALUE y otras funciones de conversion en Sheets
+- Validacion de datos (video, 3 min): Data > Data validation en Sheets para restringir entradas
+- Formato condicional (video, 4 min): Format > Conditional formatting en Sheets con reglas de color
+- Transformar datos con SQL (lectura, 4 min): resumen de funciones de conversion y transformacion en SQL
+- Fusione cadenas de texto para obtener estadisticas (video, 4 min): CONCAT en SQL para combinar campos
+- Cadenas en hojas de calculo (video, 3 min): funciones de texto en Sheets
+- Manipular cadenas con SQL (lectura, 4 min): TRIM, UPPER, LOWER, LENGTH, SUBSTR en BigQuery
+- Autorreflexion: Desbordamiento de pila (practica no calificada, 20 min): reflexion sobre uso de Stack Overflow para resolver problemas
+- Desafio del modulo 2 (quiz calificado — completado al 100%)
+
+**Modulo 3 — Agregacion de Datos para Analisis:**
+
+Actividades practicas:
+- Actividad practica: Utilizar VLOOKUP para realizar una tarea: combinar datos de dos hojas usando VLOOKUP con columna clave comun
+- Actividad practica: Consultas para JOINS: escribir INNER JOIN, LEFT JOIN y RIGHT JOIN sobre el dataset de empleados en BigQuery
+- Actividad practica: COUNT y COUNT DISTINCTOS: contar registros totales y distintos en el dataset del almacen en BigQuery
+- Actividad practica: Utilizar subconsultas para refinar Datos: escribir subconsultas en WHERE para filtrar resultados con datos de otra tabla
+- Actividad practica: Utilizar subconsultas: subconsultas en SELECT y FROM para crear columnas calculadas y tablas auxiliares
+
+Lecturas clave:
+- Paso a paso: Explore como funcionan los JOIN: ejemplos de INNER JOIN, LEFT JOIN en BigQuery con el dataset de empleados
+- Paso a Paso: Consultas dentro de consultas: tres ejemplos de subconsultas en BigQuery — en SELECT (calcular promedio global), en FROM (crear tabla auxiliar con COUNT de viajes por estacion), y en WHERE (filtrar estaciones usadas por suscriptores). Dataset: bigquery-public-data.new_york (tablas citibike_stations y citibike_trips)
+- Paso a Paso: Utilice subconsultas para agregar Datos: subconsultas como alternativa a JOIN para agregar datos de multiples tablas
+
+Otras actividades:
+- Agregacion de Datos para Analisis (video, 3 min): introduce la agregacion como herramienta analitica
+- Preparar VLOOKUP (video, 4 min): requisitos previos — formato coherente, columna clave a la izquierda
+- VLOOKUP en accion (video, 3 min): demostracion de VLOOKUP con FALSE como cuarto argumento
+- Identificar y solucionar errores comunes de VLOOKUP (video, 5 min): errores #N/A, tipos de dato distintos, rango incorrecto
+- Conceptos basicos de VLOOKUP (lectura, 8 min): sintaxis completa, casos de uso, limitaciones vs JOIN
+- Explore como funcionan las JOIN (video, 7 min): visualizacion de los cuatro tipos de JOIN
+- Identidades secretas: La importancia de los alias (lectura, 8 min): uso de AS para nombrar columnas y tablas en SQL
+- Utilice los JOIN de forma eficaz (lectura, 8 min): cuando elegir cada tipo de JOIN, buenas practicas
+- Consultas dentro de consultas (video, 6 min): subconsultas como herramienta de analisis
+- Utilice subconsultas para agregar Datos (video, 7 min): subconsultas en FROM para agregaciones complejas
+- Funciones y subconsultas SQL: Una amistad funcional (lectura, 8 min): combinar funciones de agregacion con subconsultas
+- Desafio del modulo 3 (quiz calificado — completado al 97.72%)
 
 **Modulo 4 — Realizar calculos de datos:**
-- Formulas de calculo habituales en Sheets (video)
-- Funciones con condiciones multiples: SUMIF, COUNTIFS, AVERAGEIF (video + lectura)
-- Actividad practica: trabajar con condiciones (hands-on calificable)
-- Tablas dinamicas: introduccion y elementos (video x2 + lectura x2)
-- Actividad practica: explorar datos de peliculas con tablas dinamicas (hands-on calificable)
-- Calculos con SQL: incrustar calculos sencillos (video + lectura)
-- Actividad practica: calculos con SQL (hands-on calificable)
-- Tablas temporales en SQL (video + lectura)
-- Actividad practica: crear tablas temporales (hands-on calificable)
-- Glosario del modulo 4 (lectura)
-- Desafio del modulo 4 (quiz calificado)
+
+Actividades practicas:
+- Actividad practica: Trabajar con condiciones: usar SUMIF, COUNTIFS y AVERAGEIF en Sheets sobre un dataset real
+- Actividad practica: Explorar datos de peliculas con tablas dinamicas: crear tabla dinamica en Sheets y analizar datos por genero/año
+- Actividad practica: Calculos con SQL: escribir queries con aritmetica directa y funciones de agregacion en BigQuery sobre dataset de aguacates
+- Actividad practica: FROM hojas de calculo a BigQuery: importar datos de Sheets a BigQuery y validar con COUNT y comparacion manual
+- Actividad practica: Crear tablas temporales: crear tablas WITH (CTE) y tablas temporales con CREATE TEMP TABLE en BigQuery
+
+Lecturas clave:
+- Funciones con condiciones multiples (lectura, 8 min): SUMIF, COUNTIFS, AVERAGEIF en Sheets — sintaxis y diferencias con sus versiones simples
+- Elementos de una Tabla dinamica (lectura, 4 min): filas, columnas, valores y filtros en las tablas dinamicas de Sheets
+- Utilizar tablas dinamicas en el Analisis (lectura, 8 min): cuando usar tabla dinamica vs formula manual, como interpretar resultados
+- Paso a paso: Incrustar calculos sencillos con SQL: aritmetica directa en SELECT (suma, resta, multiplicacion, division, porcentajes) usando el dataset de aguacates
+- Tipos de validacion de datos (lectura, 4 min): seis tipos — tipo de dato, rango de datos, restriccion, coherencia, estructura y codigo
+- Trabajar con tablas temporales (lectura, 8 min): diferencias entre WITH (CTE), CREATE TEMP TABLE y CREATE TABLE; cuando usar cada una
+- Su guia intermedia de SQL (lectura, 8 min): referencia de las clausulas SQL mas usadas en el certificado hasta este punto
+
+Otras actividades:
+- Calculo de datos (video, 2 min): introduccion al modulo
+- Formulas de calculo habituales (video, 9 min): SUM, AVERAGE, MIN, MAX, COUNT en Sheets con ejemplos practicos
+- Funciones y condiciones (video, 8 min): IF, IFS y funciones condicionales en Sheets
+- Funciones compuestas (video, 5 min): anidar funciones en Sheets (ej: SUMIF dentro de otra formula)
+- Empezar a trabajar con tablas dinamicas (video, 7 min): crear una tabla dinamica desde cero en Sheets
+- Tablas dinamicas continuacion (video, 5 min): agrupar, ordenar y filtrar dentro de una tabla dinamica
+- Consultas y calculos (video, 4 min): introduccion a los calculos aritmeticos directamente en SQL
+- Incrustar calculos sencillos con SQL (video, 6 min): demostracion de operadores aritmeticos en SELECT
+- Calculos con otras declaraciones (video, 4 min): calculos dentro de GROUP BY, ORDER BY y WHERE
+- Comprobar y volver a comprobar (video, 4 min): proceso de validacion de resultados de analisis
+- Tablas temporales (video, 6 min): introduccion a WITH y CREATE TEMP TABLE en BigQuery
+- Multiples variantes de mesa (video, 3 min): comparacion entre CTEs, tablas temporales y vistas
+- Utilizar hojas conectadas con BigQuery (lectura, 8 min): conectar Google Sheets directamente a BigQuery para analizar datos sin exportar
+- Desafio del modulo 4 (quiz calificado — completado al 93.75%)
 
 ---
 
