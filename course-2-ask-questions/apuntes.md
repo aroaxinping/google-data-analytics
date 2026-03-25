@@ -173,33 +173,78 @@ COURSE 2: ASK QUESTIONS
 ## Actividades del curso
 
 **Modulo 1 — Ask Effective Questions:**
-- Framework SMART para preguntas (video)
-- Tipos de problemas que resuelve un analista (video)
-- Pensamiento estructurado: problema, contexto, desafios (lectura)
-- Actividad practica: formular preguntas SMART para un escenario real (hands-on)
-- Desafio del modulo 1 (quiz calificado)
+
+Actividades practicas:
+- Autorreflexion: Preguntas SMART en accion: redactar preguntas SMART para un escenario de negocio dado (restaurante que quiere entender sus ventas)
+
+Lecturas clave:
+- Seis tipos de problemas comunes: descripcion detallada de los seis tipos de problemas analiticos (prediccion, categorizacion, anomalias, temas, conexiones, patrones) con ejemplos por tipo
+- Del Problema a la Accion: Las seis fases del Analisis de datos: recordatorio de Ask-Prepare-Process-Analyze-Share-Act y como conecta con el trabajo real
+
+Otras actividades:
+- Introduccion a la resolucion de problemas y al interrogatorio eficaz (video, 3 min): presentacion del modulo
+- Datos en accion (video, 5 min): ejemplo de como los datos resolvieron un problema de negocio real
+- Tipos de problemas comunes (video, 5 min): los seis tipos de problemas con ejemplos
+- Seguir explorando las aplicaciones empresariales (video, 6 min): casos de uso de analisis de datos en distintos sectores
+- Preguntas SMART (video): introduccion al framework — Specific, Measurable, Action-oriented, Relevant, Time-bound
+- Desafio del modulo 1 (quiz calificado — completado)
 
 **Modulo 2 — Make Data-Driven Decisions:**
-- Datos cualitativos vs cuantitativos (video)
-- Reports vs dashboards: cuando usar cada uno (video)
-- Metricas y KPIs (lectura)
-- Actividad practica: explorar ejemplos de dashboards reales (hands-on)
-- Desafio del modulo 2 (quiz calificado)
+
+Actividades practicas:
+- Autorreflexion: Profundice en los cuadros de mando: analizar un dashboard real e identificar las metricas que muestra y las decisiones que apoya
+
+Lecturas clave:
+- Datos cualitativos y cuantitativos en el Negocio a negocio: ejemplos concretos de como se usan datos cualitativos (entrevistas, encuestas) y cuantitativos (ventas, clicks) en decisiones de negocio
+- Herramientas para la visualizacion de datos: comparativa de herramientas (Sheets charts, Tableau, Looker) y para que sirve cada una
+- Disene cuadros de mando atractivos: principios de diseno de dashboards — minimalismo, contexto, jerarquia visual
+
+Otras actividades:
+- Datos y decisiones (video, 1 min): introduccion al modulo
+- Como los Datos potencian las decisiones (video, 5 min): del instinto al dato — como los datos mejoran la toma de decisiones
+- Datos cualitativos y cuantitativos (video, 4 min): diferencias y como se complementan
+- La gran revelacion: Comparta sus hallazgos (video, 5 min): como presentar datos a una audiencia no tecnica
+- Datos frente a Metricas (video, 3 min): que es una metrica, que es un KPI y como se relacionan
+- Pensamiento matematico (video, 4 min): como pensar en terminos de porcentajes, ratios y comparaciones para comunicar datos
+- Big data y small data (video): diferencias de escala y herramientas segun el volumen de datos
+- Desafio del modulo 2 (quiz calificado — completado)
 
 **Modulo 3 — Spreadsheet Magic:**
-- Organizar datos en hojas de calculo (video)
-- Funciones esenciales: SUM, AVERAGE, COUNT, IF, COUNTIF (video)
-- VLOOKUP: buscar datos en otra tabla (video)
-- Actividad practica: crear una hoja de calculo con funciones y VLOOKUP (hands-on)
-- Tablas pivot (video + lectura)
-- Actividad practica: crear una tabla pivot (hands-on)
-- Errores comunes en Sheets (#DIV/0!, #N/A, #REF!) (lectura)
-- Desafio del modulo 3 (quiz calificado)
+
+Actividades practicas:
+- Actividad practica: Introduccion a Google Sheets: crear una hoja de calculo desde cero, introducir datos, dar formato a celdas y usar auto-fill
+- Actividad practica: Analisis de datos y formulas — Estadisticas de ventas en panaderia: usar SUM, AVERAGE, MAX, MIN y formulas aritmeticas sobre datos de ventas de una panaderia ficticia
+- Actividad practica: Funciones para el analisis de hojas de calculo: usar IF, COUNTIF y SUMIF sobre un dataset para responder preguntas especificas
+
+Lecturas clave:
+- Paso a paso: Tareas basicas con hojas de calculo: como navegar Sheets, seleccionar rangos, usar auto-fill, congelar filas/columnas con View > Freeze, y ordenar con Data > Sort range
+- Paso a paso: Formulas para el exito: formulas de calculo basicas (=SUM, =AVERAGE, =MAX, =MIN, =COUNT), referencias absolutas vs relativas ($A$1 vs A1), y como escribir una formula con multiples operaciones
+
+Otras actividades:
+- La asombrosa hoja de calculo (video, 1 min): introduccion al modulo
+- Pongase a trabajar con hojas de calculo (video, 2 min): casos de uso de Sheets en analisis de datos
+- Tareas basicas de hoja de calculo (video, 4 min): navegar Sheets, editar celdas, dar formato
+- Formulas para el exito (video, 7 min): demostracion de formulas basicas en Sheets
+- Hoja de calculo errores y correcciones (video, 7 min): #DIV/0!, #VALUE!, #REF!, #N/A, #NAME? — causas y soluciones
+- Desafio del modulo 3 (quiz calificado — completado)
 
 **Modulo 4 — Always Remember the Stakeholder:**
-- Tipos de stakeholders y como comunicar con cada uno (video)
-- Lidiar con datos insuficientes (video)
-- Actividad practica: preparar una comunicacion para stakeholders (hands-on)
+
+Lecturas clave:
+- Trabajar con las partes interesadas: tipos de stakeholders (ejecutivos, managers, equipo tecnico, otros departamentos) y como adaptar la comunicacion a cada uno
+- Utilice multiples estrategias de Comunicacion para llegar a su publico: email, reuniones, documentos, dashboards — cuando usar cada canal
+- Limitaciones de los datos: como comunicar cuando los datos son insuficientes, tienen sesgo o no responden la pregunta exacta
+
+Otras actividades:
+- Comunicacion con su Equipo (video, 1 min): introduccion al modulo
+- Equilibre las necesidades y expectativas de todo su Equipo (video, 4 min): como gestionar expectativas distintas de diferentes stakeholders a la vez
+- Centrese en lo importante (video, 4 min): como priorizar cuando hay multiples peticiones y datos limitados
+- La clave es una Comunicacion clara (video, 4 min): estructura de una comunicacion efectiva — contexto, hallazgo, siguiente accion
+- Consejos para una comunicacion eficaz (video, 5 min): como presentar datos sin perder la audiencia
+- Navegar por las expectativas y los objetivos realistas del Proyecto (video, 4 min): como negociar alcance y timeline con stakeholders
+- El compromiso de los Datos: Velocidad frente a Exactitud (video, 4 min): cuando es aceptable entregar un analisis rapido vs cuando hay que ser riguroso
+- Piense en su proceso y en el resultado (video): reflexion sobre documentar el proceso de analisis, no solo los resultados
+- Desafio del modulo 4 (quiz calificado — completado)
 - Evaluacion del curso (quiz calificado final)
 
 ---
