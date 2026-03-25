@@ -282,6 +282,87 @@ COURSE 7: PYTHON
 
 ---
 
+## Actividades del curso
+
+**Modulo 1 — Hello, Python!:**
+- Por que Python para analisis de datos (video)
+- Tipos de datos: int, float, str, bool (video)
+- Variables y operadores (video)
+- Jupyter Notebooks: celdas de codigo y markdown (lectura)
+- Actividad practica: primeros pasos en Jupyter Notebook (hands-on)
+- Desafio del modulo 1 (quiz calificado)
+
+**Modulo 2 — Functions and Conditional Statements:**
+- Definir y llamar funciones con def y return (video)
+- Parametros y valores por defecto (video)
+- Condicionales: if, elif, else (video)
+- Operadores de comparacion y logicos (lectura)
+- Actividad practica: escribir funciones con condicionales (hands-on)
+- Desafio del modulo 2 (quiz calificado)
+
+**Modulo 3 — Loops and Strings:**
+- Bucles for y while (video)
+- range() y como iterar sobre listas (video)
+- Manipulacion de strings: strip, lower, replace, split, f-strings (video)
+- Actividad practica: limpiar texto con loops y funciones de string (hands-on)
+- Desafio del modulo 3 (quiz calificado)
+
+**Modulo 4 — Data Structures in Python:**
+- Listas, tuplas, diccionarios y sets (video)
+- NumPy: arrays numericos y operaciones vectorizadas (video)
+- pandas: cargar CSV, explorar con head/info/describe (video)
+- Seleccionar, filtrar y limpiar con pandas (video)
+- groupby y agg para agregaciones (video)
+- Actividad practica: analisis completo de un dataset con pandas (hands-on calificable)
+- Visualizacion basica con matplotlib (video)
+- Actividad practica: crear graficos con pandas y matplotlib (hands-on calificable)
+- Evaluacion del curso (quiz calificado final)
+
+---
+
+## Cuando usar X vs Y
+
+**pandas vs SQL:**
+SQL para extraer y filtrar datos directamente de bases de datos — es el lenguaje nativo de las bases de datos y suele ser mas eficiente para operaciones simples de seleccion y agregacion. pandas cuando la logica es programatica (requiere loops, funciones, logica condicional compleja), cuando los datos ya estan en memoria como CSV o DataFrame, o cuando quieres integrar el analisis en un flujo de codigo Python mas amplio. pandas puede hacer casi todo lo que SQL hace, pero el codigo es mas verboso para operaciones simples.
+
+**Lista vs diccionario:**
+Lista cuando el orden importa y accedes a los elementos por su posicion numerica (el primer elemento, el tercero). Diccionario cuando quieres acceder a los elementos por nombre o clave — mucho mas legible y menos propenso a errores que acordarse de que "el indice 2 es el precio".
+
+**Lista vs set:**
+Lista cuando necesitas mantener duplicados o cuando el orden de los elementos importa. Set cuando necesitas unicidad (eliminar duplicados automaticamente) y no te importa el orden. Las operaciones de pertenencia (esta este elemento?) son mucho mas rapidas en un set que en una lista.
+
+**for vs while:**
+for cuando sabes de antemano cuantas iteraciones necesitas o cuando iteras sobre una coleccion (lista, rango, columna de DataFrame). while cuando la condicion de parada depende de algo que cambia durante la ejecucion y no sabes cuantas iteraciones se necesitan.
+
+**dropna() vs fillna():**
+dropna() cuando la fila sin ese dato no tiene valor analitico y perder esas filas no distorsiona la muestra. fillna() cuando el valor faltante puede estimarse razonablemente (mediana para datos numericos sesgados, media para distribuciones simetricas, cero para conteos, valor mas frecuente para categorias) y eliminar esas filas reduciria la muestra de forma significativa.
+
+**Series vs DataFrame:**
+Una columna de un DataFrame es una Series (una dimension). Un DataFrame es una coleccion de columnas, es decir, una tabla (dos dimensiones). Muchas funciones de pandas se comportan diferente segun reciban una Series o un DataFrame, por lo que entender la diferencia evita muchos errores.
+
+---
+
+## Errores comunes
+
+- **Modificar un DataFrame sin hacer copia primero:** muchas operaciones de pandas actuan sobre el DataFrame original por referencia. Si modificas un DataFrame que es "vista" de otro, puedes alterar el original sin darte cuenta. Usar df.copy() antes de cualquier transformacion que no quieres que afecte al original.
+- **Confundir Series con DataFrame:** df["col"] devuelve una Series (una dimension); df[["col"]] devuelve un DataFrame de una columna (dos dimensiones). Muchas funciones aceptan uno pero no el otro, lo que genera errores poco descriptivos.
+- **Olvidar asignar el resultado de operaciones de pandas:** la mayoria de metodos de pandas devuelven un nuevo objeto en lugar de modificar el original. df.dropna() no modifica df a menos que uses df = df.dropna() o el parametro inplace=True. No asignar el resultado hace que la operacion no tenga efecto.
+- **Usar print() donde deberia usarse return en funciones:** el valor mostrado con print() no puede usarse fuera de la funcion. Una funcion que hace print de su resultado no puede encadenarse con otras operaciones.
+- **No entender la diferencia entre df["col"] (Series) y df[["col"]] (DataFrame):** ademas de la diferencia de tipo, muchas operaciones de agregacion y transformacion se comportan diferente en cada caso.
+- **Mezclar indices en NumPy y pandas:** los arrays de NumPy usan indices numericos siempre; los DataFrames de pandas pueden tener indices personalizados. Mezclar las dos formas de indexar genera resultados inesperados.
+
+---
+
+## Conexion con otros cursos
+
+- pandas es el equivalente Python de SQL del curso 5: groupby es GROUP BY, merge es JOIN, query es WHERE. Si dominas SQL del curso 5, pandas tiene mucha menos curva de aprendizaje.
+- Las funciones de limpieza de texto de Python (strip, lower, replace) son los mismos conceptos que TRIM, LOWER, REPLACE en SQL del curso 4 y en Sheets del mismo curso. La logica es identica, cambia la sintaxis.
+- La visualizacion con matplotlib de este curso es el equivalente basico de Tableau del curso 6. Para dashboards interactivos profesionales se sigue usando Tableau; para visualizacion integrada en un Jupyter Notebook (como en el capstone) se usa matplotlib o seaborn.
+- Las estructuras de datos de Python (lista, diccionario, set) conectan con los tipos de datos del curso 3: entender nominal vs ordinal ayuda a elegir si representar una variable como string categorico o como entero ordinal en pandas.
+- En el capstone del curso 8, Python (o R) es la herramienta recomendada para el caso Cyclistic. Todo lo aprendido aqui sobre pandas se aplica directamente al analisis del dataset de bicicletas.
+
+---
+
 ## Lo mas importante de este curso
 
 **pandas** es la libreria. Una vez que dominas DataFrame, Series, groupby
