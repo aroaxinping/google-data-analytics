@@ -167,6 +167,69 @@ El dataset de Cyclistic (Divvy Bikes) contiene estas columnas clave:
 
 ---
 
+## Actividades del curso
+
+**Modulo 1 — Learn About Capstone Basics:**
+- Que es un case study y por que importa para el portfolio (video)
+- Que hace bueno a un case study (lectura)
+- Revisar ejemplos de case studies de analistas que han completado el certificado (lectura)
+- Desafio del modulo 1 (quiz calificado)
+
+**Modulo 2 — Build Your Portfolio:**
+- Las dos opciones: Track 1 (caso proporcionado) vs Track 2 (caso propio) (video)
+- Caso A — Cyclistic Bike-Share: descripcion del problema y dataset (lectura)
+- Caso B — Bellabeat: descripcion del problema y dataset Fitbit (lectura)
+- Descargar y explorar el dataset elegido (hands-on)
+- Aplicar el framework ASK-PREPARE-PROCESS-ANALYZE-SHARE-ACT al caso (hands-on calificable — es el proyecto principal del curso)
+
+**Modulo 3 — Use Your Portfolio:**
+- Donde publicar el case study: Kaggle, GitHub, Tableau Public (video)
+- Estructura STAR para hablar del proyecto en entrevistas (lectura)
+- Actividad: publicar el case study y compartir el enlace (hands-on)
+- Desafio del modulo 3 (quiz calificado)
+
+**Modulo 4 — Put Your Certificate to Work:**
+- Reclamar el badge de Google en Credly (lectura)
+- Anadir el certificado a LinkedIn (lectura)
+- Acceder a Big Interview para practicar entrevistas (lectura)
+- Evaluacion final del certificado (quiz calificado final)
+
+---
+
+## Actividades practicas destacadas
+
+El proyecto principal del capstone es el **case study completo**, que cubre todas las fases del proceso de analisis:
+- ASK: definir la pregunta de negocio y los stakeholders
+- PREPARE: descargar el dataset, evaluarlo con ROCCC, documentar la fuente
+- PROCESS: combinar archivos si hay varios, limpiar nulos/duplicados/formatos, documentar cada decision
+- ANALYZE: calcular estadisticas descriptivas, identificar patrones, comparar grupos, responder las preguntas de negocio
+- SHARE: crear visualizaciones en Tableau o con Python/R, construir el dashboard o informe narrativo
+- ACT: formular 3-5 recomendaciones accionables basadas en hallazgos especificos
+
+---
+
+## Errores comunes
+
+- **Hacer el capstone demasiado rapido:** es la pieza principal del portfolio. Un case study hecho en un dia es visible — los reclutadores que revisan portfolios ven la diferencia entre un analisis superficial y uno riguroso.
+- **Documentar solo el resultado, no las decisiones:** los reclutadores quieren ver el razonamiento. Por que se elimino este campo, por que se eligio este tipo de grafico, por que esta recomendacion. El proceso importa tanto como el output.
+- **Describir los datos en lugar de responder la pregunta de negocio:** un case study que dice "el 65% de los usuarios son casuales" sin conectarlo a una recomendacion de negocio no demuestra habilidad analitica, solo capacidad de contar.
+- **No reconocer las limitaciones del dataset:** el dataset de Cyclistic (Divvy) no incluye datos demograficos ni informacion de pago — estas son limitaciones reales que afectan a lo que se puede concluir. Ignorarlas parece poco profesional; mencionarlas proactivamente aumenta la credibilidad.
+- **Publicar sin revisar el formato del notebook:** un Jupyter Notebook con celdas de error visibles, outputs sin ejecutar o markdown mal formateado da mala impresion. Ejecutar el notebook completo de arriba a abajo antes de publicarlo.
+
+---
+
+## Conexion con otros cursos
+
+- Este curso es la aplicacion completa de los 7 cursos anteriores. No hay nuevo contenido tecnico: todo es integracion.
+- La pregunta SMART del curso 2 define la pregunta de negocio del case study. Sin una pregunta bien definida, el analisis no tiene direccion.
+- ROCCC del curso 3 se aplica al evaluar el dataset del caso — documentar esta evaluacion es parte del case study profesional.
+- Las tecnicas de limpieza del curso 4 se usan en la fase PROCESS: ROW_NUMBER para duplicados, COALESCE para nulos, documentar cada decision en el log.
+- Las habilidades de SQL del curso 5 (JOINs, GROUP BY, CTEs) son las herramientas del analisis si se elige SQL como herramienta principal.
+- Las visualizaciones del curso 6 (Tableau o matplotlib) son el output de la fase SHARE. La narrativa con datos del curso 6 es la estructura de la presentacion del case study.
+- Python del curso 7 es la herramienta recomendada para el caso Cyclistic si se elige el track de programacion.
+
+---
+
 ## Lo mas importante de este curso
 
 El capstone no tiene contenido nuevo — es la integracion de todo. Lo que
