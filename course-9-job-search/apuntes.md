@@ -162,6 +162,62 @@ COURSE 9: JOB SEARCH WITH AI
 
 ---
 
+## Actividades del curso
+
+**Modulo 1 — Uncover Your Transferable Skills with AI:**
+- Identificar habilidades transferibles de experiencias anteriores (video)
+- Construir tu identity statement para datos (lectura)
+- Usar IA (Gemini) para mapear habilidades previas a roles de datos (lectura)
+- Actividad practica: escribir tu identity statement (hands-on)
+- Desafio del modulo 1 (quiz calificado)
+
+**Modulo 2 — Plan Your Job Search with AI:**
+- Estructura de CV para analista de datos (video)
+- CV y ATS: palabras clave y formato simple (video)
+- LinkedIn para datos: headline, Featured section, skills (lectura)
+- Usar IA para optimizar el CV segun la oferta especifica (lectura)
+- Actividad practica: optimizar tu CV con IA (hands-on)
+- Desafio del modulo 2 (quiz calificado)
+
+**Modulo 3 — Manage Your Job Applications with AI:**
+- Plataformas de busqueda: LinkedIn, Glassdoor, Kaggle Jobs, Wellfound (lectura)
+- Sistema de tracking de aplicaciones en Sheets (lectura)
+- Networking activo: llamadas informativas, comunidades, comentarios en LinkedIn (video)
+- Actividad practica: crear tu tracker de aplicaciones (hands-on)
+- Desafio del modulo 3 (quiz calificado)
+
+**Modulo 4 — Prepare and Practice for Interviews with AI:**
+- Tipos de preguntas en entrevistas de datos: tecnicas, comportamiento, negocio, caso (video)
+- Preguntas frecuentes de SQL y Python en entrevistas tecnicas (lectura)
+- La tecnica STAR para preguntas de comportamiento (video)
+- Plataformas de practica SQL: LeetCode, StrataScratch, Mode (lectura)
+- Usar IA para simular entrevistas tecnicas y de comportamiento (lectura)
+- Actividad practica: preparar respuestas STAR para 3 preguntas de comportamiento (hands-on)
+- Evaluacion final del curso (quiz calificado final)
+
+---
+
+## Errores comunes
+
+- **Aplicar a trabajos sin tener portfolio visible:** el CV sin proyectos accesibles (GitHub, Kaggle, Tableau Public) es muy dificil de evaluar para un reclutador tecnico. El portfolio es la diferencia entre "dice que sabe SQL" y "aqui esta una query de 80 lineas con CTEs y window functions".
+- **CV generico no adaptado a cada oferta:** los ATS filtran por palabras clave exactas de la descripcion del puesto. Un CV que dice "manejo de datos" cuando la oferta dice "SQL y BigQuery" no pasa el filtro automatico aunque el perfil sea perfectamente adecuado.
+- **LinkedIn sin Featured section con el case study:** es lo primero que mira un reclutador de datos despues del headline. Un perfil sin portfolio visible parece incompleto comparado con otros candidatos que si lo tienen enlazado.
+- **No practicar preguntas tecnicas SQL antes de entrevistas:** saber teoria no es lo mismo que resolver un problema de JOIN o window function bajo presion y en tiempo limitado. La practica en LeetCode SQL o StrataScratch antes de entrevistas marca la diferencia entre bloquearse y resolver con fluidez.
+- **Responder preguntas de comportamiento sin estructura STAR:** las respuestas sin estructura parecen poco organizadas y son dificiles de evaluar para el entrevistador. Una respuesta con STAR (Situation, Task, Action, Result) es mas convincente aunque el proyecto sea modesto.
+- **No hacer seguimiento de las aplicaciones:** aplicar y olvidarse hace que se pierdan oportunidades de hacer seguimiento en el momento correcto. Un tracker simple en Sheets con fecha, estado y contacto marca la diferencia en una busqueda activa.
+
+---
+
+## Conexion con otros cursos
+
+- El case study del curso 8 es el portfolio que se presenta en este curso. La calidad del capstone determina directamente la efectividad de la busqueda de empleo: un case study solido hace que el CV, el LinkedIn y las entrevistas sean mucho mas faciles.
+- Las habilidades tecnicas aprendidas en los cursos 3-7 (SQL, Python, Tableau, Sheets) son exactamente las palabras clave que hay que incluir en el CV y LinkedIn segun las instrucciones de este curso.
+- La estructura STAR para hablar de proyectos en entrevistas es la misma que se usa en el curso 8 para presentar el case study del capstone.
+- Las preguntas tecnicas de SQL que se practican para entrevistas cubren exactamente los conceptos del curso 5: JOINs, GROUP BY, HAVING, window functions. Dominar el curso 5 es la mejor preparacion para la parte tecnica de una entrevista.
+- La comunicacion con stakeholders del curso 2 y el storytelling del curso 6 son las habilidades que se evaluan en las preguntas de comportamiento y de negocio de las entrevistas.
+
+---
+
 ## Lo mas importante de este curso
 
 Dos cosas que marcan la diferencia para entrar en datos desde otro sector:
