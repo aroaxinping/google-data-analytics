@@ -224,41 +224,81 @@ COURSE 4: PROCESS (CLEAN)
 ## Actividades del curso
 
 **Modulo 1 — The Importance of Integrity:**
-- Integridad de datos: tipos de problemas (video)
-- Muestreo aleatorio y sesgo de muestreo (video)
-- Actividad practica: identificar problemas de integridad en un dataset (hands-on)
-- Desafio del modulo 1 (quiz calificado)
+
+Lecturas clave:
+- Mas informacion sobre integridad y conformidad de los datos: como la integridad de datos afecta al cumplimiento normativo (GDPR, HIPAA) y que significa "data compliance" en entornos profesionales
+- Objetivos y Datos bien alineados: como verificar que los datos que tienes responden realmente la pregunta de negocio formulada
+
+Otras actividades:
+- Introduccion a la integridad de datos (video, 3 min): presentacion del modulo
+- Por que es importante la integridad de los datos (video, 2 min): consecuencias reales de usar datos con integridad comprometida
+- Equilibrio entre los objetivos y la integridad de los datos (video, 3 min): como gestionar el tension entre lo que quieres analizar y la calidad de los datos disponibles
+- Desafio del modulo 1 (quiz calificado — completado)
 
 **Modulo 2 — Clean Data for More Accurate Insights:**
-- Tipos de datos sucios: tipograficos, espacios, duplicados, nulos (video)
-- Funciones de limpieza en Sheets: TRIM, LOWER, UPPER, PROPER, SUBSTITUTE (video)
-- Actividad practica: limpiar un dataset en Sheets (hands-on)
-- Eliminar duplicados con Data > Remove duplicates (lectura)
-- Desafio del modulo 2 (quiz calificado)
+
+Lecturas clave:
+- Que son los datos sucios (lectura, 8 min): catalogo completo de tipos de datos sucios — duplicados, desactualizados, incompletos, incorrectos, inconsistentes, no relevantes
+
+Otras actividades:
+- Limpialo (video, 2 min): introduccion al modulo
+- Por que es fundamental depurar los datos (video, 5 min): impacto de datos sucios en decisiones de negocio, con casos reales
+- Reconocer y remediar los datos sucios (video, 5 min): como identificar cada tipo de dato sucio en un dataset real
+- Herramientas y tecnicas de limpieza de datos (video, 6 min): funciones de Sheets para limpieza — TRIM, CLEAN, PROPER, SUBSTITUTE
+- Datos limpios de multiples fuentes (video, 5 min): problemas especificos al combinar datos de distintas fuentes — tipos inconsistentes, naming diferente, unidades distintas
+- Desafio del modulo 2 (quiz calificado — completado)
 
 **Modulo 3 — Data Cleaning with SQL:**
-- Detectar nulos y duplicados con SQL (video)
-- Limpiar texto: TRIM, LOWER, REPLACE (video)
-- COALESCE para manejar NULLs (lectura)
-- ROW_NUMBER() para eliminar duplicados conservando el registro correcto (video)
-- CAST y SAFE_CAST para conversion de tipos (lectura)
-- Actividad practica: limpieza completa de un dataset en BigQuery (hands-on calificable)
-- Desafio del modulo 3 (quiz calificado)
+
+Actividades practicas:
+- Actividad practica: Tiempo de proceso con SQL: medir tiempo de procesamiento de queries y usar LIMIT para optimizar
+- Actividad practica: Limpiar datos usando SQL: aplicar TRIM, LOWER, REPLACE, CAST y ROW_NUMBER sobre el dataset de clientes en BigQuery
+
+Lecturas clave:
+- Dialectos SQL y sus usos: diferencias entre BigQuery (Standard SQL), MySQL, PostgreSQL y SQL Server — funciones que difieren entre dialectos
+- Ampliamente usadas consultas SQL (widely-used-sql-queries): referencia de las queries de limpieza mas comunes — DISTINCT, TRIM, CAST, COALESCE, ROW_NUMBER()
+- Funciones avanzadas de limpieza de datos parte 1 y 2: REGEXP_CONTAINS, REGEXP_EXTRACT, REGEXP_REPLACE para limpiar texto con patrones — por ejemplo, detectar emails invalidos o extraer codigos postales de texto libre
+
+Otras actividades:
+- Utilice SQL para limpiar datos (video, 45 seg): introduccion al modulo
+- Comprender las capacidades de SQL (video, 3 min): que puede hacer SQL en limpieza que Sheets no puede a escala
+- Hojas de calculo frente a SQL (video, 4 min): guia de cuando elegir cada herramienta para limpiar datos
+- Limpiar variables de cadena usando SQL (video): demostracion de TRIM, LOWER, REPLACE en BigQuery sobre el dataset de clientes
+- Desafio del modulo 3 (quiz calificado — completado)
 
 **Modulo 4 — Verify and Report on Cleaning Results:**
-- Proceso de verificacion: comparar antes/despues (video)
-- Estadisticas de validacion (lectura)
-- Documentar el proceso de limpieza: que es un log de limpieza (video)
-- Actividad practica: crear un log de limpieza documentado (hands-on)
-- Desafio del modulo 4 (quiz calificado)
+
+Actividades practicas:
+- Autorreflexion: Creacion de un registro de cambios: crear un changlog documentando cada operacion de limpieza realizada en el dataset del modulo 3
+
+Lecturas clave:
+- Paso a paso: Verificacion de la limpieza de datos: proceso sistematico de verificacion — comparar COUNT(*) antes/despues, usar SELECT DISTINCT para verificar estandarizacion, comprobar que no quedan NULLs donde no deberian, y validar rangos con MIN/MAX
+- Lista de comprobacion de la limpieza de datos: checklist de 6 puntos que debe pasarse antes de dar un dataset por limpio: nulos, duplicados, tipos de dato, consistencia de formato, outliers, conteo de filas
+- Registros de cambios (changelogs): estructura de un changelog — fecha, tipo de cambio, descripcion, numero de registros afectados, quien lo hizo
+
+Otras actividades:
+- Verificar e informar de los resultados (video, 3 min): introduccion al modulo
+- Confirmar que la limpieza de datos cumple las expectativas de la empresa (video): como presentar los resultados de limpieza a un stakeholder no tecnico
+- Verificacion de la limpieza de datos (video, 8 min): demostracion del proceso de verificacion paso a paso en BigQuery
+- Capturar los cambios de limpieza (video, 5 min): como estructurar y mantener un changelog de limpieza
+- Desafio del modulo 4 (quiz calificado — completado)
 
 **Modulo 5 — Add Data to Your Resume:**
-- Habilidades de datos en el CV (lectura)
-- Evaluacion del curso (quiz calificado final)
 
-**Modulo 6 — Optional: Advanced cleaning techniques:**
-- Limpieza avanzada con SQL: patrones con REGEXP (lectura)
-- Actividad practica: tecnicas avanzadas de limpieza (hands-on)
+Lecturas clave:
+- Anade Habilidades tecnicas a tu Curriculum: como describir habilidades de SQL, Sheets y limpieza de datos en un CV de analista junior — con ejemplos de bullet points reales
+- La importancia de la diversidad en un equipo de Analisis de datos: perspectivas sobre inclusion en el sector de datos
+
+Otras actividades:
+- Haz que tu Curriculum sea unico (video, 3 min): consejos para diferenciarse en el CV como analista de datos junior
+- Donde radica su interes (video, 3 min): reflexion sobre especializacion dentro del analisis de datos
+
+**Modulo 6 — Course Wrap-Up:**
+
+- Reflexionar y conectar con los companeros (lectura, 4 min): reflexion sobre lo aprendido en el curso
+- Glosario del curso 4 (lectura, 4 min): terminos clave del curso
+- Enhorabuena: Resumen del curso (video, 1 min): cierre del curso
+- Evaluacion del curso (quiz calificado final)
 
 ---
 
