@@ -183,36 +183,82 @@ COURSE 6: SHARE (VISUALIZE)
 ## Actividades del curso
 
 **Modulo 1 — Visualize Data:**
-- Por que la visualizacion funciona: como procesa el cerebro imagenes vs texto (video)
-- Tipos de visualizacion y cuando usarlos (video + lectura)
-- Principios de diseno: pre-atentivo, accesibilidad, simplicidad, jerarquia (video)
-- Cuando no usar un pie chart (lectura)
-- Design thinking aplicado a visualizacion de datos (video)
-- Actividad practica: elegir el tipo de grafico correcto para distintos escenarios (hands-on)
-- Desafio del modulo 1 (quiz calificado)
+
+Actividades practicas:
+- Autorreflexion: Elegir el tipo de grafico correcto: dado un escenario de negocio, justificar que tipo de grafico (barras, linea, scatter, pie...) comunica mejor los datos y por que
+
+Lecturas clave:
+- Correlacion y causalidad: distincion critica entre que dos variables se muevan juntas (correlacion) y que una cause la otra (causalidad); como evitar conclusiones erroneas en visualizacion
+- Marco de los seis tipos de visualizacion: cuando usar barras, lineas, scatter, mapas, pie charts e histogramas segun el tipo de pregunta (comparacion, tendencia, distribucion, relacion, composicion, geolocalizacion)
+
+Otras actividades:
+- Por que es importante la Visualizacion de datos (video, 1 min): introduccion al modulo
+- Conecte las imagenes con los Datos (video, 6 min): como el cerebro procesa imagenes vs texto; atributos pre-atentivos (color, tamano, posicion)
+- Una receta para una potente visualizacion (video, 5 min): los cuatro elementos de una visualizacion efectiva — informacion, historia, objetivo, forma visual
+- Christiane: el poder de una visualizacion (video, 2 min): testimonio de analista sobre un caso real donde la visualizacion cambio la decision
+- Diseno y Pensamiento de Diseno (video): design thinking aplicado a la visualizacion de datos — empatia, definicion, ideacion, prototipo, test
+- Desafio del modulo 1 (quiz calificado — completado)
 
 **Modulo 2 — Create Data Visualizations with Tableau:**
-- Dimensions vs Measures en Tableau (video)
-- Marks card, Shelves, Show Me (video)
-- Flujo basico para crear una visualizacion en Tableau (lectura)
-- Medidas calculadas y LOD expressions (video)
-- Actividad practica: crear visualizaciones en Tableau Public (hands-on calificable)
-- Actividad practica: crear un dashboard interactivo con filtros (hands-on calificable)
-- Desafio del modulo 2 (quiz calificado)
+
+Actividades practicas:
+- Actividad practica: Creacion de una visualizacion de datos en Tableau: conectar un dataset CSV en Tableau Public, arrastrar dimensions y measures, crear un grafico de barras y aplicar filtros basicos
+- Actividad practica: Link multiple datasets in Tableau: unir dos fuentes de datos en Tableau (equivalente a un JOIN) usando un campo comun, y crear una visualizacion que combine ambas tablas
+
+Lecturas clave:
+- Optimizacion de la paleta de colores: como elegir colores accesibles (paletas para daltonismo), uso consistente del color para el mismo concepto, y cuando el color aporta informacion vs cuando es solo decorativo
+- Principios esenciales de diseno: los cinco principios — Balance, Enfasis, Movimiento, Patron y Unidad — aplicados a visualizacion de datos
+
+Otras actividades:
+- Conozca Tableau (video, 4 min): interfaz de Tableau Public — Connect, Data Source, Worksheets, Dimensions vs Measures, Marks card, Show Me
+- Crear una visualizacion de datos en Tableau (video, 6 min): demostracion de flujo completo: conectar datos, arrastrar campos, elegir tipo de grafico, aplicar filtros y formatear
+- Desafio del modulo 2 (quiz calificado — completado)
 
 **Modulo 3 — Craft Data Stories:**
-- Los 3 elementos de una historia de datos: personajes, contexto, tension (video)
-- Estructura clasica para presentar resultados (video)
-- Dashboards en Tableau: combinar hojas, filtros globales y acciones (video)
-- Contexto para los numeros: comparativas y benchmarks (lectura)
-- Actividad practica: construir un dashboard narrativo en Tableau (hands-on calificable)
-- Desafio del modulo 3 (quiz calificado)
+
+Actividades practicas:
+- Actividad practica: Crear, filtrar y personalizar graficos: en Tableau, crear multiples tipos de grafico sobre un mismo dataset, aplicar filtros por dimension y ajustar formato (colores, etiquetas, titulos)
+- Actividad practica: Construir un panel en Tableau: combinar tres o mas worksheets en un dashboard, configurar filtros globales que afecten a todas las hojas, y usar acciones para que clicar en un grafico filtre otro
+
+Lecturas clave:
+- Historias de datos eficaces: los tres elementos narrativos (personajes, contexto, tension) y como estructurar los datos para guiar al espectador hacia una conclusion concreta
+- Estadisticas en vivo y estaticas: diferencia entre un dashboard con datos que se actualizan automaticamente (conexion live a base de datos) y un dashboard con datos estaticos (extract); cuando usar cada uno segun el caso de uso
+- Cree su primer panel de Tableau: paso a paso para crear un dashboard en Tableau — anadir worksheets al lienzo, ajustar layout (tiled vs floating), configurar tamano y anadir titulos y textos explicativos
+
+Otras actividades:
+- Crear historias con Datos (video, 2 min): introduccion al modulo — diferencia entre mostrar datos y contar una historia con datos
+- Dar vida a las ideas (video, 5 min): como el contexto transforma un numero en un hallazgo relevante; el papel del analista como narrador
+- Hable a su publico (video, 4 min): adaptar la complejidad de la historia segun si la audiencia son ejecutivos, managers o equipo tecnico
+- Carolyn: Periodismo de datos (video, 3 min): perspectiva de una periodista de datos — como simplificar sin perder precision
+- DE LOS FILTROS A LOS GRAFICOS (video, 6 min): demostracion de como encadenar filtros interactivos en Tableau para explorar patrones en los datos
+- Consejos convincentes para una presentacion (video): principios para que una presentacion de datos mantenga la atencion — brevedad, una idea por diapositiva, titulos como hallazgos
+- Compartir una narracion (video, 5 min): como combinar el dashboard de Tableau con una narrativa oral en una presentacion en vivo
+- Sundas: Como gestionar el sindrome del impostor (video): testimonio de analista sobre inseguridad y como superarla en el trabajo
+- Desafio del modulo 3 (quiz calificado — completado)
 
 **Modulo 4 — Develop Presentations and Slideshows:**
-- Estructura de una presentacion de analisis (video)
-- Comunicar limitaciones de los datos (lectura)
-- Manejar preguntas dificiles en presentaciones (video)
-- Actividad practica: crear una presentacion de analisis completa (hands-on calificable)
+
+Lecturas clave:
+- Paso a paso: Critica de una presentacion: framework para evaluar presentaciones de datos — claridad del titulo, si los graficos tienen etiquetas, si los hallazgos estan en el cuerpo del texto o solo en los graficos, y si las recomendaciones son accionables
+- Guia: Compartir los resultados de los datos en las presentaciones: estructura recomendada de presentacion — slide 1 contexto, slides 2-4 hallazgos clave, slide 5 limitaciones, slide 6 recomendaciones; como escribir titulos de slide que ya sean el hallazgo
+- Prepárese para las preguntas y respuestas: como anticipar las tres categorias de preguntas mas frecuentes (clarificacion de metodologia, profundizacion en un hallazgo, implicaciones para la decision) y preparar respuestas concisas
+- Evalue su presentacion: lista de verificacion de 10 puntos antes de presentar — objetivos claros, titulos descriptivos, colores accesibles, fuentes citadas, recomendaciones concretas
+
+Otras actividades:
+- Juntelo todo (video, 1 min): introduccion al modulo — de los datos al producto final: la presentacion
+- Presentar con un framework (video, 4 min): el framework McCandless — informacion, historia, objetivo y forma visual como columna vertebral de una presentacion
+- Incorpore Datos a su presentacion (video, 4 min): como decidir que graficos incluir en slides vs cuales dejar en el dashboard de apoyo
+- Connor: Ejemplo desordenado de una presentacion de Datos (video): caso practico — errores tipicos: demasiado texto, graficos sin contexto, sin recomendacion clara
+- Connor: Buen ejemplo de presentacion de datos (video): el mismo caso con la presentacion correctamente estructurada — como cambia la comprension
+- Consejos de presentacion probados (video): tecnicas practicas — hablar menos y mostrar mas, pausa antes del grafico clave, contacto visual con la audiencia
+- Autorreflexion: Ejemplos de grandes presentaciones: analizar presentaciones reales de data storytelling (TED talks de datos) e identificar que tecnicas narrativas usan
+- Presente como un profesional (video): como gestionar el tiempo, moverse entre slides y responder sin perder el hilo
+- Anticiparse a la pregunta (video): como leer las senales de la audiencia para saber que preguntas vienen antes de que las hagan
+- Manejar las objeciones (video): tecnicas para responder cuando alguien cuestiona los datos o la metodologia — escuchar, reconocer, responder con evidencia
+- Autorreflexion: Practicar el manejo de las objeciones: ejercicio de roleplay escrito — dada una objecion tipica, redactar la respuesta como analista
+- Buenas practicas de preguntas y respuestas (video): como decir "no se" de forma profesional y cuando es correcto posponer una respuesta para investigar
+- Connor: Convertirse en un experto traductor de datos (video): como simplificar conceptos tecnicos para audiencias no tecnicas sin perder la precision
+- Desafio del modulo 4 (quiz calificado — completado)
 - Evaluacion del curso (quiz calificado final)
 
 ---
