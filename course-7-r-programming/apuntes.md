@@ -285,37 +285,117 @@ COURSE 7: PYTHON
 ## Actividades del curso
 
 **Modulo 1 — Hello, Python!:**
-- Por que Python para analisis de datos (video)
-- Tipos de datos: int, float, str, bool (video)
-- Variables y operadores (video)
-- Jupyter Notebooks: celdas de codigo y markdown (lectura)
-- Actividad practica: primeros pasos en Jupyter Notebook (hands-on)
-- Desafio del modulo 1 (quiz calificado)
+
+Actividades practicas:
+- Annotated follow-along guide: Hello, Python!: guia anotada que muestra como escribir y ejecutar el primer script Python en Jupyter Notebook — variables, tipos de datos, operaciones basicas
+- Activity: Use Python syntax: ejercicio en Jupyter Notebook para practicar variables, tipos de datos (int, float, str, bool), operadores aritmeticos y f-strings sobre datos de ejemplo
+
+Lecturas clave:
+- Introduction to R: comparativa entre R y Python para analisis de datos — cuando usar cada uno y por que Python es la eleccion del curso
+- Ways to learn about programming: recursos recomendados para aprender Python fuera del curso — documentacion oficial, Stack Overflow, comunidades
+- How to use Jupyter Notebooks: interfaz de Jupyter — celdas de codigo vs celdas Markdown, como ejecutar celdas, como reiniciar el kernel, como exportar el notebook
+- More about object-oriented programming: conceptos de OOP aplicados a Python — que es un objeto, una clase, un metodo y un atributo; como pandas y NumPy usan OOP internamente
+- Explore Python syntax: referencia de sintaxis Python — indentacion obligatoria, convencion snake_case, comentarios con #, diferencia entre = (asignacion) y == (comparacion)
+
+Otras actividades:
+- Introduction to Course 7 (video, 4 min): presentacion del curso y de Python como herramienta de analisis de datos
+- Adrian: My path to a data career (video, 2 min): testimonio de empleado de Google sobre como llego al analisis de datos
+- Welcome to module 1 (video, 2 min): introduccion al modulo
+- Introduction to Python (video, 5 min): que es Python, historia, por que es el lenguaje mas usado en data science
+- Discover more about Python (video, 7 min): ventajas de Python — legibilidad, librerias, comunidad, versatilidad
+- Jupyter Notebooks (video, 3 min): demostracion del entorno Jupyter — interfaz, celdas, ejecucion
+- Object-oriented programming (video, 5 min): introduccion a OOP — clases, objetos, metodos, atributos
+- Hamza: How Python helped my data science career (video, 3 min): caso real de uso de Python en el trabajo diario de un data scientist
+- Variables and data types (video): como declarar variables y los cuatro tipos de datos basicos (int, float, str, bool)
+- Desafio del modulo 1 (quiz calificado — completado)
 
 **Modulo 2 — Functions and Conditional Statements:**
-- Definir y llamar funciones con def y return (video)
-- Parametros y valores por defecto (video)
-- Condicionales: if, elif, else (video)
-- Operadores de comparacion y logicos (lectura)
-- Actividad practica: escribir funciones con condicionales (hands-on)
-- Desafio del modulo 2 (quiz calificado)
+
+Actividades practicas:
+- Annotated follow-along guide: Functions and conditional statements: guia anotada con ejemplos de definicion de funciones, parametros con valores por defecto, y condicionales if/elif/else
+- Activity: Functions: escribir funciones con def y return, practicar con parametros opcionales y verificar resultados con assert
+- Activity: Conditional statements: construir logica condicional con if, elif y else usando operadores de comparacion (==, !=, >, <, >=, <=) y logicos (and, or, not)
+
+Lecturas clave:
+- Reference guide: Functions: referencia completa de funciones en Python — sintaxis, parametros posicionales vs nombrados, valores de retorno, scope de variables
+- Reference guide: Python operators: tabla de operadores aritmeticos, de comparacion y logicos con ejemplos de uso en analisis de datos
+- Reference guide: Conditional statements: sintaxis de if/elif/else, operadores ternarios y como anidar condicionales
+
+Otras actividades:
+- Welcome to module 2 (video, 3 min): introduccion al modulo
+- Lateefat: Tips to address challenges when learning to code (video, 3 min): consejos de una data analyst de Google para superar la frustracion al aprender a programar
+- Define functions and return values (video, 6 min): como definir funciones con def, anadir parametros y usar return
+- Write clean code (video, 4 min): convenios de estilo PEP 8 — nombres descriptivos, longitud de linea, espacios alrededor de operadores
+- Use comments to scaffold your code (video, 7 min): como usar comentarios (#) para documentar logica, planificar el codigo antes de escribirlo y facilitar la revision
+- Make comparisons using operators (video, 4 min): operadores de comparacion y logicos con ejemplos aplicados a datos
+- Use if, elif, else statements to make decisions (video, 11 min): demostracion extensa de condicionales con casos de uso reales
+- Desafio del modulo 2 (quiz calificado — completado)
 
 **Modulo 3 — Loops and Strings:**
-- Bucles for y while (video)
-- range() y como iterar sobre listas (video)
-- Manipulacion de strings: strip, lower, replace, split, f-strings (video)
-- Actividad practica: limpiar texto con loops y funciones de string (hands-on)
-- Desafio del modulo 3 (quiz calificado)
+
+Actividades practicas:
+- Annotated follow-along guide: Loops and strings: guia con ejemplos de while, for, range() con multiples parametros, y manipulacion de strings con indexing, slicing y format
+- Activity: While loops: practicar while loops con condiciones de parada, uso de break y continue
+- Activity: For loops: iterar sobre listas, rangos y strings; combinar loops con condicionales
+- Activity: Strings: usar indexing ([i]), slicing ([start:end:step]), metodos (strip, lower, upper, replace, split) y f-strings
+
+Lecturas clave:
+- Loops, break, and continue statements: referencia de while y for loops con break (salir del loop) y continue (saltar a la siguiente iteracion); cuando usar cada uno
+- For loops: sintaxis de for loops con range(), enumerate() y zip(); iterar sobre distintos tipos de colecciones
+- String indexing and slicing: como acceder a caracteres individuales por indice y como extraer subcadenas con slicing
+- String formatting and regular expressions: f-strings para formatear texto; introduccion a expresiones regulares para buscar y reemplazar patrones en strings
+
+Otras actividades:
+- Welcome to module 3 (video, 3 min): introduccion al modulo
+- Michelle: Approach problems with an analytical mindset (video, 3 min): como aplicar pensamiento analitico al disenar loops y logica de programacion
+- Introduction to while loops (video, 9 min): sintaxis de while, condicion de parada, riesgo de bucle infinito, uso de break
+- Introduction to for loops (video, 4 min): sintaxis de for con listas y range()
+- Loops with multiple range() parameters (video, 4 min): range(start, stop, step) para controlar el inicio, fin y salto del loop
+- Work with strings (video, 4 min): metodos de string mas usados en analisis de datos — strip, lower, upper, replace, split
+- String slicing (video, 7 min): indexacion positiva y negativa, slicing con start/end/step
+- Format strings (video, 5 min): f-strings para insertar variables en texto, formateo de decimales y padding
+- Desafio del modulo 3 (quiz calificado — completado)
 
 **Modulo 4 — Data Structures in Python:**
-- Listas, tuplas, diccionarios y sets (video)
-- NumPy: arrays numericos y operaciones vectorizadas (video)
-- pandas: cargar CSV, explorar con head/info/describe (video)
-- Seleccionar, filtrar y limpiar con pandas (video)
-- groupby y agg para agregaciones (video)
-- Actividad practica: analisis completo de un dataset con pandas (hands-on calificable)
-- Visualizacion basica con matplotlib (video)
-- Actividad practica: crear graficos con pandas y matplotlib (hands-on calificable)
+
+Actividades practicas:
+- Annotated follow-along guide: Data structures in Python: guia anotada cubriendo listas, tuplas, diccionarios, sets, NumPy arrays y DataFrames de pandas con operaciones basicas en cada uno
+- Activity: Lists & tuples: crear, modificar y recorrer listas; crear tuplas y acceder a sus elementos; usar zip() y enumerate()
+- Activity: Dictionaries & sets: crear y actualizar diccionarios, usar metodos (keys, values, items), operaciones de sets (union, interseccion, diferencia)
+- Activity: Arrays and vectors with NumPy: crear arrays con np.array(), operaciones vectorizadas (suma, media, std), indexacion y slicing de arrays
+- Activity: Dataframes with pandas: cargar un CSV con pd.read_csv(), explorar con head/info/describe, filtrar con boolean masking, agrupar con groupby, unir DataFrames con merge
+
+Lecturas clave:
+- Reference guide: Lists: metodos de lista — append, extend, insert, remove, pop, sort, reverse; list comprehension
+- Compare lists, strings, and tuples: tabla comparativa de las tres estructuras — mutabilidad, orden, indexacion, casos de uso tipicos
+- zip(), enumerate(), and list comprehension: tres herramientas para iterar de forma eficiente; list comprehension como alternativa compacta a un for loop
+- Reference guide: Dictionaries: metodos de diccionario — get, keys, values, items, update, pop; dict comprehension
+- Reference guide: Sets: operaciones de conjuntos — union (|), interseccion (&), diferencia (-), diferencia simetrica (^)
+- Understand Python libraries, packages, and modules: como funciona el ecosistema de paquetes Python — import, from...import, pip install; diferencia entre modulo, paquete y libreria
+- Python's new versions and features: como mantenerse al dia con los cambios de Python — changelog, compatibilidad, uso de type hints
+- Reference guide: Arrays: operaciones NumPy esenciales — np.array, np.zeros, np.ones, np.arange, np.linspace, indexacion y slicing
+- The fundamentals of pandas: Series vs DataFrame, como pandas extiende NumPy para datos heterogeneos, el indice de pandas
+- Boolean masking in pandas: filtrar filas con condiciones booleanas — df[df["col"] > valor], combinar condiciones con & y |
+- More on grouping and aggregation: groupby con multiples columnas, agg() con diccionario de funciones, transform() para crear columnas de agregacion sin colapsar el DataFrame
+
+Otras actividades:
+- Welcome to module 4 (video, 2 min): introduccion al modulo
+- Introduction to lists (video, 5 min): listas en Python — crear, acceder, modificar, metodos
+- Modify the contents of a list (video, 4 min): append, insert, remove, pop, sort
+- Introduction to tuples (video, 4 min): tuplas — inmutabilidad, cuando usarlas, desempaquetado
+- More with loops, lists, and tuples (video, 6 min): combinar estructuras con loops; zip() y enumerate()
+- Introduction to dictionaries (video, 5 min): diccionarios — clave:valor, acceso por clave, iterar
+- Dictionary methods (video, 5 min): keys(), values(), items(), get(), update()
+- Introduction to sets (video, 6 min): sets — unicidad, operaciones de conjuntos, casos de uso
+- The power of packages (video, 4 min): como importar librerias (import numpy as np, import pandas as pd)
+- Introduction to NumPy (video, 4 min): arrays NumPy vs listas Python — velocidad, operaciones vectorizadas
+- Basic array operations (video, 6 min): operaciones aritmeticas, mean, std, sum, indexacion
+- Introduction to pandas (video, 5 min): que es pandas, Series y DataFrame, relacion con NumPy
+- pandas basics (video, 10 min): read_csv, head, tail, shape, info, describe, dtypes
+- Boolean masking (video, 6 min): filtrar filas con condiciones booleanas
+- Grouping and aggregation (video, 6 min): groupby, agg, sum, mean, count, size
+- Merging and joining data (video, 9 min): pd.merge() con how="inner"/"left"/"right"/"outer" — equivalente a SQL JOIN
+- Desafio del modulo 4 (quiz calificado — completado)
 - Evaluacion del curso (quiz calificado final)
 
 ---
