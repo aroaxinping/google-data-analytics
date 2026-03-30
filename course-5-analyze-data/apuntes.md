@@ -328,6 +328,11 @@ Otras actividades:
 - Ordenacion de Datos con SQL (video, 7 min): ORDER BY avanzado con multiples columnas
 - Desafio del modulo 1 (quiz calificado — completado al 85%)
 
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: organizar los datos para el analisis: evalua organizacion de datos, identificacion de tendencias, tecnicas de filtrado y deteccion de valores atipicos
+- Pon a prueba tus conocimientos: ordenar datos en hojas de calculo: evalua operaciones de ordenacion por rangos y por funcion, y ordenacion personalizada con multiples condiciones
+- Pon a prueba tus conocimientos: ordenar datos con SQL: evalua la clausula ORDER BY con una y multiples columnas, operador AND para filtrado multiple
+
 **Modulo 2 — Formatear y ajustar datos:**
 
 Actividades practicas:
@@ -350,6 +355,10 @@ Otras actividades:
 - Manipular cadenas con SQL (lectura, 4 min): TRIM, UPPER, LOWER, LENGTH, SUBSTR en BigQuery
 - Autorreflexion: Desbordamiento de pila (practica no calificada, 20 min): reflexion sobre uso de Stack Overflow para resolver problemas
 - Desafio del modulo 2 (quiz calificado — completado al 100%)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: convertir y formatear datos: evalua conversion de unidades de medida, pegado de valores, validacion de datos, manejo de errores y aplicaciones de formato condicional
+- Pon a prueba tus conocimientos: combinar multiples datasets: evalua concatenacion de cadenas de texto en SQL, la clausula LIMIT y funciones de redondeo y manipulacion de caracteres
 
 **Modulo 3 — Agregacion de Datos para Analisis:**
 
@@ -378,6 +387,10 @@ Otras actividades:
 - Utilice subconsultas para agregar Datos (video, 7 min): subconsultas en FROM para agregaciones complejas
 - Funciones y subconsultas SQL: Una amistad funcional (lectura, 8 min): combinar funciones de agregacion con subconsultas
 - Desafio del modulo 3 (quiz calificado — completado al 97.72%)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: VLOOKUP: evalua funcionalidad de busqueda de datos, conversion de texto a numero, referencias absolutas y la primera coincidencia encontrada
+- Pon a prueba tus conocimientos: usar JOINs para agregar datos: evalua principios de agregacion de datos, INNER JOIN para registros coincidentes, COUNT DISTINCT y alias de tablas en SQL
 
 **Modulo 4 — Realizar calculos de datos:**
 
@@ -412,6 +425,12 @@ Otras actividades:
 - Multiples variantes de mesa (video, 3 min): comparacion entre CTEs, tablas temporales y vistas
 - Utilizar hojas conectadas con BigQuery (lectura, 8 min): conectar Google Sheets directamente a BigQuery para analizar datos sin exportar
 - Desafio del modulo 4 (quiz calificado — completado al 93.75%)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: calculos de datos: evalua suma condicional con SUMIF, conteo de celdas con condicion y manipulacion de arrays
+- Pon a prueba tus conocimientos: tablas dinamicas: evalua estructura de tablas dinamicas, agrupacion, filtrado y campos calculados
+- Pon a prueba tus conocimientos: calculos con SQL: evalua operadores aritmeticos y el orden de operaciones, incluyendo el operador modulo
+- Pon a prueba tus conocimientos: usar SQL con tablas temporales: evalua clausula GROUP BY para agregacion, creacion de tablas temporales y gestion de sesiones
 
 ---
 
