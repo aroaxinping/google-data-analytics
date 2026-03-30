@@ -166,6 +166,11 @@ Otras actividades:
 - La magia de los datos testigo (video, 5 min): entrevista con profesional que uso datos para resolver un problema real
 - Desafio del modulo 1 (quiz calificado — completado)
 
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: el ecosistema de datos: evalua conceptos de analisis de datos, ecosistemas de datos, experiencia en la materia y toma de decisiones empresariales
+- Pon a prueba tus conocimientos: habilidades del analista de datos: evalua capacidades analiticas, comprension contextual, pensamiento tecnico y organizacion de informacion
+- Pon a prueba tus conocimientos: pensamiento analitico y resultados: evalua metodologia de resolucion de problemas, tipos de visualizacion de datos, orientacion al detalle y analisis de brechas
+
 **Modulo 2 — The Wonderful World of Data:**
 
 Lecturas clave:
@@ -180,6 +185,11 @@ Otras actividades:
 - Explore las herramientas del analista de datos (video, 6 min): hojas de calculo, SQL, herramientas de visualizacion
 - Autorreflexion: Repasar conceptos anteriores (quiz de practica, 20 min): autoevaluacion de conceptos del modulo 1
 - Desafio del modulo 2 (quiz calificado — completado al 90%)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: el ciclo de vida de los datos: evalua las fases de planificacion, captura y gestion, y conceptos de base de datos
+- Pon a prueba tus conocimientos: el proceso de analisis de datos: evalua la fase Ask, identificacion de stakeholders, manejo de valores atipicos y visualizacion en la fase Share
+- Pon a prueba tus conocimientos: el conjunto de herramientas del analisis de datos: evalua hojas de calculo, diferencia entre formulas y funciones, fundamentos de SQL y herramientas de visualizacion
 
 **Modulo 3 — Set Up Your Data Analytics Toolbox:**
 
@@ -200,6 +210,9 @@ Otras actividades:
 - Lilah: El poder de una visualizacion (video, 2 min): caso real de como un grafico comunico algo que los numeros no podian
 - Desafio del modulo 3 (quiz calificado — completado)
 
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: SQL y visualizacion de datos: evalua la estructura de queries SQL, seleccion de tablas y tipos de grafico apropiados segun el contexto
+
 **Modulo 4 — Become a Fair and Impactful Data Professional:**
 
 Lecturas clave:
@@ -215,6 +228,9 @@ Otras actividades:
 - Autorreflexion: Casos de negocio (practica, 20 min): analizar casos practicos de uso de datos en empresas reales
 - Desafio del modulo 4 (quiz calificado — completado)
 - Evaluacion del curso (quiz calificado final)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: tomar decisiones empresariales justas: evalua definicion de la tarea empresarial, mitigacion de sesgos, estrategias de equidad y tecnicas de sobremuestreo
 
 ---
 
