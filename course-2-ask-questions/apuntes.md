@@ -189,6 +189,11 @@ Otras actividades:
 - Preguntas SMART (video): introduccion al framework — Specific, Measurable, Action-oriented, Relevant, Time-bound
 - Desafio del modulo 1 (quiz calificado — completado)
 
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: actuar a partir de los datos: evalua identificacion de audiencia objetivo y fases del proceso de analisis de datos
+- Pon a prueba tus conocimientos: resolver problemas con datos: evalua categorizacion de problemas, identificacion de patrones y descubrimiento de conexiones
+- Pon a prueba tus conocimientos: elaborar preguntas eficaces: evalua la metodologia SMART y la claridad en la formulacion de preguntas
+
 **Modulo 2 — Make Data-Driven Decisions:**
 
 Actividades practicas:
@@ -209,6 +214,11 @@ Otras actividades:
 - Big data y small data (video): diferencias de escala y herramientas segun el volumen de datos
 - Desafio del modulo 2 (quiz calificado — completado)
 
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: el poder de los datos: evalua tipos de datos (cuantitativos y cualitativos) y fundamentos de algoritmos
+- Pon a prueba tus conocimientos: seguir la evidencia: evalua reports, dashboards y frameworks para tomar decisiones basadas en datos
+- Pon a prueba tus conocimientos: conectar los puntos de datos: evalua diferencias entre small data y big data y las cuatro V del big data
+
 **Modulo 3 — Spreadsheet Magic:**
 
 Actividades practicas:
@@ -228,6 +238,11 @@ Otras actividades:
 - Hoja de calculo errores y correcciones (video, 7 min): #DIV/0!, #VALUE!, #REF!, #N/A, #NAME? — causas y soluciones
 - Desafio del modulo 3 (quiz calificado — completado)
 
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: usar formulas en hojas de calculo: evalua sintaxis de formulas, referencias de celdas y resolucion de errores
+- Pon a prueba tus conocimientos: usar funciones en hojas de calculo: evalua aplicaciones de SUM, AVERAGE, MIN y MAX
+- Pon a prueba tus conocimientos: pensamiento estructurado: evalua dominios de problemas y documentacion del alcance del trabajo
+
 **Modulo 4 — Always Remember the Stakeholder:**
 
 Lecturas clave:
@@ -246,6 +261,10 @@ Otras actividades:
 - Piense en su proceso y en el resultado (video): reflexion sobre documentar el proceso de analisis, no solo los resultados
 - Desafio del modulo 4 (quiz calificado — completado)
 - Evaluacion del curso (quiz calificado final)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: comunicacion clara: evalua expectativas de stakeholders y estrategias de entrega de mensajes
+- Pon a prueba tus conocimientos: trabajo en equipo: evalua resolucion colaborativa de problemas y gestion de reuniones
 
 ---
 
