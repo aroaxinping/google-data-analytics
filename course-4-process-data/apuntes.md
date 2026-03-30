@@ -235,6 +235,12 @@ Otras actividades:
 - Equilibrio entre los objetivos y la integridad de los datos (video, 3 min): como gestionar el tension entre lo que quieres analizar y la calidad de los datos disponibles
 - Desafio del modulo 1 (quiz calificado — completado)
 
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: integridad de datos y objetivos de analisis: evalua conceptos de integridad de datos, manipulacion de datos, estandarizacion e identificacion de duplicados
+- Pon a prueba tus conocimientos: datos insuficientes: evalua estrategias para manejar datasets limitados, sesgo de muestreo y tecnicas de representacion de la poblacion
+- Pon a prueba tus conocimientos: probar tus datos: evalua pruebas de hipotesis, significacion estadistica, niveles de confianza y requisitos de tamano de muestra
+- Pon a prueba tus conocimientos: margen de error: evalua calculos de margen de error, intervalos de confianza y predicciones sobre la poblacion
+
 **Modulo 2 — Clean Data for More Accurate Insights:**
 
 Lecturas clave:
@@ -247,6 +253,11 @@ Otras actividades:
 - Herramientas y tecnicas de limpieza de datos (video, 6 min): funciones de Sheets para limpieza — TRIM, CLEAN, PROPER, SUBSTITUTE
 - Datos limpios de multiples fuentes (video, 5 min): problemas especificos al combinar datos de distintas fuentes — tipos inconsistentes, naming diferente, unidades distintas
 - Desafio del modulo 2 (quiz calificado — completado)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: limpieza de datos: evalua roles de profesionales de datos, valores nulos, formateo de datos y procedimientos de validacion
+- Pon a prueba tus conocimientos: los primeros pasos hacia datos limpios: evalua consistencia de formato, fusion de datos, evaluacion de compatibilidad y documentacion de errores
+- Pon a prueba tus conocimientos: limpiar datos en hojas de calculo: evalua cadenas de texto, sintaxis de COUNTIF, operaciones TRIM y funcionalidad de VLOOKUP
 
 **Modulo 3 — Data Cleaning with SQL:**
 
@@ -266,6 +277,9 @@ Otras actividades:
 - Limpiar variables de cadena usando SQL (video): demostracion de TRIM, LOWER, REPLACE en BigQuery sobre el dataset de clientes
 - Desafio del modulo 3 (quiz calificado — completado)
 
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: consultas SQL: evalua ventajas de SQL, uso de la funcion SUBSTR, clausula DISTINCT y funciones LENGTH
+
 **Modulo 4 — Verify and Report on Cleaning Results:**
 
 Actividades practicas:
@@ -282,6 +296,10 @@ Otras actividades:
 - Verificacion de la limpieza de datos (video, 8 min): demostracion del proceso de verificacion paso a paso en BigQuery
 - Capturar los cambios de limpieza (video, 5 min): como estructurar y mantener un changelog de limpieza
 - Desafio del modulo 4 (quiz calificado — completado)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: limpieza de datos manual: evalua procesos de verificacion, funcion COUNTA, documentacion en changelogs y correcciones con la clausula CASE
+- Pon a prueba tus conocimientos: documentar el proceso de limpieza: evalua documentacion de la evolucion del dataset, sincronizacion de control de versiones, contenido del changelog y procedimientos de revision de codigo
 
 **Modulo 5 — Add Data to Your Resume:**
 
