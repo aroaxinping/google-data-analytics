@@ -199,6 +199,11 @@ Otras actividades:
 - Diseno y Pensamiento de Diseno (video): design thinking aplicado a la visualizacion de datos — empatia, definicion, ideacion, prototipo, test
 - Desafio del modulo 1 (quiz calificado — completado)
 
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: visualizacion de datos: evalua tipos de graficos, principios de diseno thinking, consideraciones de accesibilidad y elementos visuales (titulos, etiquetas, subtitulos)
+- Pon a prueba tus conocimientos: disenar visualizaciones de datos: evalua elementos de diseno (linea, contraste, significado), metodologia de design thinking y la fase de empatia
+- Pon a prueba tus conocimientos: explorar consideraciones de visualizacion: evalua titulos, subtitulos, etiquetas, texto alternativo para accesibilidad y estrategias de simplificacion
+
 **Modulo 2 — Create Data Visualizations with Tableau:**
 
 Actividades practicas:
@@ -213,6 +218,10 @@ Otras actividades:
 - Conozca Tableau (video, 4 min): interfaz de Tableau Public — Connect, Data Source, Worksheets, Dimensions vs Measures, Marks card, Show Me
 - Crear una visualizacion de datos en Tableau (video, 6 min): demostracion de flujo completo: conectar datos, arrastrar campos, elegir tipo de grafico, aplicar filtros y formatear
 - Desafio del modulo 2 (quiz calificado — completado)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: empezar con Tableau: evalua capacidades de Tableau frente a herramientas de la competencia y caracteristicas de Tableau Public
+- Pon a prueba tus conocimientos: crear visualizaciones en Tableau: evalua paletas de colores, colores divergentes, psicologia del color en representacion de datos y optimizacion de etiquetas
 
 **Modulo 3 — Craft Data Stories:**
 
@@ -235,6 +244,11 @@ Otras actividades:
 - Compartir una narracion (video, 5 min): como combinar el dashboard de Tableau con una narrativa oral en una presentacion en vivo
 - Sundas: Como gestionar el sindrome del impostor (video): testimonio de analista sobre inseguridad y como superarla en el trabajo
 - Desafio del modulo 3 (quiz calificado — completado)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: historias basadas en datos: evalua elementos del storytelling con datos (comunicar significado con visuales, captar la atencion de la audiencia y tecnica de destacar hallazgos clave)
+- Pon a prueba tus conocimientos: comunicar historias de datos: evalua narrativa de datos, adaptacion del mensaje a la audiencia y estructura de la presentacion
+- Pon a prueba tus conocimientos: panel de Tableau: evalua creacion de dashboards, configuracion de filtros globales y uso de acciones interactivas
 
 **Modulo 4 — Develop Presentations and Slideshows:**
 
@@ -260,6 +274,12 @@ Otras actividades:
 - Connor: Convertirse en un experto traductor de datos (video): como simplificar conceptos tecnicos para audiencias no tecnicas sin perder la precision
 - Desafio del modulo 4 (quiz calificado — completado)
 - Evaluacion del curso (quiz calificado final)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: advertencias y limitaciones de los datos: evalua como comunicar limitaciones del analisis, uso de multiples fuentes en visualizaciones y manejo de preguntas sobre la metodologia
+- Pon a prueba tus conocimientos: presentaciones eficaces: evalua estructura de presentaciones de datos, principios de claridad y comunicacion del hallazgo principal
+- Pon a prueba tus conocimientos: escuchar, responder e incluir: evalua gestion de sesiones de preguntas y respuestas, respuesta a objeciones y como incluir a toda la audiencia
+- Pon a prueba tus conocimientos: habilidades y practicas de presentacion: evalua tecnicas de presentacion profesional, ritmo, contacto visual y anticipacion de preguntas
 
 ---
 
