@@ -233,6 +233,11 @@ Otras actividades:
 - Seguir explorando los datos estructurados (video, 1 min): profundizacion en tablas, bases de datos y CSVs
 - Desafio del modulo 1 (quiz calificado — completado)
 
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: recopilar datos: evalua conceptos de cookies, tipos de datos (primera, segunda y tercera parte) y el concepto de "poblacion" en datasets
+- Pon a prueba tus conocimientos: formatos y estructuras de datos: evalua datos continuos vs discretos, fuentes de datos externos, caracteristicas de datos no estructurados y modelos de datos
+- Pon a prueba tus conocimientos: tipos de datos, campos y valores: evalua atributos de tipos de datos, formato de texto/cadena, ubicacion de campos en tablas y estructura de datos largos
+
 **Modulo 2 — Data Responsibility:**
 
 Lecturas clave:
@@ -248,6 +253,12 @@ Otras actividades:
 - Etica de los datos esenciales (video, 4 min): consentimiento informado, privacidad, apertura y transparencia
 - Dar prioridad a la privacidad de los datos (video, 1 min): diferencia entre anonimizacion y privacidad
 - Desafio del modulo 2 (quiz calificado — completado)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: datos imparciales y objetivos: evalua definiciones de sesgo, ejemplos de sesgo de muestreo, sesgo de confirmacion y terminologia del sesgo de observador
+- Pon a prueba tus conocimientos: credibilidad de los datos: evalua fuentes de datos fiables, datasets verificados, evaluacion de citas y actualidad de la informacion
+- Pon a prueba tus conocimientos: etica y privacidad de los datos: evalua estandares eticos, transparencia en transacciones, tecnicas de anonimizacion y procedimientos de consentimiento
+- Pon a prueba tus conocimientos: datos abiertos: evalua principios de apertura, metodos de distribucion preferidos y requisitos de participacion universal
 
 **Modulo 3 — Database Essentials:**
 
@@ -278,6 +289,13 @@ Otras actividades:
 - BigQuery en accion (video, 6 min): demostracion completa de una query SELECT-WHERE-ORDER BY en BigQuery
 - Desafio del modulo 3 (quiz calificado — completado al 100%)
 
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: trabajar con bases de datos: evalua tablas de bases de datos relacionales, claves primarias, procesos de normalizacion y escritura de queries
+- Pon a prueba tus conocimientos: metadatos: evalua tipos de metadatos (administrativos, estructurales), evaluacion de calidad y gobierno de datos
+- Pon a prueba tus conocimientos: acceder a fuentes de datos: evalua beneficios de datos abiertos, formatos de archivo CSV, importacion de datos y funciones de hojas de calculo
+- Pon a prueba tus conocimientos: ordenar y filtrar: evalua tecnicas de organizacion de datos, filtrado y congelacion de filas de cabecera
+- Pon a prueba tus conocimientos: usar SQL con grandes conjuntos de datos: evalua clausulas WHERE, convenciones de nomenclatura, tipos de escritura y componentes de queries
+
 **Modulo 4 — Organize and Protect Data:**
 
 Actividades practicas:
@@ -292,6 +310,10 @@ Otras actividades:
 - Caracteristicas de seguridad en las hojas de calculo (video, 3 min): proteger hojas con contrasena en Sheets, bloquear celdas y gestionar permisos de colaboradores
 - Equilibrio entre seguridad y analisis (lectura, 4 min): cuando aplicar restricciones de acceso sin bloquear el trabajo de analisis
 - Desafio del modulo 4 (quiz calificado — completado al 93.75%)
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: poner los datos en orden: evalua pautas consistentes para descripciones de archivos, organizacion en carpetas, estructuras jerarquicas y estrategias de nomenclatura efectiva
+- Pon a prueba tus conocimientos: proteger los datos: evalua medidas de proteccion, algoritmos de cifrado, procesos de tokenizacion y seguimiento de versiones
 
 **Modulo 5 — Engage in the Data Community:**
 
