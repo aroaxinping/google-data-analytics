@@ -309,6 +309,11 @@ Otras actividades:
 - Variables and data types (video): como declarar variables y los cuatro tipos de datos basicos (int, float, str, bool)
 - Desafio del modulo 1 (quiz calificado — completado)
 
+Cuestionarios de practica:
+- Test your knowledge: Get started with the course: evalua conceptos introductorios del curso y el entorno de Python
+- Test your knowledge: The power of Python: evalua ventajas de Python para el analisis de datos y sus capacidades
+- Test your knowledge: Using Python syntax: evalua sintaxis basica de Python, variables, tipos de datos y operadores
+
 **Modulo 2 — Functions and Conditional Statements:**
 
 Actividades practicas:
@@ -330,6 +335,10 @@ Otras actividades:
 - Make comparisons using operators (video, 4 min): operadores de comparacion y logicos con ejemplos aplicados a datos
 - Use if, elif, else statements to make decisions (video, 11 min): demostracion extensa de condicionales con casos de uso reales
 - Desafio del modulo 2 (quiz calificado — completado)
+
+Cuestionarios de practica:
+- Test your knowledge: Functions: evalua definicion de funciones, parametros, valores de retorno y scope de variables
+- Test your knowledge: Conditional statements: evalua sintaxis de if/elif/else, operadores de comparacion y logicos
 
 **Modulo 3 — Loops and Strings:**
 
@@ -355,6 +364,11 @@ Otras actividades:
 - String slicing (video, 7 min): indexacion positiva y negativa, slicing con start/end/step
 - Format strings (video, 5 min): f-strings para insertar variables en texto, formateo de decimales y padding
 - Desafio del modulo 3 (quiz calificado — completado)
+
+Cuestionarios de practica:
+- Test your knowledge: While loops: evalua sintaxis de while, condiciones de parada y uso de break y continue
+- Test your knowledge: For loops: evalua iteracion sobre colecciones con range(), enumerate() y zip()
+- Test your knowledge: Strings: evalua indexado, slicing y metodos de cadena (strip, lower, replace, split)
 
 **Modulo 4 — Data Structures in Python:**
 
@@ -397,6 +411,12 @@ Otras actividades:
 - Merging and joining data (video, 9 min): pd.merge() con how="inner"/"left"/"right"/"outer" — equivalente a SQL JOIN
 - Desafio del modulo 4 (quiz calificado — completado)
 - Evaluacion del curso (quiz calificado final)
+
+Cuestionarios de practica:
+- Test your knowledge: Lists and tuples: evalua creacion y modificacion de listas, inmutabilidad de tuplas y uso de zip() y enumerate()
+- Test your knowledge: Dictionaries and sets: evalua operaciones con diccionarios, metodos clave y operaciones de conjuntos (union, interseccion, diferencia)
+- Test your knowledge: Arrays and vectors with NumPy: evalua creacion de arrays, operaciones vectorizadas e indexacion
+- Test your knowledge: Dataframes with pandas: evalua carga de datos, exploracion con head/info/describe, filtrado con boolean masking, groupby y merge
 
 ---
 
