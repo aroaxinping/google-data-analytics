@@ -187,10 +187,16 @@ Otras actividades:
 - El mejor de su clase (video, 7 min): ejemplos de case studies de alta calidad — que tienen en comun
 - Desafio del modulo 1 (quiz calificado — completado)
 
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: estudios de caso profesionales: evalua concepto de portfolio, estrategias para completar case studies, caracteristicas de calidad del portfolio y plataformas de almacenamiento (GitHub, Kaggle, Tableau)
+
 **Modulo 2 — Build Your Portfolio:**
 
 Actividades practicas:
 - Actividad practica: Anadir su Portfolio a Kaggle: crear un perfil publico en Kaggle, subir el notebook del case study y configurar la visibilidad y descripcion del proyecto
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: completar un estudio de caso: evalua las seis fases del proceso de analisis aplicadas al case study — Ask (enunciado de la tarea empresarial), Prepare (fuentes de datos), Process (limpieza de datos), Analyze (resumen de hallazgos), Share (visualizaciones) y Act (recomendaciones y oportunidades futuras)
 
 Lecturas clave:
 - Introduccion a la creacion de su Portfolio: como estructurar el portfolio online — que plataformas usar, que proyectos incluir, como redactar las descripciones
@@ -224,6 +230,9 @@ Otras actividades:
 - Video de situacion: Negociar las condiciones (video, 3 min): simulacion de negociacion salarial — como responder a una oferta y como pedir un numero
 - Nathan: VetNet y dar consejos a los veterinarios (video, 3 min): testimonio de graduado del certificado sobre como uso el case study para conseguir su primer trabajo
 - Autorreflexion: Pula su Portfolio: revision del case study propio con la checklist del modulo 1 — identificar que mejorar antes de compartirlo
+
+Cuestionarios de practica:
+- Pon a prueba tus conocimientos: tecnicas eficaces de entrevista: evalua creacion del elevator pitch, proposito de la presentacion del case study en entrevistas, como compartir contexto personal y estrategias de preparacion
 
 **Modulo 4 — Put Your Certificate to Work:**
 
