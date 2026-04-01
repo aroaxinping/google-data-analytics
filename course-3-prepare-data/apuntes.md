@@ -214,6 +214,103 @@ COURSE 3: PREPARE DATA
 
 ---
 
+## Glosarios por modulo
+
+**Glosario del modulo 1:**
+
+| Termino | Definicion |
+|---------|------------|
+| Archivo de audio | Almacenamiento de audio digitalizado generalmente en formato MP3, AAC u otro formato comprimido |
+| Datos booleanos | Un tipo de dato con solo dos valores posibles, generalmente verdadero o falso |
+| Datos continuos | Datos que se miden y pueden tener casi cualquier valor numerico |
+| Cookie | Un archivo pequeno almacenado en un ordenador que contiene informacion sobre sus usuarios |
+| Datos | Una coleccion de hechos |
+| Elemento de datos | Una pieza de informacion en un conjunto de datos |
+| Tipo de dato | Un atributo que describe un dato basado en sus valores, su lenguaje de programacion o las operaciones que puede realizar |
+| Conjunto de datos | Una coleccion de datos que puede manipularse o analizarse como una unidad |
+| Foto digital | Una imagen electronica o basada en ordenador generalmente en formato BMP o JPG |
+| Datos discretos | Datos que se cuentan y tienen un numero limitado de valores |
+| Datos externos | Datos que viven y se generan fuera de una organizacion |
+| Datos de primera parte | Datos recopilados por un individuo o grupo usando sus propios recursos |
+| Datos internos | Datos que viven dentro de los sistemas de una empresa |
+| Datos largos | Un conjunto de datos en el que cada fila es un punto de tiempo por sujeto, por lo que cada sujeto tiene datos en multiples filas |
+| Modelo de datos | Una herramienta para organizar elementos de datos y como se relacionan entre si |
+| Datos nominales | Un tipo de datos cualitativos que se categoriza sin un orden establecido |
+| Pixel | En imagenes digitales, una pequena area de iluminacion en una pantalla que, combinada con otras areas adyacentes, forma una imagen digital |
+| Poblacion | En analitica de datos, todos los posibles valores de datos en un conjunto de datos |
+| Datos cualitativos | Una medida subjetiva y explicativa de una cualidad o caracteristica |
+| Datos cuantitativos | Una medida especifica y objetiva, como un numero, cantidad o rango |
+| Registro | Una coleccion de datos relacionados en una tabla de datos, generalmente sinonimo de fila |
+| Base de datos relacional | Una base de datos que contiene una serie de tablas que pueden conectarse para formar relaciones |
+| Muestra | En analitica de datos, un segmento de una poblacion que es representativo de toda la poblacion |
+| Redes sociales | Sitios web y aplicaciones a traves de los cuales los usuarios crean y comparten contenido o participan en redes sociales |
+| Datos estructurados | Datos organizados en un formato determinado como filas y columnas |
+| Tipo de dato de texto | Una secuencia de caracteres y puntuacion que contiene informacion textual |
+| Archivo de video | Una coleccion de imagenes, archivos de audio y otros datos generalmente codificados en un formato comprimido |
+| Datos amplios | Un conjunto de datos en el que cada sujeto tiene una sola fila con multiples columnas para los valores de varios atributos |
+| Datos no estructurados | Datos que no estan organizados de ninguna manera facilmente identificable |
+
+**Glosario del modulo 2:**
+
+| Termino | Definicion |
+|---------|------------|
+| Fuente de datos mala | Una fuente de datos que no es confiable, original, completa, actual y citada (ROCCC) |
+| Sesgo | Una preferencia consciente o inconsciente a favor o en contra de una persona, grupo de personas o cosa |
+| Sesgo de confirmacion | La tendencia a buscar o interpretar informacion de una manera que confirma creencias preexistentes |
+| Consentimiento | El aspecto de la etica de datos que presume el derecho de un individuo a saber como y por que se usaran sus datos personales antes de aceptar proporcionarlos |
+| Divisa | El aspecto de la etica de datos que presume que los individuos deben ser conscientes de las transacciones financieras resultantes del uso de sus datos personales |
+| Anonimizacion de datos | El proceso de proteger los datos privados o sensibles de las personas eliminando informacion identificativa |
+| Sesgo de datos | Cuando una preferencia a favor o en contra de una persona, grupo de personas o cosa sesga sistematicamente los resultados del analisis de datos |
+| Etica de datos | Normas bien fundamentadas de lo correcto e incorrecto que dictan como se recopilan, comparten y usan los datos |
+| Interoperabilidad de datos | Un factor clave que lleva al uso exitoso de datos abiertos entre empresas y gobiernos |
+| Privacidad de datos | Preservar la informacion de un sujeto de datos en cualquier momento que ocurra una transaccion de datos |
+| Etica | Normas bien fundamentadas de lo correcto e incorrecto que prescriben lo que los humanos deben hacer |
+| Sesgo del experimentador | La tendencia de diferentes personas a observar las cosas de manera diferente |
+| Fuente de datos buena | Una fuente de datos que es confiable, original, completa, actual y citada (ROCCC) |
+| Sesgo de interpretacion | La tendencia a interpretar situaciones ambiguas de forma positiva o negativa |
+| Sesgo del observador | La tendencia de diferentes personas a observar las cosas de manera diferente |
+| Datos abiertos | Datos que estan disponibles para el publico |
+| Apertura | El aspecto de la etica de datos que promueve el acceso, uso y comparticion libre de datos |
+| Propiedad | El aspecto de la etica de datos que presume que los individuos son duenos de los datos en bruto que proporcionan |
+| Sesgo de muestreo | Sobrerrepresentar o subrepresentar ciertos miembros de una poblacion como resultado de trabajar con una muestra no representativa |
+| Transparencia de transacciones | El aspecto de la etica de datos que presume que todas las actividades de procesamiento de datos y algoritmos deben ser explicables y comprendidos por el individuo que proporciona los datos |
+| Muestreo no sesgado | Cuando la muestra de la poblacion que se mide es representativa de la poblacion en su conjunto |
+| Organizacion Mundial de la Salud | Una organizacion cuya funcion principal es dirigir y coordinar la salud internacional dentro del sistema de las Naciones Unidas |
+
+**Glosario del modulo 3:**
+
+| Termino | Definicion |
+|---------|------------|
+| Metadatos administrativos | Metadatos que indican la fuente tecnica de un activo digital |
+| Archivo CSV | Un archivo de texto delimitado que usa una coma para separar valores |
+| Metadatos descriptivos | Metadatos que describen un dato y pueden usarse para identificarlo en un punto posterior en el tiempo |
+| Clave externa | Un campo dentro de una tabla de base de datos que es una clave primaria en otra tabla |
+| FROM | La seccion de una consulta que indica de donde provienen los datos seleccionados |
+| Geolocalizacion | La ubicacion geografica de una persona o dispositivo mediante informacion digital |
+| Metadatos | Datos sobre datos |
+| Repositorio de metadatos | Una base de datos creada para almacenar metadatos |
+| Convencion de nombres | Directrices consistentes que describen el contenido, fecha de creacion y version de un archivo en su nombre |
+| Base de datos normalizada | Una base de datos en la que solo se almacenan datos relacionados en cada tabla |
+| Libreta | Un entorno de programacion interactivo y editable para crear informes de datos |
+| Clave primaria | Un identificador en una base de datos que referencia una columna en la que cada valor es unico |
+| Redundancia | Cuando el mismo dato se almacena en dos o mas lugares |
+| Esquema | Una forma de describir como se organiza algo, como los datos |
+| SELECT | La seccion de una consulta que indica el subconjunto de un conjunto de datos |
+| Datos de segunda parte | Datos recopilados por un grupo directamente de su audiencia y luego vendidos |
+| Metadatos estructurales | Metadatos que indican como se organiza un dato y si forma parte de una o mas de una coleccion de datos |
+| Datos de terceros | Datos proporcionados por fuentes externas que no los recopilaron directamente |
+| WHERE | La seccion de una consulta que especifica los criterios que deben cumplir los datos solicitados |
+
+**Glosario del modulo 4:**
+
+| Termino | Definicion |
+|---------|------------|
+| Control de acceso | Funciones como proteccion con contrasena, permisos de usuario y cifrado que se usan para proteger una hoja de calculo |
+| Gobierno de datos | Un proceso para garantizar la gestion formal de los activos de datos de una empresa |
+| Seguridad de datos | Proteger los datos del acceso no autorizado o la corrupcion adoptando medidas de seguridad |
+
+---
+
 ## Actividades del curso
 
 **Modulo 1 — Data Types and Structures:**
