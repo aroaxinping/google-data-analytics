@@ -170,6 +170,105 @@ COURSE 2: ASK QUESTIONS
 
 ---
 
+## Glosarios por modulo
+
+**Glosario del modulo 1:**
+
+| Termino | Definicion |
+|---------|------------|
+| Pregunta orientada a la accion | Una pregunta cuyas respuestas llevan a un cambio |
+| Habilidades analiticas | Cualidades y caracteristicas asociadas con usar hechos para resolver problemas |
+| Pensamiento analitico | Identificar y definir un problema y luego resolverlo usando datos de forma organizada y paso a paso |
+| Atributo | Una caracteristica o cualidad de datos usada para etiquetar una columna en una tabla |
+| Tarea empresarial | La pregunta o problema que el analisis de datos resuelve para una empresa |
+| Nube | Un lugar para guardar datos en linea, en lugar de en el disco duro de un ordenador |
+| Contexto | La condicion en la que algo existe o sucede |
+| Datos | Una coleccion de hechos |
+| Analisis de datos | La recopilacion, transformacion y organizacion de datos para sacar conclusiones, hacer predicciones y tomar decisiones informadas |
+| Analista de datos | Alguien que recopila, transforma y organiza datos para ayudar a tomar decisiones informadas |
+| Analitica de datos | La ciencia de los datos |
+| Base de datos | Una coleccion de datos almacenados en un sistema informatico |
+| Toma de decisiones basada en datos | Usar hechos para guiar la estrategia de negocio |
+| Ecosistema de datos | Los distintos elementos que interactuan entre si para producir, gestionar, almacenar, organizar, analizar y compartir datos |
+| Ciclo de vida del dato | La secuencia de fases que experimentan los datos: planificar, capturar, gestionar, analizar, archivar y destruir |
+| Ciencia de datos | Crear nuevas formas de modelar y entender lo desconocido usando datos en bruto |
+| Estrategia de datos | La gestion de las personas, procesos y herramientas usados en analisis de datos |
+| Equidad | Una cualidad del analisis de datos que no crea ni refuerza sesgos |
+| Formula | Un conjunto de instrucciones que realiza un calculo usando datos en una hoja de calculo |
+| Funcion | Un comando preestablecido que realiza automaticamente un proceso o tarea especifica usando datos en una hoja de calculo |
+| Analisis de brechas | Metodo para examinar y evaluar como funciona un proceso actualmente para llegar al lugar deseado en el futuro |
+| Pregunta orientadora | Una pregunta que lleva a las personas a responder de cierta manera |
+| Pregunta medible | Una pregunta cuyas respuestas pueden cuantificarse y evaluarse |
+| Observacion | Todos los atributos de algo contenidos en una fila de una tabla de datos |
+| Tipos de problemas | Los distintos tipos de tareas que encuentran los analistas de datos: hacer predicciones, categorizar cosas, detectar algo inusual, identificar temas, descubrir conexiones y encontrar patrones |
+| Consulta | La forma en que usamos SQL para comunicarnos con la base de datos |
+| Lenguaje de consulta | Un lenguaje de programacion que permite recuperar y manipular datos de una base de datos |
+| Pregunta relevante | Una pregunta que tiene significado para el problema a resolver |
+| Causa raiz | La razon por la que ocurre un problema |
+| Metodologia SMART | Un metodo para determinar la eficacia de una pregunta. Una pregunta eficaz es Especifica, Medible, Orientada a la accion, Relevante y Acotada en el tiempo |
+| Pregunta especifica | Una pregunta que es simple, significativa y centrada en un solo tema o unas pocas ideas estrechamente relacionadas |
+| Hoja de calculo | Un documento electronico en el que los datos se organizan en filas y columnas de una cuadricula |
+| Partes interesadas | Personas que han invertido tiempo, interes y recursos en los proyectos en los que trabajaras como analista de datos |
+| Pensamiento estructurado | El proceso de reconocer el problema o situacion actual, organizar la informacion disponible, revelar brechas y oportunidades, e identificar opciones |
+| Mentalidad tecnica | La capacidad de descomponer las cosas en pasos o piezas mas pequenas y trabajar con ellas de forma ordenada y logica |
+| Pregunta acotada en el tiempo | Una pregunta que especifica el periodo de tiempo que se va a estudiar |
+| Pregunta injusta | Una pregunta que hace suposiciones o es dificil de responder honestamente |
+| Visualizacion | La representacion grafica de informacion |
+
+**Glosario del modulo 2:**
+
+| Termino | Definicion |
+|---------|------------|
+| Algoritmo | Un proceso o conjunto de reglas a seguir para una tarea especifica |
+| Datos grandes | Conjuntos de datos grandes y complejos que tipicamente abarcan largos periodos de tiempo y permiten a los analistas abordar problemas empresariales de gran alcance |
+| Panel de control | Monitorea datos entrantes en tiempo real |
+| Toma de decisiones inspirada en datos | Explorar diferentes fuentes de datos para descubrir que tienen en comun |
+| Metrica | Un tipo de dato unico y cuantificable que se puede usar para la medicion |
+| Objetivo de metrica | Un objetivo medible establecido por una empresa y evaluado usando metricas |
+| Tabla dinamica | Una herramienta de resumen de datos usada en el procesamiento de datos para resumir, ordenar, reorganizar, agrupar, contar, sumar o promediar datos almacenados en una base de datos |
+| Grafico dinamico | Un grafico creado a partir de los campos de una tabla dinamica |
+| Datos cualitativos | Medidas subjetivas o explicativas de cualidades y caracteristicas |
+| Datos cuantitativos | Medidas especificas y objetivas de hechos numericos |
+| Informe | Una coleccion estatica de datos que se entrega periodicamente a las partes interesadas |
+| Retorno de la inversion (ROI) | Una formula disenada usando metricas que permite a una empresa saber que tan bien va una inversion |
+| Datos pequenos | Puntos de datos especificos que tipicamente involucran un corto periodo de tiempo y son utiles para la toma de decisiones diarias |
+
+**Glosario del modulo 3:**
+
+| Termino | Definicion |
+|---------|------------|
+| AVERAGE | Una funcion de hoja de calculo que devuelve un promedio de los valores de un rango seleccionado |
+| Borders | Lineas que se pueden agregar alrededor de dos o mas celdas en una hoja de calculo |
+| Referencia de celda | Una celda o rango de celdas en una hoja de calculo tipicamente usada en formulas y funciones |
+| COUNT | Una funcion de hoja de calculo que cuenta el numero de celdas en un rango que contienen valores |
+| Fill handle | Un cuadro en la esquina inferior derecha de una celda seleccionada que se puede arrastrar por celdas vecinas para continuar una instruccion |
+| Filtrado | El proceso de mostrar solo los datos que cumplen los criterios especificados |
+| Encabezado | La primera fila en una hoja de calculo que etiqueta el tipo de dato en cada columna |
+| Expresion matematica | Un calculo que involucra suma, resta, multiplicacion o division |
+| Funcion matematica | Una funcion que se usa como parte de una formula matematica |
+| MAX | Una funcion de hoja de calculo que devuelve el valor numerico mas grande de un rango de celdas |
+| MIN | Una funcion de hoja de calculo que devuelve el valor numerico mas pequeno de un rango de celdas |
+| Datos abiertos | Datos que estan disponibles para el publico |
+| Operador | Un simbolo que nombra el tipo de operacion o calculo a realizar |
+| Orden de operaciones | Usar parentesis para agrupar valores de hoja de calculo para clarificar el orden en que deben realizarse las operaciones |
+| Dominio del problema | El area especifica de analisis que engloba toda actividad que afecta o se ve afectada por el problema |
+| Rango | Una coleccion de dos o mas celdas en una hoja de calculo |
+| Alcance del trabajo (SOW) | Un esquema acordado de las tareas a realizar durante un proyecto |
+| Ordenacion | El proceso de organizar datos en un orden significativo |
+| SQL | Lenguaje de consulta estructurado |
+| SUM | Una funcion de hoja de calculo que suma los valores de un rango seleccionado de celdas |
+| Variables | Tipicamente la primera fila en una hoja de calculo que etiqueta el tipo de dato en cada columna |
+
+**Glosario del modulo 4:**
+
+| Termino | Definicion |
+|---------|------------|
+| Reencuadre | El proceso de replantear un problema o desafio y redirigirlo hacia una posible resolucion |
+| TLDR | Acronimo especifico de Google que significa "Demasiado largo, no lo lei" y recuerda a las personas ser claras y concisas en su comunicacion |
+| Tasa de rotacion | La tasa a la que los empleados dejan voluntariamente una empresa |
+
+---
+
 ## Actividades del curso
 
 **Modulo 1 — Ask Effective Questions:**
