@@ -140,6 +140,93 @@ COURSE 1: FOUNDATIONS
 
 ---
 
+## Glosarios por modulo
+
+**Glosario del modulo 1:**
+
+| Termino | Definicion |
+|---------|------------|
+| Analisis de datos | La recopilacion, transformacion y organizacion de datos para sacar conclusiones, hacer predicciones y tomar decisiones informadas |
+| Analista de datos | Persona que recopila, transforma y organiza datos para ayudar a tomar decisiones informadas |
+| Analitica de datos | La ciencia de los datos |
+| Datos | Una coleccion de hechos |
+| Ecosistema de datos | Los distintos elementos que interactuan entre si para producir, gestionar, almacenar, organizar, analizar y compartir datos |
+| Toma de decisiones basada en datos | Usar hechos para guiar la estrategia de negocio |
+| Ciencia de datos | Crear nuevas formas de modelar y entender lo desconocido usando datos en bruto |
+
+**Glosario del modulo 2:**
+
+| Termino | Definicion |
+|---------|------------|
+| Habilidades analiticas | Cualidades y caracteristicas asociadas con resolver problemas usando hechos |
+| Pensamiento analitico | Identificar y definir un problema y luego resolverlo usando datos de forma organizada y paso a paso |
+| Contexto | La condicion en la que algo existe o sucede |
+| Datos | Una coleccion de hechos |
+| Analisis de datos | La recopilacion, transformacion y organizacion de datos para sacar conclusiones, hacer predicciones y tomar decisiones informadas |
+| Analista de datos | Alguien que recopila, transforma y organiza datos para ayudar a tomar decisiones informadas |
+| Analitica de datos | La ciencia de los datos |
+| Diseno de datos | Como se organiza la informacion |
+| Toma de decisiones basada en datos | Usar hechos para guiar la estrategia de negocio |
+| Ecosistema de datos | Los distintos elementos que interactuan entre si para producir, gestionar, almacenar, organizar, analizar y compartir datos |
+| Ciencia de datos | Crear nuevas formas de modelar y entender lo desconocido usando datos en bruto |
+| Estrategia de datos | La gestion de las personas, procesos y herramientas usados en analisis de datos |
+| Analisis de brechas | Metodo para examinar y evaluar como funciona un proceso actualmente para llegar al lugar deseado en el futuro |
+| Causa raiz | La razon por la que ocurre un problema |
+| Mentalidad tecnica | La capacidad de descomponer las cosas en pasos o piezas mas pequenas y trabajar con ellas de forma ordenada y logica |
+| Visualizacion | La representacion grafica de informacion |
+
+**Glosario del modulo 3:**
+
+| Termino | Definicion |
+|---------|------------|
+| Habilidades analiticas | Cualidades y caracteristicas asociadas con usar hechos para resolver problemas |
+| Pensamiento analitico | Identificar y definir un problema y luego resolverlo usando datos de forma organizada y paso a paso |
+| Contexto | La condicion en la que algo existe o sucede |
+| Datos | Una coleccion de hechos |
+| Analisis de datos | La recopilacion, transformacion y organizacion de datos para sacar conclusiones, hacer predicciones y tomar decisiones informadas |
+| Analista de datos | Alguien que recopila, transforma y organiza datos para ayudar a tomar decisiones informadas |
+| Analitica de datos | La ciencia de los datos |
+| Visualizacion de datos | La representacion grafica de datos |
+| Base de datos | Una coleccion de datos almacenados en un sistema informatico |
+| Conjunto de datos | Una coleccion de datos relacionados |
+| Formula | Un conjunto de instrucciones que realiza un calculo usando datos en una hoja de calculo |
+| Funcion | Un comando preestablecido que realiza automaticamente un proceso o tarea usando datos en una hoja de calculo |
+| Analisis de brechas | Metodo para examinar y evaluar el estado actual de un proceso para identificar oportunidades de mejora en el futuro |
+| Lenguaje de consulta | Un lenguaje de programacion usado para comunicarse con una base de datos |
+| Causa raiz | La razon por la que ocurre un problema |
+| Partes interesadas | Personas que invierten tiempo y recursos en un proyecto y tienen interes en su resultado |
+| Mentalidad tecnica | La capacidad de descomponer las cosas en pasos o piezas mas pequenas y trabajar con ellas de forma ordenada y logica |
+
+**Glosario del modulo 4:**
+
+| Termino | Definicion |
+|---------|------------|
+| Habilidades analiticas | Cualidades y caracteristicas asociadas con resolver problemas usando hechos |
+| Pensamiento analitico | Identificar y definir un problema y luego resolverlo usando datos de forma organizada y paso a paso |
+| Atributo | Una caracteristica o cualidad de datos usada para etiquetar una columna en una tabla |
+| Tarea empresarial | La pregunta o problema que el analisis de datos resuelve para una empresa |
+| Contexto | La condicion en la que algo existe o sucede |
+| Datos | Una coleccion de hechos |
+| Analisis de datos | La recopilacion, transformacion y organizacion de datos para sacar conclusiones, hacer predicciones y tomar decisiones informadas |
+| Analista de datos | Alguien que recopila, transforma y organiza datos para ayudar a tomar decisiones informadas |
+| Analitica de datos | La ciencia de los datos |
+| Diseno de datos | Como se organiza la informacion |
+| Toma de decisiones basada en datos | Usar hechos para guiar la estrategia de negocio |
+| Base de datos | Una coleccion de datos almacenados en un sistema informatico |
+| Equidad | Garantizar que el analisis no crea ni refuerza sesgos |
+| Formula | Un conjunto de instrucciones que realiza un calculo especifico usando datos en una hoja de calculo |
+| Funcion | Un comando preestablecido que realiza automaticamente un proceso o tarea especifica usando datos en una hoja de calculo |
+| Analisis de brechas | Metodo para examinar y evaluar como funciona un proceso actualmente para llegar al lugar deseado en el futuro |
+| Observacion | Todos los atributos de algo contenidos en una fila de una tabla de datos |
+| Consulta | La forma en que usamos SQL para comunicarnos con la base de datos |
+| Lenguaje de consulta | Un lenguaje de programacion que permite recuperar y manipular datos de una base de datos |
+| Causa raiz | La razon por la que ocurre un problema |
+| Partes interesadas | Personas que han invertido tiempo y recursos en un proyecto y tienen interes en el resultado |
+| Mentalidad tecnica | La capacidad de descomponer las cosas en pasos o piezas mas pequenas y trabajar con ellas de forma ordenada y logica |
+| Visualizacion | La representacion grafica de informacion |
+
+---
+
 ## Actividades del curso
 
 **Modulo 1 — Introducing Data Analytics and Analytical Thinking:**
