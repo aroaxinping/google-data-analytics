@@ -278,6 +278,55 @@ es como darle nombre a un paso intermedio.
 
 ---
 
+## Glosarios por modulo
+
+**Glosario del modulo 1:**
+
+| Termino | Definicion |
+|---------|------------|
+| ORDER BY | Una clausula SQL que ordena los resultados devueltos en una consulta |
+
+**Glosario del modulo 2:**
+
+| Termino | Definicion |
+|---------|------------|
+| ROUND | Una funcion SQL que devuelve un numero redondeado a un cierto numero de decimales |
+
+**Glosario del modulo 3:**
+
+| Termino | Definicion |
+|---------|------------|
+| Referencia absoluta | Una referencia dentro de una funcion que esta bloqueada para que las filas y columnas no cambien si la funcion se copia |
+| Agregacion | El proceso de recopilar o reunir muchas piezas separadas en un todo |
+| Alias | Nombrar temporalmente una tabla o columna en una consulta para facilitar su lectura y escritura |
+| COUNT DISTINCT | Una funcion SQL que solo devuelve los valores distintos en un rango especificado |
+| Agregacion de datos | El proceso de recopilar datos de multiples fuentes y combinarlos en una sola coleccion resumida |
+| INNER JOIN | Una funcion SQL que devuelve registros con valores coincidentes en ambas tablas |
+| JOIN | Una funcion SQL que se usa para combinar filas de dos o mas tablas basandose en una columna relacionada |
+| LEFT JOIN | Una funcion SQL que devolvera todos los registros de la tabla izquierda y solo los registros coincidentes de la tabla derecha |
+| LIMIT | Una clausula SQL que especifica el numero maximo de registros devueltos en una consulta |
+| MATCH | Una funcion de hoja de calculo usada para localizar la posicion de un valor de busqueda especifico |
+| OUTER JOIN | Una funcion SQL que combina RIGHT y LEFT JOIN para devolver todos los registros coincidentes en ambas tablas |
+| RIGHT JOIN | Una funcion SQL que devolvera todos los registros de la tabla derecha y solo los registros coincidentes de la izquierda |
+| Subconsulta | Una consulta SQL que esta anidada dentro de una consulta mas grande |
+| VALUE | Una funcion de hoja de calculo que convierte una cadena de texto que representa un numero a un valor numerico |
+
+**Glosario del modulo 4:**
+
+| Termino | Definicion |
+|---------|------------|
+| Array | Una coleccion de valores en celdas de hoja de calculo |
+| Campo calculado | Un nuevo campo dentro de una tabla dinamica que realiza ciertos calculos basados en los valores de otros campos |
+| GROUP BY | Una clausula SQL que agrupa filas con los mismos valores de una tabla en filas de resumen |
+| Modulo | Un operador (%) que devuelve el resto cuando un numero se divide por otro |
+| Margen de beneficio | Un porcentaje que indica cuantos centavos de beneficio se han generado por cada dolar de venta |
+| Tabla de resumen | Una tabla usada para resumir informacion estadistica sobre datos |
+| SUMPRODUCT | Una funcion que multiplica arrays y devuelve la suma de esos productos |
+| Tabla temporal | Una tabla de base de datos que se crea y existe temporalmente en un servidor de base de datos |
+| Guiones bajos | Lineas usadas para subrayar palabras y conectar caracteres de texto |
+
+---
+
 ## Esquema resumido del curso
 
 ```
