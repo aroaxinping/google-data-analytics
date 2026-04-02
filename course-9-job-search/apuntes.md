@@ -162,6 +162,46 @@ COURSE 9: JOB SEARCH WITH AI
 
 ---
 
+## Glosarios por modulo
+
+**Glosario del modulo 1:**
+
+| Termino | Definicion |
+|---------|------------|
+| Career Dreamer | Una herramienta de Google que usa IA para ayudar a los usuarios a explorar opciones de carrera y generar una declaracion de identidad profesional a partir de su experiencia |
+| Declaracion de identidad profesional (identity statement) | Un parrafo corto que resume quien eres, de donde vienes profesionalmente y hacia que tipo de rol te diriges |
+| Habilidades transferibles | Competencias adquiridas en un contexto laboral o academico que son aplicables en roles o sectores distintos |
+
+**Glosario del modulo 2:**
+
+| Termino | Definicion |
+|---------|------------|
+| ATS (Applicant Tracking System) | Software usado por las empresas para filtrar automaticamente los CVs recibidos antes de que lleguen a un reclutador humano |
+| Carta de presentacion (cover letter) | Documento que acompana al CV en una candidatura y explica por que el candidato es adecuado para el puesto especifico |
+| Palabras clave | Terminos especificos extraidos de la descripcion de una oferta de trabajo que deben incluirse en el CV para superar los filtros ATS y atraer la atencion del reclutador |
+| Marca profesional (personal brand) | La imagen y reputacion profesional que un candidato proyecta en su CV, LinkedIn y portfolio online |
+
+**Glosario del modulo 3:**
+
+| Termino | Definicion |
+|---------|------------|
+| Llamada informativa | Una conversacion breve con un profesional del sector para obtener informacion sobre un rol o empresa, sin que sea una entrevista formal |
+| Establecimiento de redes (networking) | El proceso de construir y mantener relaciones profesionales que pueden facilitar oportunidades laborales |
+| Rastreador de aplicaciones | Una hoja de calculo o herramienta para registrar y hacer seguimiento de todas las candidaturas enviadas durante una busqueda de empleo |
+
+**Glosario del modulo 4:**
+
+| Termino | Definicion |
+|---------|------------|
+| Email de agradecimiento | Un mensaje breve enviado dentro de las 24 horas posteriores a una entrevista para agradecer el tiempo del entrevistador y reforzar los puntos clave discutidos |
+| Entrevista de caso | Un formato de entrevista en el que se presenta al candidato un problema analitico o de negocio para que lo resuelva en tiempo real |
+| Entrevista de comportamiento | Un formato de entrevista que evalua como el candidato ha manejado situaciones especificas en el pasado mediante preguntas del tipo "cuentame de una vez que..." |
+| Gemini Live | Una modalidad de Google Gemini que permite conversaciones en tiempo real de voz a voz, usada para simular entrevistas interactivas |
+| NotebookLM | Una herramienta de IA de Google que permite cargar documentos y generar preguntas, resumenes y analisis a partir de ellos |
+| Tecnica STAR | Metodo para estructurar respuestas a preguntas de entrevistas de comportamiento describiendo la Situacion, la Tarea, la Accion tomada y el Resultado obtenido |
+
+---
+
 ## Actividades del curso
 
 **Modulo 1 — Uncover Your Transferable Skills with AI:**
