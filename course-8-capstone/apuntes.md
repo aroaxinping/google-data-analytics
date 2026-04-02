@@ -167,6 +167,45 @@ El dataset de Cyclistic (Divvy Bikes) contiene estas columnas clave:
 
 ---
 
+## Glosarios por modulo
+
+**Glosario del modulo 1:**
+
+| Termino | Definicion |
+|---------|------------|
+| Caso de exito (case study) | Un escenario de problemas de datos que los analistas de datos usan para practicar, aprender y demostrar habilidades para empleadores potenciales |
+| Portfolio | Una coleccion de materiales que puede compartir con empleadores potenciales |
+| Hoja de ruta del aprendizaje | Una guia personalizada con los pasos necesarios para lograr una meta de aprendizaje o carrera |
+| Enunciado de la tarea empresarial | Una pregunta o problema que el analisis de datos responde para una empresa u organizacion |
+
+**Glosario del modulo 2:**
+
+| Termino | Definicion |
+|---------|------------|
+| Registro de limpieza | Un historial cronologico de las decisiones de limpieza tomadas sobre un conjunto de datos durante la fase de procesamiento |
+| Metodologia | Un conjunto de principios y tecnicas que guian la forma de abordar un problema o tarea de analisis |
+| Pregunta SMART | Una pregunta de analisis de datos que es especifica, medible, orientada a la accion, relevante y con limite de tiempo |
+| Sesgo de los datos | Cuando una preferencia sesga sistematicamente los resultados del analisis de datos en una cierta direccion |
+| Validacion | El proceso de confirmar que los datos y el analisis son correctos, completos y relevantes para responder la pregunta de negocio |
+
+**Glosario del modulo 3:**
+
+| Termino | Definicion |
+|---------|------------|
+| Elevator pitch | Una presentacion de aproximadamente 60 segundos de una persona, empresa, producto o propuesta de valor diseñada para despertar el interes del oyente |
+| Estructura STAR | Un marco para responder preguntas de entrevista describiendo la Situacion, la Tarea, la Accion tomada y el Resultado obtenido |
+| Entrevista tecnica | Un tipo de entrevista laboral en la que se evaluan las habilidades tecnicas del candidato mediante preguntas o ejercicios practicos |
+
+**Glosario del modulo 4:**
+
+| Termino | Definicion |
+|---------|------------|
+| IA generativa | Tecnologia de inteligencia artificial capaz de generar nuevo contenido (texto, codigo, imagenes) basandose en patrones aprendidos de grandes cantidades de datos |
+| Prompt | Una instruccion o pregunta que se le da a una herramienta de IA para obtener una respuesta o resultado especifico |
+| Insignia digital (badge) | Una certificacion digital verificable que acredita la consecucion de un logro educativo o profesional |
+
+---
+
 ## Actividades del curso
 
 **Modulo 1 — Learn About Capstone Basics:**
