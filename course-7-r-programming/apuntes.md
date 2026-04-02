@@ -282,6 +282,80 @@ COURSE 7: PYTHON
 
 ---
 
+## Glosarios por modulo
+
+**Glosario del modulo 1:**
+
+| Termino | Definicion |
+|---------|------------|
+| Argumento | La informacion que se necesita que una funcion de programacion realice su tarea predeterminada |
+| Comentario | Texto en una linea de codigo que no se ejecuta — anotaciones legibles para humanos que explican lo que hace el codigo |
+| Tipo de dato | Un atributo que describe como se almacena y usa un dato en un lenguaje de programacion |
+| Float | Un tipo de dato numerico con decimales |
+| Entero (int) | Un tipo de dato numerico sin decimales |
+| Jupyter Notebook | Un entorno de desarrollo interactivo que combina celdas de codigo ejecutable y texto Markdown en un mismo documento |
+| Celda Markdown | En Jupyter Notebook, una celda que contiene texto formateado, imagenes o ecuaciones — no se ejecuta como codigo |
+| Metodo | Una funcion que pertenece a un tipo de objeto especifico y se llama con la notacion punto |
+| Modulo | Un archivo de Python que contiene funciones, clases y variables que pueden importarse en otros programas |
+| Objeto | Una instancia de una clase en programacion orientada a objetos; almacena datos y comportamiento |
+| Programacion orientada a objetos (OOP) | Un paradigma de programacion que organiza el codigo en clases y objetos |
+| Paquete | Una coleccion de modulos Python agrupados para ofrecer funcionalidad adicional |
+| String (str) | Un tipo de dato de texto — una secuencia de caracteres entre comillas |
+| Variable | Un contenedor con nombre que almacena un valor en un programa; puede ser reasignado |
+
+**Glosario del modulo 2:**
+
+| Termino | Definicion |
+|---------|------------|
+| Condicion | Una expresion booleana que Python evalua como verdadera o falsa para determinar que bloque de codigo ejecutar |
+| Logica condicional | Un conjunto de instrucciones que se ejecutan solo cuando se cumple una condicion especifica |
+| def | Palabra clave de Python usada para definir una funcion |
+| elif | Palabra clave de Python que significa "de lo contrario si" — evalua una nueva condicion cuando la anterior es falsa |
+| else | Palabra clave de Python que ejecuta un bloque de codigo cuando ninguna condicion anterior fue verdadera |
+| Funcion | Un bloque de codigo reutilizable con un nombre que realiza una tarea especifica cuando se le llama |
+| if | Palabra clave de Python que inicia una instruccion condicional — ejecuta el bloque siguiente si la condicion es verdadera |
+| Operador logico | Operador que combina o invierte condiciones booleanas: and, or, not |
+| Operador de comparacion | Un operador que compara dos valores y devuelve un booleano: ==, !=, >, <, >=, <= |
+| Parametro | Una variable definida en la declaracion de una funcion que recibe un valor cuando la funcion se llama |
+| PEP 8 | La guia de estilo oficial de Python que define convenciones de formato de codigo como la indentacion y los nombres de variables |
+| return | Palabra clave de Python que especifica el valor que devuelve una funcion al codigo que la llamo |
+| Snake case | Convencion de nombres en Python donde las palabras se separan con guiones bajos: nombre_variable |
+
+**Glosario del modulo 3:**
+
+| Termino | Definicion |
+|---------|------------|
+| break | Palabra clave de Python que termina la ejecucion de un bucle antes de que la condicion normal de parada se cumpla |
+| continue | Palabra clave de Python que salta el resto del cuerpo del bucle en la iteracion actual y pasa a la siguiente |
+| Bucle for | Una instruccion de Python que itera sobre los elementos de una secuencia o coleccion |
+| Indexacion | Acceder a un elemento especifico de una secuencia usando su posicion numerica |
+| Iteracion | Una sola repeticion de las instrucciones dentro de un bucle |
+| range() | Funcion de Python que genera una secuencia de numeros enteros entre un inicio y un fin con un paso opcional |
+| Slicing | Extraer un subconjunto de una secuencia usando la notacion [inicio:fin:paso] |
+| Cadena de texto (string) | Una secuencia de caracteres en Python; los metodos de string permiten manipular texto |
+| Bucle while | Una instruccion de Python que repite un bloque de codigo mientras una condicion sea verdadera |
+
+**Glosario del modulo 4:**
+
+| Termino | Definicion |
+|---------|------------|
+| Array | Una estructura de datos de NumPy que almacena elementos del mismo tipo en una o mas dimensiones |
+| Boolean masking | Filtrar filas de un DataFrame de pandas usando una expresion booleana para seleccionar solo las filas donde la condicion es verdadera |
+| DataFrame | La estructura de datos principal de pandas — una tabla bidimensional con filas y columnas etiquetadas |
+| Diccionario | Una estructura de datos de Python que almacena pares clave-valor sin orden garantizado |
+| groupby | Un metodo de pandas que agrupa filas de un DataFrame segun los valores de una o mas columnas para aplicar funciones de agregacion |
+| Libreria | Una coleccion de paquetes y modulos que anade funcionalidad al lenguaje base de Python |
+| Lista | Una estructura de datos de Python que almacena elementos ordenados y modificables, que pueden ser de tipos diferentes |
+| merge() | Un metodo de pandas que combina dos DataFrames usando una o mas columnas comunes, equivalente a un JOIN de SQL |
+| NumPy | Una libreria de Python para computacion numerica que proporciona arrays de n dimensiones con operaciones matematicas eficientes |
+| pandas | Una libreria de Python para el analisis y manipulacion de datos que proporciona DataFrames y Series |
+| pip | El sistema de gestion de paquetes de Python para instalar y actualizar paquetes desde el repositorio PyPI |
+| Series | Una estructura de datos de pandas de una sola dimension con un indice; equivale a una columna de un DataFrame |
+| Set | Una estructura de datos de Python que almacena elementos unicos sin orden garantizado |
+| Tupla | Una estructura de datos de Python que almacena elementos ordenados e inmutables |
+
+---
+
 ## Actividades del curso
 
 **Modulo 1 — Hello, Python!:**
