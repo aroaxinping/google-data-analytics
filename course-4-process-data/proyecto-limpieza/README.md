@@ -133,3 +133,23 @@ ORDER BY n DESC;
 Los datos sucios no solo dan resultados incorrectos — dan resultados que
 **parecen** correctos. Eso es mucho más peligroso. La verificación del
 paso 4 no es opcional: es lo que te da confianza para analizar.
+
+---
+
+## Archivo de verificacion
+
+`verificacion.sql` contiene queries especializadas para auditar la tabla
+limpia despues de ejecutar `limpieza.sql`. Cada bloque verifica un
+problema especifico:
+
+| Verificacion | Que comprueba | Resultado esperado |
+|---|---|---|
+| 1 — Conteo antes/despues | Cuantos registros se eliminaron | Reduccion coherente con duplicados + invalidos |
+| 2 — Duplicados | Que order_id sea unico | 0 filas |
+| 3 — Nulos criticos | Campos obligatorios sin NULL | Todos los contadores en 0 |
+| 4 — Precios validos | Que sale_price sea positivo | 0 filas con precio <= 0 |
+| 5 — Categorias consistentes | Que no haya variantes del mismo texto | Una fila por categoria |
+| 6 — Regiones estandarizadas | Que region este en UPPER() | Solo mayusculas |
+| 7 — Fechas coherentes | Sin fechas en el futuro ni fuera de rango | fechas_en_el_futuro = 0 |
+| 8 — Espacios en nombres | Que TRIM() e INITCAP() se aplicaron bien | 0 filas |
+| Resumen ejecutivo | Todos los checks en una sola query | Todos los valores = 0 |
