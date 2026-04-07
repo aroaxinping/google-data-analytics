@@ -114,10 +114,10 @@ source("setup.R")
 
 ---
 
-## Course 6 — Tableau (pendiente)
+## Course 6 — Tableau
 
-El dashboard no está construido todavía. Cuando esté:
-1. Se necesita Tableau Public Desktop (gratuito)
+El diseño del dashboard está documentado en `proyecto-tableau/README.md`.
+Para construirlo:
+1. Descargar Tableau Public Desktop (gratuito)
 2. Conectar el CSV de Netflix como fuente de datos
-3. Seguir el diseño documentado en `proyecto-tableau/README.md`
-4. Publicar en Tableau Public y añadir el enlace al README
+3. Seguir el diseño documentado (vistas, paleta, filtros)
