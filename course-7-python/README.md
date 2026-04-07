@@ -2,7 +2,7 @@
 
 **Duracion:** 27 horas | **Modulos:** 4 | **Fase del proceso:** (Transversal)
 
-> Nota: el certificado se actualizo en 2024 y cambio este curso de R a Python. La carpeta se llama "course-7-r-programming" por razones historicas.
+> Nota: el certificado se actualizo en 2024 y cambio este curso de R a Python. La carpeta se llama "course-7-python" por razones historicas.
 
 Introduccion a Python para el analisis de datos: desde la sintaxis basica hasta el uso de pandas y NumPy para manipular, limpiar y visualizar datos. Es el curso mas largo del certificado.
 

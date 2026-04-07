@@ -4,7 +4,7 @@
 **Modulos:** 4
 
 > Nota: el certificado se actualizo en 2024 y cambio el Course 7 de R a Python.
-> La carpeta de este repositorio se llama "course-7-r-programming" porque se
+> La carpeta de este repositorio se llama "course-7-python" porque se
 > creo antes de ese cambio. El ejercicio practico (analisis-netflix.Rmd) usa R,
 > pero el temario oficial del curso cubre Python.
 

@@ -55,7 +55,7 @@ google-data-analytics/
 │   └── proyecto-analisis/            <- analisis-netflix.sql
 ├── course-6-visualize-data/
 │   └── tableau-dashboards/
-├── course-7-r-programming/
+├── course-7-python/
 │   ├── modulo-1-python-basico/       <- ejercicios.py
 │   ├── modulo-2-funciones-condicionales/ <- ejercicios.py
 │   ├── modulo-3-bucles-strings/      <- ejercicios.py
