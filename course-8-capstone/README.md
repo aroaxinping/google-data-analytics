@@ -11,7 +11,26 @@ El proyecto final del certificado. No hay nuevo contenido tecnico: es aplicar to
 - Modulo 3: Use Your Portfolio — como presentar el case study en entrevistas, estructura STAR y negociacion salarial
 - Modulo 4: Put Your Certificate to Work — IA generativa para el analisis, reclamar el badge de Google y recursos post-certificacion
 
-## Archivos
+## Proyectos
+
+Este capstone incluye dos case studies:
+
+**1. Cyclistic Bike-Share** — caso estudio oficial del certificado
+- Herramienta: R (ggplot2, tidyverse)
+- Pregunta: como se diferencian los usuarios casuales de los miembros anuales?
+- Carpeta: `cyclistic-case-study/`
+
+**2. Basic Fit — Expansion Europea** — analisis propio, voluntario
+- Herramienta: Python (pandas, matplotlib)
+- Datos: informes anuales publicos de Basic Fit (Euronext: BFIT)
+- Pregunta: que mercados impulsan el crecimiento y donde esta el mayor potencial?
+- Carpeta: `basic-fit-analysis/`
+
+El analisis de Basic Fit no es parte del certificado — es un proyecto adicional sobre
+una empresa real que uso, para aplicar el mismo framework a datos publicos de una
+compania cotizada europea.
+
+## Otros archivos
 
 - `apuntes.md` — notas del curso con el framework del capstone, analisis del caso Cyclistic y errores comunes
 
