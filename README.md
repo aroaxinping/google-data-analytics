@@ -17,6 +17,19 @@ Para instrucciones de instalación y cómo replicar cada proyecto, ver [SETUP.md
 
 ---
 
+## Proyectos destacados
+
+| Proyecto | Herramienta | Descripcion |
+|----------|-------------|-------------|
+| [Basic Fit — Expansion Europea](./course-8-capstone/basic-fit-analysis/) | Python | Analisis de expansion por mercado con datos reales de annual reports (Euronext: BFIT). Penetracion por pais, potencial de crecimiento, recomendaciones estrategicas |
+| [Cyclistic Bike-Share Case Study](./course-8-capstone/cyclistic-case-study/) | R | Capstone oficial del certificado. Analisis de comportamiento de usuarios casuales vs miembros anuales |
+| [Analisis SQL Netflix](./course-5-analyze-data/proyecto-analisis/) | SQL / BigQuery | 7 queries ejecutables sobre el catalogo de Netflix: JOINs, window functions, CTEs, UNNEST |
+| [Limpieza de datos e-commerce](./course-4-process-data/proyecto-limpieza/) | SQL / BigQuery | Pipeline completo de limpieza: deteccion de duplicados, nulos, tipos incorrectos y verificacion |
+| [Visualizaciones Netflix](./course-6-visualize-data/proyecto-python/) | Python | 4 visualizaciones ejecutables: donut, area apilada, barras horizontales, treemap |
+| [Ejercicios SQL avanzado](./course-5-analyze-data/) | SQL / BigQuery | 4 modulos con ejercicios ejecutables: ORDER BY, JOINs, window functions, CTEs |
+
+---
+
 ## Progreso
 
 | Curso | Titulo | Contenido en el repo |
@@ -26,9 +39,9 @@ Para instrucciones de instalación y cómo replicar cada proyecto, ver [SETUP.md
 | 3 | Prepare Data for Exploration | Apuntes, glosario, SQL básico, Kaggle datasets, ROCCC |
 | 4 | Process Data from Dirty to Clean | Apuntes, glosario, limpieza SQL + verificación |
 | 5 | Analyze Data to Answer Questions | Apuntes, glosario, ejercicios SQL por módulo, análisis Netflix |
-| 6 | Share Data Through the Art of Visualization | Apuntes, glosario, documentación Tableau |
+| 6 | Share Data Through the Art of Visualization | Apuntes, glosario, notebook Python con visualizaciones Netflix (ejecutable), documentación Tableau |
 | 7 | Data Analysis with Python | Apuntes, glosario, ejercicios Python por módulo, análisis Netflix en R |
-| 8 | Google Data Analytics Capstone | Apuntes, glosario, Cyclistic case study (R Markdown) |
+| 8 | Google Data Analytics Capstone | Apuntes, glosario, Cyclistic case study (R), Basic Fit expansion analysis (Python — datos reales) |
 | 9 | Accelerate Your Job Search with AI | Apuntes, glosario |
 
 ---
@@ -54,15 +67,17 @@ google-data-analytics/
 │   ├── modulo-4-calculos/            <- ejercicios.sql (CTEs, tablas temporales)
 │   └── proyecto-analisis/            <- analisis-netflix.sql
 ├── course-6-visualize-data/
-│   └── tableau-dashboards/
+│   ├── proyecto-python/              <- notebook Python con 4 visualizaciones Netflix
+│   └── proyecto-tableau/
 ├── course-7-python/
 │   ├── modulo-1-python-basico/       <- ejercicios.py
 │   ├── modulo-2-funciones-condicionales/ <- ejercicios.py
 │   ├── modulo-3-bucles-strings/      <- ejercicios.py
 │   ├── modulo-4-estructuras-pandas/  <- ejercicios.py
-│   └── proyecto-r/                   <- analisis-netflix.Rmd
+│   └── analisis-r-netflix/           <- analisis extra en R (anterior version del curso)
 ├── course-8-capstone/
-│   └── cyclistic-case-study/         <- cyclistic-analysis.Rmd
+│   ├── cyclistic-case-study/         <- cyclistic-analysis.Rmd
+│   └── basic-fit-analysis/           <- expansion europea con datos reales (Python)
 └── course-9-job-search/
 ```
 
