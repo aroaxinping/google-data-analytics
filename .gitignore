@@ -1,0 +1,42 @@
+# Datasets — nunca subir datos
+*.csv
+*.zip
+*.xlsx
+*.xls
+*.tsv
+
+# Outputs compilados
+*.html
+*.pdf
+!SETUP.md  # excepcion: SETUP.md es un archivo nuestro
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+env/
+venv/
+.ipynb_checkpoints/
+*.pyc
+
+# Jupyter outputs temporales
+.jupyter/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
