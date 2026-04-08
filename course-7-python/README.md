@@ -16,7 +16,7 @@ Introduccion a Python para el analisis de datos: desde la sintaxis basica hasta 
 ## Archivos
 
 - `apuntes.md` — notas completas del curso con Python, pandas, NumPy y comparativas con SQL
-- `analisis-netflix.Rmd` — ejercicio practico en R (anterior version del curso)
+- `analisis-r-netflix/` — ejercicio practico en R (anterior version del curso)
 
 ## Glosario del curso
 

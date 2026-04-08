@@ -75,7 +75,7 @@ Mismos pasos que Course 4 pero con el dataset de Netflix.
 git clone https://github.com/aroaxinping/google-data-analytics.git
 
 # 2. Ir a la carpeta
-cd google-data-analytics/course-7-python/proyecto-r/
+cd google-data-analytics/course-7-python/analisis-r-netflix/
 
 # 3. Descargar netflix_titles.csv de Kaggle y colocarlo aquí
 
