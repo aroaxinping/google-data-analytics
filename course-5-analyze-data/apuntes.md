@@ -276,56 +276,6 @@ ORDER BY diferencia_vs_media DESC;
 Los CTEs hacen las queries largas mucho mas legibles — cada bloque WITH
 es como darle nombre a un paso intermedio.
 
-**QUALIFY — filtrar resultados de window functions sin subquery:**
-
-```sql
--- Sin QUALIFY: necesitas una subquery o CTE para filtrar por window function
-SELECT * FROM (
-  SELECT nombre, ventas, RANK() OVER (ORDER BY ventas DESC) AS ranking
-  FROM tabla
-)
-WHERE ranking <= 3;
-
--- Con QUALIFY: filtras directamente en la misma query
-SELECT nombre, ventas, RANK() OVER (ORDER BY ventas DESC) AS ranking
-FROM tabla
-QUALIFY ranking <= 3;
--- Mucho mas compacto. Disponible en BigQuery, Snowflake, DuckDB.
--- No disponible en PostgreSQL ni MySQL.
-```
-
-**ARRAY_AGG — agregar valores de multiples filas en un array:**
-
-```sql
--- Combinar todos los generos de cada pelicula en una lista
-SELECT
-  titulo,
-  ARRAY_AGG(genero ORDER BY genero) AS lista_generos
-FROM peliculas
-GROUP BY titulo;
--- Output: { titulo: "Inception", lista_generos: ["Accion", "SciFi", "Thriller"] }
-
--- Util para ver todos los valores de un grupo sin perder informacion
--- Alternativa a STRING_AGG cuando necesitas un array en lugar de texto
-```
-
-**FORMAT() — formatear numeros y fechas en el output:**
-
-```sql
--- Formatear numeros con separadores de miles y decimales
-SELECT FORMAT('%,.2f', total_ventas) AS ventas_formato
-FROM resumen;
--- Output: "1,234,567.89" en lugar de 1234567.89
-
--- Formatear fechas
-SELECT FORMAT_DATE('%d/%m/%Y', fecha) AS fecha_formato
-FROM tabla;
--- Output: "15/03/2024"
-
--- Util para reportes y presentaciones donde el formato visual importa
--- No usar en columnas que seguiran siendo procesadas: FORMAT devuelve STRING
-```
-
 ---
 
 ## Glosarios por modulo
@@ -574,6 +524,65 @@ VLOOKUP en Sheets cuando el dataset es pequeno y ya tienes los datos en hojas de
 - Las tablas dinamicas de Sheets de este modulo 4 son el equivalente visual de GROUP BY en SQL, que se exploro tambien en el curso 2. El concepto de agrupar y agregar es el mismo en todas las herramientas.
 - Los hallazgos que se obtienen aqui con SQL son los que se visualizan en el curso 6 con Tableau. El output de las queries de este curso es el input de las visualizaciones del siguiente.
 - En el capstone del curso 8, todas las habilidades de este curso (JOINs, GROUP BY, window functions, CTEs) se usan combinadas para el analisis del caso Cyclistic.
+
+---
+
+---
+
+## Mas alla del certificado
+
+Estos conceptos no forman parte del temario oficial del curso pero son directamente
+utiles en el trabajo real. Los incluyo como extension voluntaria.
+
+### QUALIFY — filtrar resultados de window functions sin subquery
+
+```sql
+-- Sin QUALIFY: necesitas una subquery o CTE para filtrar por window function
+SELECT * FROM (
+  SELECT nombre, ventas, RANK() OVER (ORDER BY ventas DESC) AS ranking
+  FROM tabla
+)
+WHERE ranking <= 3;
+
+-- Con QUALIFY: filtras directamente en la misma query
+SELECT nombre, ventas, RANK() OVER (ORDER BY ventas DESC) AS ranking
+FROM tabla
+QUALIFY ranking <= 3;
+-- Mucho mas compacto. Disponible en BigQuery, Snowflake, DuckDB.
+-- No disponible en PostgreSQL ni MySQL.
+```
+
+### ARRAY_AGG — agregar valores de multiples filas en un array
+
+```sql
+-- Combinar todos los generos de cada pelicula en una lista
+SELECT
+  titulo,
+  ARRAY_AGG(genero ORDER BY genero) AS lista_generos
+FROM peliculas
+GROUP BY titulo;
+-- Output: { titulo: "Inception", lista_generos: ["Accion", "SciFi", "Thriller"] }
+
+-- Util para ver todos los valores de un grupo sin perder informacion
+-- Alternativa a STRING_AGG cuando necesitas un array en lugar de texto
+```
+
+### FORMAT() — formatear numeros y fechas en el output
+
+```sql
+-- Formatear numeros con separadores de miles y decimales
+SELECT FORMAT('%,.2f', total_ventas) AS ventas_formato
+FROM resumen;
+-- Output: "1,234,567.89" en lugar de 1234567.89
+
+-- Formatear fechas
+SELECT FORMAT_DATE('%d/%m/%Y', fecha) AS fecha_formato
+FROM tabla;
+-- Output: "15/03/2024"
+
+-- Util para reportes y presentaciones donde el formato visual importa
+-- No usar en columnas que seguiran siendo procesadas: FORMAT devuelve STRING
+```
 
 ---
 
