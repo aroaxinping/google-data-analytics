@@ -144,6 +144,39 @@ CONCAT(col1, ' ', col2)           -- unir textos
 LENGTH(col)                        -- longitud del texto
 ```
 
+**Funciones avanzadas de limpieza:**
+
+```sql
+-- REGEXP_REPLACE: reemplazar patrones con expresiones regulares
+-- Util cuando REPLACE no basta porque el patron varia
+SELECT
+  REGEXP_REPLACE(telefono, r'[^0-9]', '') AS telefono_limpio
+FROM tabla;
+-- Elimina todo lo que no sea un digito (parentesis, guiones, espacios)
+
+-- IFNULL: reemplazar NULL por un valor por defecto
+-- Alternativa mas compacta a COALESCE cuando solo hay un valor posible
+SELECT IFNULL(region, 'Sin region') AS region
+FROM tabla;
+
+-- NULLIF: devuelve NULL si dos valores son iguales
+-- Util para convertir valores "vacio" o "N/A" en NULL reales
+SELECT NULLIF(categoria, '') AS categoria   -- convierte string vacio en NULL
+FROM tabla;
+-- Caso tipico: columnas importadas con "N/A" o "0" como placeholder
+SELECT NULLIF(precio, 0) AS precio_real     -- 0 probablemente significa "sin dato"
+FROM tabla;
+
+-- SAFE_DIVIDE: division que devuelve NULL en lugar de error cuando divisor = 0
+-- IMPRESCINDIBLE en metricas de ratio para evitar errores de division por cero
+SELECT
+  ventas,
+  total_clientes,
+  SAFE_DIVIDE(ventas, total_clientes) AS ventas_por_cliente
+FROM tabla;
+-- Sin SAFE_DIVIDE: si total_clientes = 0, la query falla con error
+```
+
 ---
 
 ## Modulo 4: Verify and Report on Cleaning Results

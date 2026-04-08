@@ -111,6 +111,54 @@ else:
 and, or, not   # operadores logicos
 ```
 
+**Manejo de errores — try/except:**
+```python
+# Sin try/except: si la operacion falla, el programa se detiene
+resultado = int("texto")   # ValueError — el programa para
+
+# Con try/except: el programa continua y gestiona el error
+try:
+    resultado = int(valor)
+except ValueError:
+    resultado = 0   # valor por defecto si la conversion falla
+
+# Capturar varios tipos de error
+try:
+    df = pd.read_csv("datos.csv")
+    resultado = df["precio"].mean()
+except FileNotFoundError:
+    print("El archivo no existe")
+except KeyError:
+    print("La columna 'precio' no existe en el DataFrame")
+
+# Cuando usarlo en analisis de datos:
+# - Al cargar archivos que pueden no existir
+# - Al convertir tipos de dato en columnas con valores inconsistentes
+# - Al hacer peticiones a APIs que pueden fallar
+```
+
+**Funciones lambda:**
+```python
+# Lambda: funcion anonima de una sola expresion
+# Sintaxis: lambda parametros: expresion
+
+# Sin lambda
+def doblar(x):
+    return x * 2
+
+# Con lambda — equivalente en una linea
+doblar = lambda x: x * 2
+
+# Uso tipico en pandas: apply() con una transformacion puntual
+df["precio_iva"] = df["precio"].apply(lambda x: x * 1.21)
+
+# Con dos parametros
+sumar = lambda a, b: a + b
+
+# Cuando usarlas: transformaciones simples que no vale la pena
+# nombrar con def. Para logica compleja, siempre def.
+```
+
 ---
 
 ## Modulo 3: Loops and Strings
@@ -234,6 +282,69 @@ df.sort_values("ventas", ascending=False)
 
 # Nueva columna
 df["beneficio"] = df["ventas"] - df["costes"]
+```
+
+**Comprehensions — forma compacta de construir listas y diccionarios:**
+
+```python
+# List comprehension
+# Sin comprehension
+cuadrados = []
+for n in range(10):
+    cuadrados.append(n ** 2)
+
+# Con list comprehension — equivalente en una linea
+cuadrados = [n ** 2 for n in range(10)]
+
+# Con condicion
+pares = [n for n in range(20) if n % 2 == 0]
+
+# Aplicado a datos: limpiar una lista de strings
+nombres = ["  Ana  ", " Luis", "Eva  "]
+nombres_limpios = [nombre.strip() for nombre in nombres]
+
+# Dict comprehension
+# Crear diccionario a partir de dos listas
+claves = ["a", "b", "c"]
+valores = [1, 2, 3]
+mi_dict = {k: v for k, v in zip(claves, valores)}
+# {"a": 1, "b": 2, "c": 3}
+
+# Cuando usarlos: transformaciones simples sobre listas o diccionarios
+# Para logica compleja, un for loop clasico es mas legible
+```
+
+**merge() vs join() en pandas:**
+
+```python
+# merge() — el equivalente de SQL JOIN, mas flexible
+# Se puede unir por cualquier columna de cualquier DataFrame
+
+df_resultado = pd.merge(
+    df_ventas,
+    df_clientes,
+    on="cliente_id",       # columna comun
+    how="inner"            # tipo: inner, left, right, outer
+)
+
+# Columnas con nombres distintos en cada tabla
+df_resultado = pd.merge(
+    df_ventas,
+    df_clientes,
+    left_on="id_cliente",  # nombre en df_ventas
+    right_on="cliente_id", # nombre en df_clientes
+    how="left"
+)
+
+# join() — une por el indice del DataFrame
+# Mas rapido pero menos flexible — requiere que la clave este en el indice
+
+df_clientes_idx = df_clientes.set_index("cliente_id")
+df_resultado = df_ventas.join(df_clientes_idx, on="cliente_id")
+
+# Cuando usar cada uno:
+# merge(): cuando las claves son columnas normales (la mayoria de casos)
+# join(): cuando los datos ya estan indexados y la velocidad importa
 ```
 
 **Visualizacion basica con pandas/matplotlib:**
