@@ -1,6 +1,6 @@
 # Course 3 — Prepare Data for Exploration
 
-**Duracion:** 19 horas | **Modulos:** 4 | **Fase del proceso:** Prepare
+**Duracion:** 19 horas | **Modulos:** 5 | **Fase del proceso:** Prepare
 
 La fase Prepare del proceso de analisis: como se generan y estructuran los datos, como evaluarlos con el framework ROCCC, como acceder a bases de datos con SQL basico en BigQuery, y como organizar y proteger datos correctamente.
 

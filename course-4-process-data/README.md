@@ -58,7 +58,6 @@ Todos los terminos definidos a lo largo del curso, ordenados alfabeticamente.
 | Intervalo de confianza | Un rango de valores que indica que tan probable es que una estimacion estadistica refleje la poblacion |
 | LEFT | Una funcion que devuelve un numero establecido de caracteres del lado izquierdo de una cadena de texto |
 | LEN | Una funcion que devuelve la longitud de una cadena de texto contando el numero de caracteres que contiene |
-| LEN | Una funcion que devuelve la longitud de una cadena de texto contando el numero de caracteres que contiene |
 | Longitud | El numero de caracteres en una cadena de texto |
 | Longitud de campo | Una herramienta para determinar cuantos caracteres pueden ingresarse en un campo de hoja de calculo |
 | Manipulacion de datos | El proceso de cambiar datos para hacerlos mas organizados y faciles de leer |

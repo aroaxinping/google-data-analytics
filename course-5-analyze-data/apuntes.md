@@ -527,8 +527,6 @@ VLOOKUP en Sheets cuando el dataset es pequeno y ya tienes los datos en hojas de
 
 ---
 
----
-
 ## Mas alla del certificado
 
 Estos conceptos no forman parte del temario oficial del curso pero son directamente

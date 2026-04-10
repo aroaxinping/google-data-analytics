@@ -25,7 +25,7 @@ Para instrucciones de instalación y cómo replicar cada proyecto, ver [SETUP.md
 | [Cyclistic Bike-Share Case Study](./course-8-capstone/cyclistic-case-study/) | R | Capstone oficial del certificado. Analisis de comportamiento de usuarios casuales vs miembros anuales |
 | [Analisis SQL Netflix](./course-5-analyze-data/proyecto-analisis/) | SQL / BigQuery | 7 queries ejecutables sobre el catalogo de Netflix: JOINs, window functions, CTEs, UNNEST |
 | [Limpieza de datos e-commerce](./course-4-process-data/proyecto-limpieza/) | SQL / BigQuery | Pipeline completo de limpieza: deteccion de duplicados, nulos, tipos incorrectos y verificacion |
-| [Visualizaciones Netflix](./course-6-visualize-data/proyecto-python/) | Python | 4 visualizaciones ejecutables: donut, area apilada, barras horizontales, treemap |
+| [Visualizaciones Netflix](./course-6-visualize-data/proyecto-tableau/) | Tableau | 4 visualizaciones ejecutables: donut, area apilada, barras horizontales, treemap |
 | [Ejercicios SQL avanzado](./course-5-analyze-data/) | SQL / BigQuery | 4 modulos con ejercicios ejecutables: ORDER BY, JOINs, window functions, CTEs |
 
 ---
@@ -67,8 +67,8 @@ google-data-analytics/
 │   ├── modulo-4-calculos/            <- ejercicios.sql (CTEs, tablas temporales)
 │   └── proyecto-analisis/            <- analisis-netflix.sql
 ├── course-6-visualize-data/
-│   ├── proyecto-python/              <- notebook Python con 4 visualizaciones Netflix
-│   └── proyecto-tableau/
+│   ├── proyecto-tableau/             <- diseño de dashboard Netflix (donut, area, barras, treemap)
+│   └── tableau-dashboards/
 ├── course-7-python/
 │   ├── modulo-1-python-basico/       <- ejercicios.py
 │   ├── modulo-2-funciones-condicionales/ <- ejercicios.py

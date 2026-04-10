@@ -68,7 +68,7 @@ Mismos pasos que Course 4 pero con el dataset de Netflix.
 
 ---
 
-## Course 7 — R Markdown
+## Course 7 — R (analisis-r-netflix)
 
 ```bash
 # 1. Clonar el repo

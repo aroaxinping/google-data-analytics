@@ -417,7 +417,7 @@ Mapa de calor cuando quieres ver patrones en una matriz de datos (actividad por 
 
 ## Errores comunes
 
-- **Usar el grafico que queda mas bonito en lugar del que comunica mejor:** la estetica es secundaria a la claridad. Un grafico de barras simple que comunica el hallazgoclaramente es mejor que un grafico 3D visualmente llamativo que confunde al lector.
+- **Usar el grafico que queda mas bonito en lugar del que comunica mejor:** la estetica es secundaria a la claridad. Un grafico de barras simple que comunica el hallazgo claramente es mejor que un grafico 3D visualmente llamativo que confunde al lector.
 - **Pie charts con mas de 5-6 categorias:** el ojo no distingue angulos similares. Un pie chart con 10 categorias es inutil — nadie puede decir que diferencia hay entre una categoria al 8% y otra al 11%.
 - **Presentar un numero sin contexto:** "las ventas son 50.000" no significa nada sin saber si eso es bueno o malo, si sube o baja respecto al periodo anterior, y si esta por encima o por debajo del objetivo. Todo numero necesita una comparativa para tener significado.
 - **Usar rojo y verde como unico diferenciador:** el daltonismo rojo-verde afecta al 8% de los hombres. Combinar siempre el color con otra cue visual (forma, patron, etiqueta) para que la visualizacion sea accesible.
