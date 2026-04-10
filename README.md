@@ -25,7 +25,7 @@ Para instrucciones de instalación y cómo replicar cada proyecto, ver [SETUP.md
 | [Cyclistic Bike-Share Case Study](./course-8-capstone/cyclistic-case-study/) | R | Capstone oficial del certificado. Analisis de comportamiento de usuarios casuales vs miembros anuales |
 | [Analisis SQL Netflix](./course-5-analyze-data/proyecto-analisis/) | SQL / BigQuery | 7 queries ejecutables sobre el catalogo de Netflix: JOINs, window functions, CTEs, UNNEST |
 | [Limpieza de datos e-commerce](./course-4-process-data/proyecto-limpieza/) | SQL / BigQuery | Pipeline completo de limpieza: deteccion de duplicados, nulos, tipos incorrectos y verificacion |
-| [Visualizaciones Netflix](./course-6-visualize-data/proyecto-tableau/) | Tableau | 4 visualizaciones ejecutables: donut, area apilada, barras horizontales, treemap |
+| [Visualizaciones Netflix — diseno](./course-6-visualize-data/proyecto-tableau/) | Tableau | Diseno documentado de dashboard Netflix: 4 vistas, paleta, criterios de eleccion de grafico y principios aplicados |
 | [Ejercicios SQL avanzado](./course-5-analyze-data/) | SQL / BigQuery | 4 modulos con ejercicios ejecutables: ORDER BY, JOINs, window functions, CTEs |
 
 ---
@@ -39,7 +39,7 @@ Para instrucciones de instalación y cómo replicar cada proyecto, ver [SETUP.md
 | 3 | Prepare Data for Exploration | Apuntes, glosario, SQL básico, Kaggle datasets, ROCCC |
 | 4 | Process Data from Dirty to Clean | Apuntes, glosario, limpieza SQL + verificación |
 | 5 | Analyze Data to Answer Questions | Apuntes, glosario, ejercicios SQL por módulo, análisis Netflix |
-| 6 | Share Data Through the Art of Visualization | Apuntes, glosario, notebook Python con visualizaciones Netflix (ejecutable), documentación Tableau |
+| 6 | Share Data Through the Art of Visualization | Apuntes, glosario, diseno de dashboard Netflix en Tableau |
 | 7 | Data Analysis with Python | Apuntes, glosario, ejercicios Python por módulo, análisis Netflix en R |
 | 8 | Google Data Analytics Capstone | Apuntes, glosario, Cyclistic case study (R), Basic Fit expansion analysis (Python — datos reales) |
 | 9 | Accelerate Your Job Search with AI | Apuntes, glosario |
