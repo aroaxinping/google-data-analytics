@@ -285,12 +285,23 @@ es como darle nombre a un paso intermedio.
 | Termino | Definicion |
 |---------|------------|
 | ORDER BY | Una clausula SQL que ordena los resultados devueltos en una consulta |
+| LIMIT | Una clausula SQL que especifica el numero maximo de registros devueltos en una consulta |
+| CASE | Una instruccion SQL que devuelve valores distintos segun condiciones especificadas, equivalente a un if/then/else en SQL |
+| WHERE | La clausula de una consulta que especifica los criterios que deben cumplir los registros devueltos |
+| Segmentacion | El proceso de agrupar datos en categorias o rangos definidos para facilitar el analisis comparativo |
+| Alias | Nombrar temporalmente una tabla o columna en una consulta para facilitar su lectura y escritura |
 
 **Glosario del modulo 2:**
 
 | Termino | Definicion |
 |---------|------------|
 | ROUND | Una funcion SQL que devuelve un numero redondeado a un cierto numero de decimales |
+| CAST | Una funcion SQL que convierte datos de un tipo a otro (texto a numero, texto a fecha, etc.) |
+| SAFE_CAST | Variante de CAST en BigQuery que devuelve NULL en lugar de error cuando la conversion falla |
+| FORMAT_DATE | Una funcion de BigQuery que devuelve una fecha en el formato de texto especificado |
+| EXTRACT | Una funcion SQL que extrae una parte especifica de una fecha (anio, mes, dia, hora) |
+| DATE_DIFF | Una funcion de BigQuery que calcula la diferencia entre dos fechas en la unidad especificada |
+| CONCAT | Una funcion SQL que une dos o mas cadenas de texto en una sola |
 
 **Glosario del modulo 3:**
 

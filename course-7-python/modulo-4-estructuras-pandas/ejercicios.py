@@ -23,7 +23,7 @@ print(f"Ultima venta:  {ventas[-1]}")     # 2100 — indice negativo cuenta desd
 
 # Slicing: ventas[inicio:fin] — incluye inicio, excluye fin
 print(f"Primeras 3: {ventas[:3]}")        # [1200, 980, 1450]
-print(f"Ultimas 2:  {ventas[-2:]}")       # [2100] ... espera, ultimas 2: [760, 2100]
+print(f"Ultimas 2:  {ventas[-2:]}")       # [760, 2100]
 
 # Modificar y agregar
 ventas.append(1700)                        # anade al final
