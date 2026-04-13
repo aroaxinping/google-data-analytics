@@ -124,9 +124,9 @@ FROM (
 )
 WHERE fila = 1;
 
--- ROW_NUMBER() aparece aqui para duplicados pero es la primera window function
--- del certificado. En el curso 5 la misma sintaxis OVER() aparece en contextos
--- completamente distintos (rankings, acumulados, LAG).
+-- ROW_NUMBER() OVER() es una window function — aunque aqui se use solo para
+-- eliminar duplicados. En el curso 5 la misma sintaxis OVER() se usa para
+-- rankings, totales acumulados y LAG. Es el mismo mecanismo.
 
 -- Convertir tipo de dato
 SELECT CAST(precio_texto AS FLOAT64) AS precio

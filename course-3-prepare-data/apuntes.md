@@ -96,9 +96,9 @@ tiene filas (registros) y columnas (atributos).
 - **Primary key:** identificador unico de cada fila en una tabla
 - **Foreign key:** columna que referencia la primary key de otra tabla
 
-La diferencia costo un rato. Lo que la fijo: la primary key vive en su propia
-tabla (unica, no puede ser nula); la foreign key apunta a la primary key de
-otra tabla. Sin esto claro los JOINs no tienen base.
+Primary key: unica en su propia tabla, no puede ser nula. Foreign key:
+referencia a la primary key de otra tabla — es la columna por la que se
+hace el JOIN. Sin esta distincion clara los JOINs no tienen base logica.
 - **Schema:** estructura/diseno de la base de datos (que tablas hay y como se relacionan)
 - **Metadata:** datos sobre los datos (quien creo el archivo, cuando, que significa cada columna)
 

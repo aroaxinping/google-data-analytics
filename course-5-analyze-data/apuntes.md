@@ -144,9 +144,10 @@ HAVING COUNT(*) > 1000;
 
 **Funciones de ventana (window functions):**
 
-El salto conceptual mas dificil de todo el certificado. GROUP BY colapsa las
-filas; OVER() calcula sobre grupos pero las conserva todas. Tardo mas en
-hacer click que cualquier otra cosa del programa.
+Diferencia clave con GROUP BY: GROUP BY colapsa todas las filas del grupo en
+una sola fila de resultado. OVER() calcula sobre el grupo pero conserva todas
+las filas individuales. Usar GROUP BY para el resumen; OVER() cuando se
+necesita el calculo por grupo manteniendo el detalle fila a fila.
 
 Permiten calcular agregaciones sin colapsar las filas.
 

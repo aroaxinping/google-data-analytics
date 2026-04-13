@@ -61,9 +61,9 @@ Ask -> Prepare -> Process -> Analyze -> Share -> Act
 ```
 
 La diferencia: el ciclo de vida del dato es sobre los datos en si; el proceso
-de analisis es sobre lo que hace el analista con esos datos. Al principio
-parecen lo mismo — la clave es que un dato puede estar en fase "Gestionar"
-durante meses sin que nadie lo este analizando.
+de analisis es sobre lo que hace el analista con esos datos. Un dato puede
+estar en fase "Gestionar" durante meses sin que nadie lo este analizando —
+los dos ciclos son independientes.
 
 ---
 

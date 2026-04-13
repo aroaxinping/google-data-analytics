@@ -103,9 +103,8 @@ Los datos por si solos no convencen. Hay que construir una narrativa.
 2. **Contexto:** la situacion actual y por que importa
 3. **Tension:** el problema o pregunta que los datos responden
 
-Lo que mas cuesta al principio: ir al hallazgo directamente en lugar de
-contar todo el proceso. La audiencia no necesita saber como llegaste —
-necesita saber que encontraste y que hacer con ello.
+Orden correcto: hallazgo primero, proceso despues (o solo si lo piden).
+La audiencia necesita el que y la recomendacion — el como es secundario.
 
 **Estructura clasica para presentar resultados:**
 

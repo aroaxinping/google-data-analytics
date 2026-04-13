@@ -102,8 +102,10 @@ analisis, no solo para escribir listas.
 - El ultimo parametro: FALSE = coincidencia exacta (siempre asi para IDs)
 - La columna_retorno es relativa al rango, no a la hoja completa
 
-VLOOKUP fue el primer momento en que Sheets se sintio como herramienta real:
-buscar un valor en otra tabla sin copiar y pegar manualmente.
+Nota: VLOOKUP solo mira hacia la derecha y devuelve la primera coincidencia.
+Para logica mas compleja (multiples tablas, coincidencias multiples) usar JOIN
+en SQL. FALSE como ultimo argumento siempre — TRUE hace coincidencia aproximada
+y produce errores silenciosos con IDs.
 
 **Tablas pivot:**
 - Insert > Pivot table

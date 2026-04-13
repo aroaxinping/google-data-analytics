@@ -63,8 +63,10 @@ lleguen a un humano. Para pasar el filtro:
 - Formato simple sin tablas ni graficos (los ATS no los leen bien)
 - Una pagina si tienes menos de 5 anos de experiencia
 
-Copiar el lenguaje exacto de la oferta no es trampa — es entender como
-funciona el filtro.
+Los ATS filtran por coincidencia exacta de terminos. El CV debe usar el
+lenguaje literal de la oferta — si la oferta dice "BigQuery y Python" y
+el CV dice "bases de datos en la nube y scripting", no pasa el filtro
+aunque el perfil sea adecuado.
 
 **Usar IA para optimizar el CV:**
 - Pegar la descripcion del trabajo y pedir que identifique las palabras clave
