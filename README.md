@@ -40,7 +40,7 @@ Para instrucciones de instalación y cómo replicar cada proyecto, ver [SETUP.md
 | 4 | Process Data from Dirty to Clean | Apuntes, glosario, limpieza SQL + verificación |
 | 5 | Analyze Data to Answer Questions | Apuntes, glosario, ejercicios SQL por módulo, análisis Netflix |
 | 6 | Share Data Through the Art of Visualization | Apuntes, glosario, diseno de dashboard Netflix en Tableau |
-| 7 | Data Analysis with Python | Apuntes, glosario, ejercicios Python por módulo, análisis Netflix en R |
+| 7 | Data Analysis with Python | Apuntes, glosario, ejercicios Python por módulo, análisis Netflix en R (versión anterior del curso) |
 | 8 | Google Data Analytics Capstone | Apuntes, glosario, Cyclistic case study (R), Basic Fit expansion analysis (Python — datos reales) |
 | 9 | Accelerate Your Job Search with AI | Apuntes, glosario |
 
@@ -87,7 +87,7 @@ google-data-analytics/
 
 - **SQL / BigQuery** — cursos 3, 4, 5
 - **Python / pandas / NumPy** — curso 7
-- **R / RStudio / ggplot2** — cursos 7, 8
+- **R / RStudio / ggplot2** — curso 8 (Cyclistic capstone) + análisis legacy curso 7
 - **Sheets / Excel** — cursos 1, 2, 4
 - **Tableau Public** — curso 6
 
