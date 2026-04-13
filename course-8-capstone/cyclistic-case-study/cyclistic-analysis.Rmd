@@ -34,6 +34,38 @@ está disponible públicamente bajo licencia de Motivate International Inc.
 
 ---
 
+## Fase 1: Ask
+
+**Enunciado de la tarea empresarial (SMART):**
+
+| Criterio | Aplicación |
+|---|---|
+| **Specific** | Comparar el comportamiento de uso entre ciclistas casuales y miembros anuales de Cyclistic |
+| **Measurable** | Duración media, número de viajes, distribución por día/mes/hora, tipo de bicicleta |
+| **Action-oriented** | Identificar patrones que permitan diseñar campañas de conversión de casual a member |
+| **Relevant** | La directora de marketing considera que maximizar membresías anuales es clave para la rentabilidad |
+| **Time-bound** | Análisis sobre datos del año 2023 (12 meses completos) |
+
+**Stakeholders:**
+
+- **Lily Moreno (Directora de Marketing):** necesita insights para diseñar la campaña de conversión
+- **Equipo ejecutivo de Cyclistic:** aprobará o rechazará la propuesta de marketing basándose en los datos
+- **Equipo de marketing digital:** ejecutará las campañas concretas
+
+---
+
+## Fase 2: Prepare — Credibilidad de los datos (ROCCC)
+
+| Criterio | Evaluación |
+|---|---|
+| **Reliable** | Datos reales de Divvy Bikes, empresa de bike-sharing de Chicago |
+| **Original** | Descargados directamente de divvy-tripdata.s3.amazonaws.com |
+| **Comprehensive** | 12 archivos mensuales que cubren el año completo |
+| **Current** | Datos de 2023 (análisis realizado en 2024) |
+| **Cited** | Licencia pública de Motivate International Inc. |
+
+---
+
 # Configuración del entorno
 
 ```{r librerias}
@@ -49,7 +81,7 @@ COLOR_MEMBER <- "#3A86FF"   # azul para member
 
 ---
 
-# Carga y combinación de datos
+## Fase 3: Process — Carga y combinación de datos
 
 ```{r carga-datos, eval=FALSE}
 # Cargar 12 archivos CSV (uno por mes) y combinarlos en un único dataframe
@@ -92,7 +124,7 @@ trips_raw <- tibble(
 
 ---
 
-# Limpieza de datos
+## Limpieza de datos
 
 ```{r limpieza}
 trips <- trips_raw %>%
@@ -127,7 +159,7 @@ cat("Viajes member:", scales::comma(sum(trips$member_casual == "Member")), "\n")
 
 ---
 
-# Análisis exploratorio
+## Fase 4: Analyze — Análisis exploratorio
 
 ## Estadísticas de duración
 
@@ -232,6 +264,63 @@ ggplot(mes_summary, aes(x = month, y = n, fill = member_casual)) +
   )
 ```
 
+## Uso por hora del día {.tabset}
+
+### Número de viajes por hora
+
+```{r viajes-hora}
+hora_summary <- trips %>%
+  count(hour, member_casual)
+
+ggplot(hora_summary, aes(x = hour, y = n, color = member_casual, group = member_casual)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2) +
+  scale_color_manual(values = c("Casual" = COLOR_CASUAL, "Member" = COLOR_MEMBER),
+                     name = "Tipo de usuario") +
+  scale_x_continuous(breaks = seq(0, 23, by = 2)) +
+  scale_y_continuous(labels = scales::comma) +
+  labs(
+    title = "Número de viajes por hora del día",
+    subtitle = "Los miembros tienen picos a las 8h y 17h (commuting); los casuales a las 14-16h",
+    x = "Hora del día",
+    y = "Número de viajes",
+    caption = "Fuente: Divvy Bikes Trip Data 2023"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    legend.position = "top"
+  )
+```
+
+### Duración media por hora
+
+```{r duracion-hora}
+hora_duracion <- trips %>%
+  group_by(hour, member_casual) %>%
+  summarise(duracion_media = mean(ride_length), .groups = "drop")
+
+ggplot(hora_duracion, aes(x = hour, y = duracion_media,
+                           color = member_casual, group = member_casual)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2) +
+  scale_color_manual(values = c("Casual" = COLOR_CASUAL, "Member" = COLOR_MEMBER),
+                     name = "Tipo de usuario") +
+  scale_x_continuous(breaks = seq(0, 23, by = 2)) +
+  labs(
+    title = "Duración media del viaje por hora del día",
+    subtitle = "Los casuales muestran mayor variación a lo largo del día",
+    x = "Hora del día",
+    y = "Duración media (minutos)",
+    caption = "Fuente: Divvy Bikes Trip Data 2023"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    legend.position = "top"
+  )
+```
+
 ## Tipo de bicicleta preferida
 
 ```{r tipo-bici}
@@ -269,18 +358,18 @@ ggplot(bici_summary, aes(x = member_casual, y = pct, fill = rideable_type)) +
 
 ---
 
-# Conclusiones
+## Fase 5: Share — Conclusiones
 
 ## Resumen de hallazgos
 
 ```{r tabla-conclusiones, echo=FALSE}
 tibble(
-Dimensión = c("Duración media", "Día de mayor uso", "Mes pico",
-                "Bicicleta preferida", "Patrón de uso"),
-Casual = c("~24 min", "Sábado", "Julio",
-             "Eléctrica", "Ocio / turismo"),
-Member = c("~12 min", "Martes-Miércoles", "Agosto",
-             "Clásica", "Commuting diario")
+  Dimension = c("Duracion media", "Dia de mayor uso", "Mes pico",
+                "Hora pico", "Bicicleta preferida", "Patron de uso"),
+  Casual = c("~24 min", "Sabado", "Julio",
+             "14-16h", "Electrica", "Ocio / turismo"),
+  Member = c("~12 min", "Martes-Miercoles", "Agosto",
+             "8h y 17h", "Clasica", "Commuting diario")
 ) %>%
   knitr::kable(align = "lll")
 ```
@@ -304,6 +393,30 @@ la conversión en el momento de mayor engagement.
 Los casuales hacen viajes el doble de largos. Si se paga pase diario,
 los viajes largos son más caros que con membresía. Una campaña que muestre
 el ahorro acumulado mensual para usuarios frecuentes sería muy efectiva.
+
+---
+
+## Limitaciones del análisis
+
+1. **Datos simulados en este documento:** el bloque de simulación genera 50.000 viajes sintéticos con distribuciones realistas pero no es un sustituto de los datos reales de Divvy. Los patrones observados reflejan los parámetros de simulación, no el comportamiento real de los usuarios.
+2. **Sin datos demográficos:** Divvy no incluye edad, género ni lugar de residencia. No es posible identificar qué perfil de usuario casual tiene más probabilidad de convertirse en member.
+3. **Sin datos de precio:** el análisis asume que el coste relativo motiva la conversión, pero no hay datos de sensibilidad al precio ni de qué usuarios tienen pase diario vs pase por viaje.
+4. **Cobertura geográfica limitada a Chicago:** las estaciones de inicio/fin no se analizan en este estudio. Una extensión natural sería identificar qué estaciones concentran más viajes casuales para orientar la comunicación offline.
+5. **Sesgo de estacionalidad:** si los datos reales no cubren exactamente 12 meses o tienen gaps, el análisis mensual puede estar sesgado.
+
+---
+
+## Fase 6: Act — Próximos pasos
+
+Con base en los hallazgos, las acciones concretas recomendadas son:
+
+| Acción | Responsable | Plazo |
+|---|---|---|
+| Lanzar campaña de descuento en membresía anual durante junio-julio | Equipo de marketing | Q2 2024 |
+| Activar notificaciones push el domingo al final del viaje con cálculo de ahorro | Equipo de producto / app | Q1 2024 |
+| Crear landing page con comparativa de coste: pase diario vs membresía anual | Marketing digital | Q1 2024 |
+| Analizar estaciones con mayor concentración de viajes casuales para comunicación offline | Analítica | Q2 2024 |
+| Revisar efectividad de las campañas a los 90 días (tasa de conversión casual → member) | Marketing / analítica | Q3 2024 |
 
 ---
 
