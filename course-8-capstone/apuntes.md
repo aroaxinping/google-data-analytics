@@ -338,6 +338,10 @@ El proyecto principal del capstone es el **case study completo**, que cubre toda
 
 ## Lo mas importante de este curso
 
+La diferencia del capstone respecto a los ejercicios: aqui nadie dice que
+analizar. Decidir que columnas derivar, que comparar, que visualizar —
+esa es la parte donde se trabaja de verdad como analista.
+
 El capstone no tiene contenido nuevo — es la integracion de todo. Lo que
 determina la calidad del resultado es:
 

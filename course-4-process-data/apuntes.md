@@ -124,6 +124,10 @@ FROM (
 )
 WHERE fila = 1;
 
+-- ROW_NUMBER() aparece aqui para duplicados pero es la primera window function
+-- del certificado. En el curso 5 la misma sintaxis OVER() aparece en contextos
+-- completamente distintos (rankings, acumulados, LAG).
+
 -- Convertir tipo de dato
 SELECT CAST(precio_texto AS FLOAT64) AS precio
 FROM tabla;

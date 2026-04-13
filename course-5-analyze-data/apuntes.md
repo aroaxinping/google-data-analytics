@@ -144,8 +144,11 @@ HAVING COUNT(*) > 1000;
 
 **Funciones de ventana (window functions):**
 
-Son el salto mas grande en complejidad de este curso. Permiten calcular
-agregaciones sin colapsar las filas.
+El salto conceptual mas dificil de todo el certificado. GROUP BY colapsa las
+filas; OVER() calcula sobre grupos pero las conserva todas. Tardo mas en
+hacer click que cualquier otra cosa del programa.
+
+Permiten calcular agregaciones sin colapsar las filas.
 
 ```sql
 -- Calcular el porcentaje de cada fila sobre el total

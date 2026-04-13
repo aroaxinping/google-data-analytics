@@ -102,6 +102,9 @@ analisis, no solo para escribir listas.
 - El ultimo parametro: FALSE = coincidencia exacta (siempre asi para IDs)
 - La columna_retorno es relativa al rango, no a la hoja completa
 
+VLOOKUP fue el primer momento en que Sheets se sintio como herramienta real:
+buscar un valor en otra tabla sin copiar y pegar manualmente.
+
 **Tablas pivot:**
 - Insert > Pivot table
 - Rows: dimension por la que agrupar

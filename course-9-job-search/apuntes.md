@@ -63,6 +63,9 @@ lleguen a un humano. Para pasar el filtro:
 - Formato simple sin tablas ni graficos (los ATS no los leen bien)
 - Una pagina si tienes menos de 5 anos de experiencia
 
+Copiar el lenguaje exacto de la oferta no es trampa — es entender como
+funciona el filtro.
+
 **Usar IA para optimizar el CV:**
 - Pegar la descripcion del trabajo y pedir que identifique las palabras clave
 - Pedir que adapte el summary al puesto especifico

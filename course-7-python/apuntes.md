@@ -200,6 +200,11 @@ array * 2        # multiplica cada elemento por 2
 
 **pandas — el corazon del analisis de datos en Python:**
 
+Los DataFrames son tablas: filas, columnas, operaciones por columna. La
+diferencia con SQL: SQL es declarativo (describes el resultado); pandas
+es procedural (encadenas operaciones sobre el objeto). Cuando lo vi asi
+dejo de intimidar.
+
 ```python
 import pandas as pd
 
