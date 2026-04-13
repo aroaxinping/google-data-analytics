@@ -131,6 +131,7 @@ código completo de limpieza y transformación.
 | Duración media del viaje | ~24 min | ~12 min |
 | Día de mayor uso | Sábado | Martes/Miércoles |
 | Mes de mayor uso | Julio | Agosto |
+| Hora pico | 14-16h | 8h y 17h |
 | Bicicleta preferida | Electric > Classic | Classic > Electric |
 | Patrón de uso | Ocio (fines de semana) | Commuting (días laborables) |
 
@@ -145,7 +146,9 @@ visualizaciones completas.
 1. Viajes por día de la semana (barras agrupadas: casual vs member)
 2. Duración media por día (líneas)
 3. Viajes por mes (área apilada)
-4. Tipo de bicicleta preferida (barras apiladas al 100%)
+4. Uso por hora del día — número de viajes (líneas)
+5. Uso por hora del día — duración media (líneas)
+6. Tipo de bicicleta preferida (barras apiladas al 100%)
 
 ---
 

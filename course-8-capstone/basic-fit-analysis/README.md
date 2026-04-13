@@ -21,6 +21,27 @@ que mercados tienen mas recorrido y donde esta el mayor potencial sin explotar.
 
 En que paises esta creciendo mas Basic Fit y donde esta el mayor potencial sin explotar?
 
+## Framework aplicado
+
+El analisis sigue el proceso Ask → Prepare → Process → Analyze → Share → Act:
+
+- **Ask:** Pregunta SMART definida, stakeholders identificados, metrica clave (clubs por millon de habitantes)
+- **Prepare:** Datos de Annual Reports y FY press releases oficiales (2016-2024), evaluacion ROCCC
+- **Process:** Calculos derivados — penetracion, tasa YoY, ratio miembros/club
+- **Analyze:** 5 visualizaciones + correlacion de Pearson clubs vs miembros (r = 0.98)
+- **Share:** Conclusiones y 3 recomendaciones estrategicas por mercado
+- **Act:** Tabla de proximos pasos por mercado con KPIs de seguimiento
+
+## Visualizaciones
+
+| Archivo | Contenido |
+|---------|-----------|
+| `viz1_total_clubs.png` | Evolucion total de clubs por anio (2016-2024) |
+| `viz2_clubs_by_country.png` | Clubs por pais (barras apiladas) |
+| `viz3_penetration.png` | Penetracion por pais: clubs por millon de habitantes |
+| `viz4_members_revenue.png` | Evolucion de miembros e ingresos (dual axis) |
+| `viz5_emerging_markets.png` | Trayectoria de Espana y Alemania — mercados emergentes |
+
 ## Archivos
 
-- `basic-fit-expansion.ipynb` — analisis completo con visualizaciones
+- `basic-fit-expansion.ipynb` — analisis completo ejecutado con todos los outputs

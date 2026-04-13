@@ -1,6 +1,7 @@
 # Proyecto: Análisis de Netflix con R
 
-**Curso:** Course 7 — Data Analysis with R Programming
+**Curso:** Course 7 (versión anterior — R) | El curso actual usa Python
+> Este proyecto usa R porque fue desarrollado con la versión anterior del certificado (antes de la actualización de 2024 a Python). El temario actual del Course 7 cubre Python; este análisis se conserva como ejercicio práctico complementario.
 **Dataset:** Netflix Movies and TV Shows
 **Herramientas:** R, RStudio, ggplot2, tidyverse, lubridate
 **Entregable:** R Markdown → HTML report

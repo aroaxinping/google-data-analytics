@@ -15,8 +15,9 @@ a personas no técnicas. Límite práctico: ~100k filas antes de que se vuelva l
 **SQL / BigQuery** — cuando el dataset es demasiado grande para Sheets. Millones
 de filas, combinar múltiples tablas, consultas repetibles y automatizables.
 
-**R + RStudio** — análisis estadístico, visualizaciones complejas con ggplot2,
-documentación reproducible con R Markdown. Más potente que Sheets para análisis.
+**Python / pandas / NumPy** — análisis de datos, visualizaciones con matplotlib,
+automatización y manipulación de datasets. El mismo lenguaje que se usa en
+machine learning, así que si profundizas no tienes que cambiar de herramienta.
 
 **Tableau Public** — dashboards interactivos para presentar a stakeholders no
 técnicos. Lo que haces en Tableau lo puede ver cualquiera sin saber de datos.
@@ -26,9 +27,9 @@ técnicos. Lo que haces en Tableau lo puede ver cualquiera sin saber de datos.
 ```
 Dataset pequeño, exploración rápida  → Sheets
 Dataset grande, extraer datos         → SQL / BigQuery
-Análisis estadístico, visualizaciones → R
+Análisis de datos, visualizaciones    → Python (pandas, matplotlib)
 Dashboard para presentar              → Tableau
 ```
 
-No son excluyentes. Un flujo real típico: SQL para extraer → R para analizar
+No son excluyentes. Un flujo real típico: SQL para extraer → Python para analizar
 → Tableau para presentar.
