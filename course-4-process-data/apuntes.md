@@ -298,18 +298,14 @@ COURSE 4: PROCESS (CLEAN)
 | Especialista en almacenamiento de datos | Un profesional que desarrolla procesos y procedimientos para almacenar y organizar datos de manera eficaz |
 | Delimitador | Un caracter que indica el inicio o fin de un elemento de datos |
 | Datos sucios | Datos que estan incompletos, incorrectos o irrelevantes para el problema a resolver |
-| Datos duplicados | Cualquier registro que inadvertidamente comparte datos con otro registro |
 | Longitud de campo | Una herramienta para determinar cuantos caracteres pueden ingresarse en un campo de hoja de calculo |
 | Datos incompletos | Datos a los que les faltan campos importantes |
-| Datos inconsistentes | Datos que usan diferentes formatos para representar lo mismo |
-| Datos incorrectos | Datos que estan completos pero son inexactos |
 | LEFT | Una funcion que devuelve un numero establecido de caracteres del lado izquierdo de una cadena de texto |
 | LEN | Una funcion que devuelve la longitud de una cadena de texto contando el numero de caracteres que contiene |
 | Longitud | El numero de caracteres en una cadena de texto |
 | Fusion empresarial | Un acuerdo que une dos organizaciones en una sola nueva |
 | MID | Una funcion que devuelve un segmento del medio de una cadena de texto |
 | Nulo | Una indicacion de que un valor no existe en un conjunto de datos |
-| Datos desactualizados | Cualquier dato que ha sido superado por informacion mas nueva y precisa |
 | Eliminar duplicados | Una herramienta de hoja de calculo que busca y elimina automaticamente entradas duplicadas |
 | SPLIT | Una funcion de hoja de calculo que divide texto alrededor de un caracter especificado |
 | Subcadena | Un subconjunto de una cadena de texto |
