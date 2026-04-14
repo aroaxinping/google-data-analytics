@@ -313,13 +313,11 @@ es como darle nombre a un paso intermedio.
 |---------|------------|
 | Referencia absoluta | Una referencia dentro de una funcion que esta bloqueada para que las filas y columnas no cambien si la funcion se copia |
 | Agregacion | El proceso de recopilar o reunir muchas piezas separadas en un todo |
-| Alias | Nombrar temporalmente una tabla o columna en una consulta para facilitar su lectura y escritura |
 | COUNT DISTINCT | Una funcion SQL que solo devuelve los valores distintos en un rango especificado |
 | Agregacion de datos | El proceso de recopilar datos de multiples fuentes y combinarlos en una sola coleccion resumida |
 | INNER JOIN | Una funcion SQL que devuelve registros con valores coincidentes en ambas tablas |
 | JOIN | Una funcion SQL que se usa para combinar filas de dos o mas tablas basandose en una columna relacionada |
 | LEFT JOIN | Una funcion SQL que devolvera todos los registros de la tabla izquierda y solo los registros coincidentes de la tabla derecha |
-| LIMIT | Una clausula SQL que especifica el numero maximo de registros devueltos en una consulta |
 | MATCH | Una funcion de hoja de calculo usada para localizar la posicion de un valor de busqueda especifico |
 | OUTER JOIN | Una funcion SQL que combina RIGHT y LEFT JOIN para devolver todos los registros coincidentes en ambas tablas |
 | RIGHT JOIN | Una funcion SQL que devolvera todos los registros de la tabla derecha y solo los registros coincidentes de la izquierda |
