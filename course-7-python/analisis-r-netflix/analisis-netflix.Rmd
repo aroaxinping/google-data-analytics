@@ -1,3 +1,6 @@
+# NOTA: Este archivo corresponde a la version anterior del certificado (pre-2024),
+# cuando el curso 7 usaba R en lugar de Python. Se conserva como referencia.
+
 ---
 title: "Análisis del Catálogo de Netflix"
 author: "aroaxinping"
