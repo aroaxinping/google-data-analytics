@@ -293,6 +293,58 @@ Otras actividades:
 
 ---
 
+## Referencia practica: perfil DA y portfolio
+
+### Que buscan las empresas en un DA
+
+Las ofertas de DA (especialmente en empresas medianas y grandes) evaluan tres
+dimensiones de forma consistente:
+
+**Tecnica:**
+- SQL: capacidad de escribir queries con JOINs, GROUP BY, HAVING y subqueries sin ayuda
+- Manipulacion de datos: limpieza, transformacion y agregacion — en SQL, Python o Sheets segun el puesto
+- Visualizacion: saber elegir el tipo correcto y construirlo en Tableau, Looker o similar
+- Conocimiento de bases de datos: entender schemas relacionales, primary/foreign keys y diferencia entre tablas
+
+**Analitica:**
+- Traducir preguntas de negocio en preguntas de datos — no esperar que alguien defina exactamente que hay que calcular
+- Identificar que metricas responden la pregunta y cuales son ruido
+- Reconocer limitaciones del dataset y comunicarlas
+
+**Comunicacion:**
+- Presentar hallazgos a audiencias no tecnicas sin simplificar en exceso
+- Documentar el proceso de analisis para que sea reproducible
+- Anticipar preguntas de stakeholders antes de la presentacion
+
+Las habilidades blandas que mas aparecen en descripciones de puesto de DA:
+curiosidad, rigor en los datos, capacidad de simplificar lo complejo
+y orientacion a decisiones — no a analisis por el analisis.
+
+### Encuadrar proyectos en CV y portfolio
+
+La estructura que funciona para describir un proyecto de analisis en un CV:
+
+```
+[Verbo de accion] + [que datos/herramientas] + [para que objetivo de negocio] + [resultado cuantificado si existe]
+```
+
+Ejemplos:
+- "Analice 12 meses de datos de viajes en bicicleta (3M+ registros) con Python y Tableau para identificar patrones de uso entre miembros y usuarios casuales, derivando 3 recomendaciones de conversion."
+- "Disenei pipeline de limpieza en SQL (BigQuery) para estandarizar dataset de e-commerce con 5 tipos de inconsistencias, reduciendo errores de agregacion en reportes mensuales."
+
+Lo que NO funciona en un CV de datos:
+- Descripcion de herramientas sin contexto de negocio: "Use SQL, Python y Tableau" (dice que tienes las herramientas, no que sabes usarlas para resolver problemas)
+- Verbos pasivos: "Se realizo un analisis de..." (quita agencia y claridad)
+- Proyectos sin resultado: "Analice datos de ventas" sin mencionar que pregunta se respondio ni que se encontro
+
+Para el portfolio (GitHub o Kaggle), cada proyecto necesita:
+1. Un README que explique el problema de negocio (no el tecnico) en la primera linea
+2. El proceso visible — no solo el resultado final
+3. Las decisiones documentadas: por que se limpio de esta manera, por que este tipo de grafico
+4. Recomendaciones concretas al final — no solo descripcion de los datos
+
+---
+
 ## Errores comunes
 
 - **Aplicar a trabajos sin tener portfolio visible:** el CV sin proyectos accesibles (GitHub, Kaggle, Tableau Public) es muy dificil de evaluar para un reclutador tecnico. El portfolio es la diferencia entre "dice que sabe SQL" y "aqui esta una query de 80 lineas con CTEs y window functions".
