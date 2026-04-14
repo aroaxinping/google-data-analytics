@@ -187,10 +187,13 @@ SELECT
   categoria,
   importe,
   -- RANK: igual importe = mismo rango, el siguiente rango se salta
+  -- Usar cuando los empates son significativos y deben reflejarse (ej. dos productos con ventas identicas comparten el puesto 1)
   RANK()       OVER (ORDER BY importe DESC) AS ranking_global,
   -- ROW_NUMBER: siempre numeros consecutivos, sin empates
+  -- Usar cuando necesitas exactamente N filas (ej. top-3 sin que dos empates den top-4)
   ROW_NUMBER() OVER (ORDER BY importe DESC) AS numero_fila,
   -- RANK por ciudad: ranking independiente dentro de cada ciudad
+  -- PARTITION BY hace que el ranking se reinicie en cada ciudad — sin el, seria un ranking global
   RANK()       OVER (PARTITION BY ciudad ORDER BY importe DESC) AS ranking_en_ciudad
 FROM ventas
 ORDER BY importe DESC;
