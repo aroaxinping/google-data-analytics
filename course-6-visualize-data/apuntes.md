@@ -211,8 +211,6 @@ COURSE 6: SHARE (VISUALIZE)
 | Enfasis | El principio de diseno que se refiere a usar diferencias visuales para centrar la atencion en la informacion mas importante |
 | HAVING | Una clausula SQL que agrega un filtro a una consulta en lugar de a la tabla subyacente que se consulta |
 | Titular | Las palabras en el tamano de letra mas grande en la parte superior de una visualizacion que transmite el beneficio mas importante que alguien obtiene al ver los datos |
-| Mapa de calor | Tipo de visualizacion que usa color para comparar categorias en una tabla de datos |
-| Histograma | Tipo de visualizacion que muestra la frecuencia relativa de valores de datos en rangos iguales o desiguales |
 | Subconsulta interna | Una consulta SQL dentro de otra consulta |
 | Etiqueta | En visualizacion, texto en una visualizacion que identifica un valor de datos o describe los atributos correspondientes |
 | Leyenda | Una referencia de herramienta usada para identificar la codificacion de color en visualizaciones |
@@ -259,7 +257,6 @@ COURSE 6: SHARE (VISUALIZE)
 | Grafico de columnas | Una visualizacion que usa barras verticales para comparar valores en distintas categorias |
 | Grafico combinado (combo) | Una visualizacion que combina dos tipos de grafico diferentes (generalmente barras y lineas) en un mismo grafico |
 | Mapa de densidad | Un mapa que muestra la concentracion geografica de datos en lugar de puntos individuales |
-| Grafico de distribucion | Una visualizacion que muestra como los valores se distribuyen en un conjunto de datos |
 | Paleta de colores divergente | Una paleta de colores en Tableau que muestra dos rangos de valores usando colores en los extremos y un color neutral en el centro |
 | Grafico de dona (donut) | Una variacion del grafico circular con el centro recortado, usada para mostrar proporciones |
 | Mapa relleno | Un mapa en Tableau donde las regiones se colorean segun el valor de una variable |
