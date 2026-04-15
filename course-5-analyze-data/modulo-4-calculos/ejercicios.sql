@@ -119,14 +119,18 @@ WITH antiguedad AS (
 ),
 
 con_bonus AS (
-  -- CTE 2: unir con la tabla de bonus (LEFT JOIN para conservar empleados sin bonus)
+  -- CTE 2: unir con la tabla de bonus
+  -- LEFT JOIN (no INNER JOIN) porque queremos conservar TODOS los empleados,
+  -- incluidos los que no tienen bonus en 2024 — con INNER JOIN desaparecerian del resultado
   SELECT
     a.emp_id,
     a.nombre,
     a.departamento,
     a.salario,
     a.anios_en_empresa,
-    COALESCE(b.importe_bonus, 0) AS bonus_2024  -- COALESCE convierte NULL en 0
+    COALESCE(b.importe_bonus, 0) AS bonus_2024
+    -- COALESCE: el LEFT JOIN produce NULL para empleados sin bonus; convertimos NULL a 0
+    -- para que el calculo de compensacion_total sea valido (salario + NULL = NULL)
   FROM antiguedad AS a
   LEFT JOIN bonus AS b
     ON a.emp_id = b.emp_id
