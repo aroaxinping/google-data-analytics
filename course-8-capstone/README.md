@@ -33,25 +33,3 @@ compania cotizada europea.
 ## Otros archivos
 
 - `apuntes.md` — notas del curso con el framework del capstone, analisis del caso Cyclistic y errores comunes
-
-## Glosario del curso
-
-Todos los terminos definidos a lo largo del curso, ordenados alfabeticamente.
-
-| Termino | Definicion |
-|---------|------------|
-| Insignia digital (badge) | Una certificacion digital verificable que acredita la consecucion de un logro educativo o profesional |
-| Caso de exito (case study) | Un escenario de problemas de datos que los analistas de datos usan para practicar, aprender y demostrar habilidades para empleadores potenciales |
-| Sesgo de los datos | Cuando una preferencia sesga sistematicamente los resultados del analisis de datos en una cierta direccion |
-| Elevator pitch | Una presentacion de aproximadamente 60 segundos de una persona, empresa, producto o propuesta de valor diseñada para despertar el interes del oyente |
-| IA generativa | Tecnologia de inteligencia artificial capaz de generar nuevo contenido (texto, codigo, imagenes) basandose en patrones aprendidos de grandes cantidades de datos |
-| Hoja de ruta del aprendizaje | Una guia personalizada con los pasos necesarios para lograr una meta de aprendizaje o carrera |
-| Registro de limpieza | Un historial cronologico de las decisiones de limpieza tomadas sobre un conjunto de datos durante la fase de procesamiento |
-| Metodologia | Un conjunto de principios y tecnicas que guian la forma de abordar un problema o tarea de analisis |
-| Portfolio | Una coleccion de materiales que puede compartir con empleadores potenciales |
-| Prompt | Una instruccion o pregunta que se le da a una herramienta de IA para obtener una respuesta o resultado especifico |
-| Pregunta SMART | Una pregunta de analisis de datos que es especifica, medible, orientada a la accion, relevante y con limite de tiempo |
-| Estructura STAR | Un marco para responder preguntas de entrevista describiendo la Situacion, la Tarea, la Accion tomada y el Resultado obtenido |
-| Entrevista tecnica | Un tipo de entrevista laboral en la que se evaluan las habilidades tecnicas del candidato mediante preguntas o ejercicios practicos |
-| Enunciado de la tarea empresarial | Una pregunta o problema que el analisis de datos responde para una empresa u organizacion |
-| Validacion | El proceso de confirmar que los datos y el analisis son correctos, completos y relevantes para responder la pregunta de negocio |
