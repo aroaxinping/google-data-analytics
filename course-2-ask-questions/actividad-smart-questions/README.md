@@ -4,11 +4,11 @@
 
 ---
 
-La sorpresa del Course 2 es que el trabajo de un analista empieza mucho antes
-de tocar datos: en definir qué pregunta estás intentando responder.
+El trabajo de análisis empieza antes de tocar datos: la calidad del resultado
+depende de la calidad de la pregunta inicial.
 
-Si la pregunta está mal planteada, da igual lo buena que sea tu SQL o tu ggplot2.
-Vas a producir un análisis perfecto que no responde nada útil.
+Una pregunta mal planteada produce un análisis técnicamente correcto que no
+responde nada util.
 
 ## El framework SMART
 
@@ -35,7 +35,7 @@ más de un 15% en Q1 2024 vs Q1 2023, y qué acciones podemos tomar antes del Q2
 marzo de 2024, y qué funcionalidades usan más los usuarios que retienen vs
 los que abandonan?"*
 
-## Lo que entendí sobre los stakeholders
+## Stakeholders y preguntas vagas
 
 Los stakeholders suelen dar preguntas vagas porque no saben qué datos tienes
 disponibles. Tu trabajo como analista es traducir su pregunta al lenguaje
@@ -48,6 +48,3 @@ de los datos:
  características comparten los clientes que cancelan antes de 90 días?"
 ```
 
-Al principio el framework SMART me pareció académico. Cuanto más avanzo,
-más veo que la calidad de un análisis depende directamente de la calidad
-de la pregunta inicial.
