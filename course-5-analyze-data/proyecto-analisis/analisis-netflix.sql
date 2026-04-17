@@ -6,6 +6,19 @@
 -- Fuente: https://www.kaggle.com/datasets/shivamb/netflix-shows
 -- ============================================================
 
+-- ------------------------------------------------------------
+-- SCHEMA: netflix_titles
+-- show_id      STRING   -- identificador unico del titulo
+-- type         STRING   -- 'Movie' o 'TV Show'
+-- title        STRING
+-- country      STRING   -- puede contener multiples paises separados por coma
+-- date_added   STRING   -- formato: 'January 1, 2021' (requiere PARSE_DATE)
+-- release_year INT64
+-- rating       STRING   -- clasificacion de edad (TV-MA, TV-14, etc.) — contiene errores
+-- duration     STRING   -- 'X min' para peliculas, 'X Season(s)' para series
+-- listed_in    STRING   -- generos, puede contener multiples separados por coma
+-- ------------------------------------------------------------
+
 
 -- ------------------------------------------------------------
 -- 1. Peliculas vs Series
