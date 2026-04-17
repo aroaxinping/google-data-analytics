@@ -7,34 +7,7 @@
 
 ---
 
-## Mi perspectiva como estudiante
-
-El capstone es el momento en el que todo lo que has aprendido en los 7 cursos
-anteriores tiene que funcionar junto. Y es exactamente tan intimidante como suena.
-
-La pregunta que más me rondó al empezar: *"¿Por dónde empiezo?"*. Tienes
-12 archivos CSV, millones de filas, y una pregunta de negocio abierta. Es la
-primera vez en el certificado en que no hay una actividad guiada — eres tú
-sola con los datos y el proceso de análisis.
-
-Lo que me ayudó fue volver al framework básico del Course 1: Ask → Prepare →
-Process → Analyze → Share → Act. Cada fase tiene una salida concreta. Si
-defines bien la salida de cada fase antes de empezar, el proyecto se
-vuelve manejable.
-
-Elegí el caso de **Cyclistic** (Track 1) en vez de proponer el mío propio
-porque quería enfocarse en hacer bien el análisis, no en buscar el dataset
-perfecto. El caso de Cyclistic tiene una pregunta de negocio muy clara y
-datos de calidad, lo que te permite concentrarte en la parte analítica.
-
-El hallazgo que más me gustó descubrir: los usuarios casuales hacen viajes
-el doble de largos que los miembros, pero con mucha menos frecuencia y
-concentrados en fines de semana. Eso dice muchísimo sobre el perfil de cada
-grupo sin necesidad de saber nada más sobre ellos. Los miembros van al trabajo
-en bici; los casuales la usan para pasear. Son necesidades completamente
-distintas, y eso tiene que reflejarse en cómo les hablas en marketing.
-
-Este proyecto es el que voy a poner en el portfolio.
+Caso oficial del capstone, Track 1. La pregunta de negocio está bien definida y los datos son de buena calidad. Se eligió sobre proponer un dataset propio para centrar el trabajo en el análisis, no en el sourcing de datos.
 
 ---
 
