@@ -68,6 +68,41 @@ Mismos pasos que Course 4 pero con el dataset de Netflix.
 
 ---
 
+## Course 7 — Python
+
+Los ejercicios del curso requieren Python 3.9 o superior con los siguientes paquetes:
+
+```
+pandas
+numpy
+matplotlib
+jupyter
+```
+
+Instalacion con pip:
+
+```bash
+pip install pandas numpy matplotlib jupyter
+```
+
+Para ejecutar los notebooks y archivos `.py`:
+
+```bash
+# Ejecutar un script directamente
+python ejercicios.py
+
+# Abrir Jupyter Notebook en la carpeta del modulo
+jupyter notebook
+```
+
+Los ejercicios de cada modulo estan en archivos `.py` independientes dentro de
+`course-7-python/modulo-*/`. No requieren datasets externos.
+
+El analisis de Basic Fit (course 8) usa los mismos paquetes. El notebook
+`basic-fit-expansion.ipynb` puede abrirse con Jupyter o con VS Code + extension Python.
+
+---
+
 ## Course 7 — R (analisis-r-netflix)
 
 ```bash
