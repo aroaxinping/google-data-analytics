@@ -52,12 +52,17 @@ Para instrucciones de instalación y cómo replicar cada proyecto, ver [SETUP.md
 google-data-analytics/
 ├── SETUP.md
 ├── course-1-foundations/
+│   ├── actividad-explorar-datos/     <- ejercicio de exploracion de datos
+│   └── actividad-herramientas/       <- practica con herramientas del certificado
 ├── course-2-ask-questions/
-│   └── practica-sheets/
+│   ├── actividad-smart-questions/    <- practica de formulacion de preguntas SMART
+│   ├── actividad-spreadsheets/       <- ejercicios con funciones de Sheets
+│   └── practica-sheets/              <- ejercicios adicionales en Google Sheets
 ├── course-3-prepare-data/
+│   ├── actividad-bigquery/           <- ejercicios de consultas SQL en BigQuery
+│   ├── actividad-roccc/              <- evaluacion de fuentes de datos con ROCCC
 │   ├── practica-sql/                 <- consultas-basicas.sql (BigQuery)
-│   ├── actividad-roccc/
-│   └── week-3-kaggle-datasets/
+│   └── week-3-kaggle-datasets/       <- exploracion de datasets publicos en Kaggle
 ├── course-4-process-data/
 │   └── proyecto-limpieza/            <- limpieza.sql + verificacion.sql
 ├── course-5-analyze-data/
@@ -67,7 +72,7 @@ google-data-analytics/
 │   ├── modulo-4-calculos/            <- ejercicios.sql (CTEs, tablas temporales)
 │   └── proyecto-analisis/            <- analisis-netflix.sql
 ├── course-6-visualize-data/
-│   ├── proyecto-tableau/             <- diseño de dashboard Netflix (donut, area, barras, treemap)
+│   ├── proyecto-tableau/             <- diseno de dashboard Netflix (donut, area, barras, treemap)
 │   └── tableau-dashboards/
 ├── course-7-python/
 │   ├── modulo-1-python-basico/       <- ejercicios.py
