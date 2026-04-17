@@ -7,15 +7,16 @@
 
 ## Motivacion
 
-El caso estudio oficial del certificado usa Cyclistic (Divvy Bikes Chicago).
-Este es un analisis adicional, hecho por interes propio, sobre una empresa
-que conozco como usuario: Basic Fit, la cadena de gimnasios low-cost mas
-grande de Europa.
+Ademas del caso estudio oficial del certificado (Cyclistic), este repositorio
+incluye un analisis independiente sobre Basic Fit N.V. (Euronext: BFIT), la
+cadena de gimnasios low-cost de mayor presencia en Europa.
 
-Queria aplicar el mismo framework Ask-Prepare-Process-Analyze-Share a datos
-reales de una compania cotizada — extraidos de sus informes anuales publicos —
-y responder una pregunta que me parecia genuinamente interesante:
-que mercados tienen mas recorrido y donde esta el mayor potencial sin explotar.
+El objetivo es aplicar el framework Ask-Prepare-Process-Analyze-Share-Act a
+datos financieros y operacionales publicos de una compania cotizada, cubriendo
+el periodo 2016-2024. La pregunta de analisis — que mercados concentran el
+crecimiento y donde existe mayor potencial sin explotar — permite trabajar con
+metricas de penetracion relativa y comparacion entre paises, lo que resulta
+relevante para ejercitar calculos derivados y visualizacion con datos reales.
 
 ## Pregunta de negocio
 
