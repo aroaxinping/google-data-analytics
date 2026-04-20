@@ -5,6 +5,18 @@
 -- Dataset: proyecto.dataset.ecommerce_ventas
 -- ============================================================
 
+-- ------------------------------------------------------------
+-- SCHEMA: ecommerce_ventas (dataset original — con errores intencionales)
+-- order_id       STRING   -- identificador del pedido, hay duplicados
+-- customer_name  STRING   -- puede tener espacios extra o mayusculas inconsistentes
+-- order_date     STRING   -- formato 'DD/MM/YYYY' (requiere PARSE_DATE)
+-- category       STRING   -- puede tener variantes de mayusculas ('Electronics' vs 'electronics')
+-- sale_price     FLOAT64  -- puede contener valores <= 0 (errores)
+-- region         STRING   -- puede tener mayusculas inconsistentes
+-- quantity       INT64
+-- country        STRING
+-- ------------------------------------------------------------
+
 
 -- ------------------------------------------------------------
 -- PASO 1: Inspección inicial
