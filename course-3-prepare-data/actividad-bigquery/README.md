@@ -16,8 +16,8 @@ filas antes de volverse lento. El dataset de taxis de Chicago tiene más de
 2. BigQuery > SQL Workspace en el menú lateral
 3. Explorar `bigquery-public-data` en el panel izquierdo
 
-Lo primero que pensé: "¿dónde está el botón de abrir archivo?". No hay.
-Aquí no abres archivos — escribes una consulta y le preguntas a la base de datos.
+BigQuery no tiene interfaz de archivo. Se escribe una query y se consulta
+directamente la base de datos.
 
 ## Queries iniciales
 
@@ -64,8 +64,8 @@ WHERE fare > 5
 HAVING COUNT(*) > 1000
 ```
 
-Esto me confundió al principio. Regla: si filtras sobre una columna original
-→ `WHERE`. Si filtras sobre una agregación → `HAVING`.
+Regla: si filtras sobre una columna original → `WHERE`. Si filtras sobre
+una agregacion → `HAVING`.
 
 ## El estimador de datos procesados
 
@@ -73,9 +73,9 @@ Antes de ejecutar, BigQuery muestra cuántos datos procesará arriba a la derech
 La capa gratuita incluye 1 TB/mes. Buena práctica: siempre usar `WHERE` para
 acotar antes de agregar, y `LIMIT` cuando solo exploras.
 
-## Lo que me ayudó
+## SQL leido como inglés
 
-Leer SQL como inglés:
+Cada clausula tiene una traduccion directa:
 
 ```
 "Select everything from this table" → SELECT * FROM tabla
@@ -83,5 +83,3 @@ Leer SQL como inglés:
 "Group by payment type"             → GROUP BY payment_type
 "Order by total descending"         → ORDER BY total DESC
 ```
-
-Cuando lo ves así, deja de intimidar.
