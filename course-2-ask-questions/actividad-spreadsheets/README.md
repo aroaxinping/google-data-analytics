@@ -11,11 +11,11 @@ visual hace que después tengan mucho más sentido en código.
 
 ## Ordenar y filtrar
 
-La confusión clásica al principio: **ordenar** cambia el orden de filas,
-**filtrar** oculta filas que no cumplen la condición. Son cosas distintas.
+Distincion importante: **ordenar** cambia el orden de filas; **filtrar**
+oculta filas que no cumplen la condicion.
 
 Cuando tienes un filtro activo y ordenas, estás ordenando solo lo que está
-visible. Hay que tenerlo claro para no confundirse con los resultados.
+visible.
 
 ## Tablas pivot
 
@@ -23,8 +23,8 @@ Una tabla pivot hace en segundos lo que harías con horas de fórmulas.
 Lo más importante: **si los datos originales cambian, la pivot se actualiza**.
 No es una foto, es una vista viva.
 
-En SQL esto es un `GROUP BY`. Entender la pivot visualmente antes me hizo
-entender `GROUP BY` mucho más rápido cuando llegué al Course 3.
+En SQL esto es un `GROUP BY`. La pivot es el equivalente visual: util para
+entender la logica de agregacion antes de escribirla en codigo.
 
 ## VLOOKUP
 
@@ -38,12 +38,11 @@ entender `GROUP BY` mucho más rápido cuando llegué al Course 3.
 - `FALSE` → coincidencia exacta
 
 La trampa está en el tercer parámetro: se refiere a la posición dentro del
-rango definido, no en la hoja completa. Eso me confundió varias veces.
+rango definido, no en la hoja completa.
 
-En SQL esto equivale a un `JOIN`. De hecho, entender VLOOKUP fue lo que me
-hizo entender JOIN cuando llegué al Course 5.
+En SQL esto equivale a un `JOIN`.
 
-## La tabla de equivalencias que me quedé
+## Tabla de equivalencias Sheets / SQL
 
 | Sheets | SQL |
 |--------|-----|
@@ -52,5 +51,4 @@ hizo entender JOIN cuando llegué al Course 5.
 | Tabla pivot | `GROUP BY` |
 | VLOOKUP | `JOIN` |
 
-Aprender el concepto visual en Sheets primero hizo el salto a SQL mucho
-menos traumático. Los conceptos son los mismos, cambia la sintaxis.
+Los conceptos son los mismos en Sheets y en SQL. Cambia la sintaxis.
