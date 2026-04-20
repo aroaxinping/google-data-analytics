@@ -5,14 +5,9 @@
 
 ---
 
-La primera actividad práctica del certificado es muy sencilla: te dan una hoja
-de cálculo con datos de ventas por región y mes, y tienes que responder preguntas
-básicas sobre lo que ves.
+Actividad de exploración inicial con una hoja de cálculo de ventas por región y mes. El objetivo es responder preguntas básicas sobre los datos usando ordenación, filtros y funciones de agregación.
 
-No es técnicamente difícil. El punto es entender que el análisis empieza por
-hacerse preguntas, no por saber usar herramientas.
-
-## Lo que hice
+## Pasos
 
 Ordenar por ventas de mayor a menor para ver qué región vendía más (`Data > Sort range`).
 Filtrar por región para ver la tendencia de una sola (`Data > Create a filter`).
@@ -24,16 +19,12 @@ Calcular totales y promedios básicos:
 =MAX(C2:C13)
 ```
 
-## Lo que me quedé
+## Nota
 
-Antes de empezar el certificado pensaba que "analizar datos" era hacer cosas
-complejas. Esta actividad me demostró que empieza por algo más simple:
-mirar los datos con curiosidad y hacerse las preguntas correctas.
+Sin una pregunta definida en el paso Ask, el resto del proceso no tiene dirección.
 
 El framework que introduce el Course 1:
 
 ```
 Ask → Prepare → Process → Analyze → Share → Act
 ```
-
-Sin una pregunta clara en el paso "Ask", el resto del proceso no tiene dirección.
