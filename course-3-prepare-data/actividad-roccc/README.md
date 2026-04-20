@@ -4,10 +4,8 @@
 
 ---
 
-Antes de analizar datos hay que hacerse una pregunta que es fácil de saltarse:
-**¿de dónde vienen estos datos y puedo confiar en ellos?**
-
-El framework ROCCC es la herramienta del curso para hacer esa evaluación.
+Antes de analizar: verificar la credibilidad de los datos. El framework ROCCC
+estructura esa evaluacion.
 
 ## El framework
 
