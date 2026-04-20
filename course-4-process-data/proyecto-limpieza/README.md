@@ -10,11 +10,10 @@
 
 ---
 
-El Course 4 fue donde entendí por qué dicen que el 80% del trabajo de un
-analista es limpiar datos. Los errores en datos reales no son obvios —
-`"Electronics"` vs `"electronics"` son técnicamente texto válido, pero para
-un `GROUP BY` son dos grupos distintos. Si no lo limpias, tus resultados
-están mal y ni te das cuenta.
+La limpieza de datos suele ser el paso más costoso en tiempo del proceso de
+análisis. `"Electronics"` vs `"electronics"` son texto valido pero para un
+`GROUP BY` son grupos distintos. Sin normalizacion, los resultados de
+agregacion son incorrectos sin advertencia.
 
 ## Los problemas del dataset
 
@@ -128,11 +127,11 @@ ORDER BY n DESC;
 
 ---
 
-## Lo que me quedé
+## Nota sobre verificacion
 
 Los datos sucios no solo dan resultados incorrectos — dan resultados que
-**parecen** correctos. Eso es mucho más peligroso. La verificación del
-paso 4 no es opcional: es lo que te da confianza para analizar.
+**parecen** correctos. La verificación del paso 4 no es opcional: es lo que
+permite confiar en el análisis posterior.
 
 ---
 
