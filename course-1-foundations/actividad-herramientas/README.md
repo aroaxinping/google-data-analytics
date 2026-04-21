@@ -5,7 +5,7 @@
 ---
 
 El Course 1 presenta las cuatro herramientas del certificado sin entrar en
-profundidad con ninguna. La idea es saber dónde vas antes de empezar el camino.
+profundidad con ninguna.
 
 ## Las herramientas y cuándo se usan
 
@@ -22,7 +22,7 @@ machine learning, así que si profundizas no tienes que cambiar de herramienta.
 **Tableau Public** — dashboards interactivos para presentar a stakeholders no
 técnicos. Lo que haces en Tableau lo puede ver cualquiera sin saber de datos.
 
-## El mapa mental que me quedé
+## Criterios de selección de herramienta
 
 ```
 Dataset pequeño, exploración rápida  → Sheets
