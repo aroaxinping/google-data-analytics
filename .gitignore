@@ -8,7 +8,6 @@
 # Outputs compilados
 *.html
 *.pdf
-!SETUP.md  # excepcion: SETUP.md es un archivo nuestro
 
 # R
 .Rhistory
