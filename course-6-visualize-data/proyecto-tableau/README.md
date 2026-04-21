@@ -5,15 +5,7 @@
 
 ---
 
-El Course 6 fue el más cercano al diseño para mí. La pregunta "¿cómo presento
-esta información para que quien la vea la entienda en 5 segundos?" conecta
-con el diseño gráfico más que cualquier otra parte del certificado.
-
-Lo que más me abrió la cabeza: **bonito ≠ efectivo**. Un donut con 12 sectores
-puede ser visualmente impactante y absolutamente ilegible al mismo tiempo.
-Barras horizontales simples suelen comunicar mejor aunque sean "más aburridas".
-
----
+Dashboard diseñado sobre el dataset de Netflix del course-5. Objetivo: comunicar los hallazgos del análisis SQL a una audiencia no técnica.
 
 ## Diseño del dashboard
 
@@ -44,7 +36,7 @@ Comunica proporciones entre muchas categorías de forma compacta.
 
 El mismo color para el mismo concepto en todas las vistas. Sin excepciones.
 
-## Principios que aplico
+## Principios de diseño aplicados
 
 - Cada gráfico responde una pregunta concreta, no "muestra datos"
 - Sin decoración que no aporte información (chart junk)
