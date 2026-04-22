@@ -30,18 +30,18 @@ Para instrucciones de instalación y cómo replicar cada proyecto, ver [SETUP.md
 
 ---
 
-## Progreso
+## Cursos
 
-| Curso | Titulo | Contenido en el repo |
-|-------|--------|----------------------|
+| Curso | Titulo | Contenido |
+|-------|--------|-----------|
 | 1 | Foundations: Data, Data, Everywhere | Apuntes, glosario, actividades de exploración |
 | 2 | Ask Questions to Make Data-Driven Decisions | Apuntes, glosario, práctica Sheets |
 | 3 | Prepare Data for Exploration | Apuntes, glosario, SQL básico, Kaggle datasets, ROCCC |
 | 4 | Process Data from Dirty to Clean | Apuntes, glosario, limpieza SQL + verificación |
 | 5 | Analyze Data to Answer Questions | Apuntes, glosario, ejercicios SQL por módulo, análisis Netflix |
-| 6 | Share Data Through the Art of Visualization | Apuntes, glosario, diseno de dashboard Netflix en Tableau |
-| 7 | Data Analysis with Python | Apuntes, glosario, ejercicios Python por módulo, análisis Netflix en R (versión anterior del curso) |
-| 8 | Google Data Analytics Capstone | Apuntes, glosario, Cyclistic case study (R), Basic Fit expansion analysis (Python — datos reales) |
+| 6 | Share Data Through the Art of Visualization | Apuntes, glosario, diseño de dashboard Netflix en Tableau |
+| 7 | Data Analysis with Python | Apuntes, glosario, ejercicios Python por módulo |
+| 8 | Google Data Analytics Capstone | Apuntes, Cyclistic case study (R), Basic Fit expansion analysis (Python) |
 | 9 | Accelerate Your Job Search with AI | Apuntes, glosario |
 
 ---
