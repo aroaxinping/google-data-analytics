@@ -1,0 +1,125 @@
+-- ============================================================
+-- ANALISIS DE NETFLIX — Netflix Movies and TV Shows
+-- Curso: Google Data Analytics Certificate — Course 5
+-- Herramienta: BigQuery (Google Cloud)
+-- Dataset: proyecto.dataset.netflix_titles
+-- Fuente: https://www.kaggle.com/datasets/shivamb/netflix-shows
+-- ============================================================
+
+-- ------------------------------------------------------------
+-- SCHEMA: netflix_titles
+-- show_id      STRING   -- identificador unico del titulo
+-- type         STRING   -- 'Movie' o 'TV Show'
+-- title        STRING
+-- country      STRING   -- puede contener multiples paises separados por coma
+-- date_added   STRING   -- formato: 'January 1, 2021' (requiere PARSE_DATE)
+-- release_year INT64
+-- rating       STRING   -- clasificacion de edad (TV-MA, TV-14, etc.) — contiene errores
+-- duration     STRING   -- 'X min' para peliculas, 'X Season(s)' para series
+-- listed_in    STRING   -- generos, puede contener multiples separados por coma
+-- ------------------------------------------------------------
+
+
+-- ------------------------------------------------------------
+-- 1. Peliculas vs Series
+-- ------------------------------------------------------------
+
+SELECT
+  type,
+  COUNT(*) AS total,
+  ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 1) AS porcentaje
+FROM `proyecto.dataset.netflix_titles`
+GROUP BY type
+ORDER BY total DESC;
+
+
+-- ------------------------------------------------------------
+-- 2. Top 10 países productores
+-- (maneja celdas con múltiples países separados por coma)
+-- ------------------------------------------------------------
+
+SELECT
+  TRIM(country_split) AS country,
+  COUNT(*) AS titulos
+FROM `proyecto.dataset.netflix_titles`,
+UNNEST(SPLIT(country, ', ')) AS country_split
+WHERE country IS NOT NULL
+  AND TRIM(country_split) != ''
+GROUP BY country
+ORDER BY titulos DESC
+LIMIT 10;
+
+
+-- ------------------------------------------------------------
+-- 3. Crecimiento del catálogo por año (con total acumulado)
+-- ------------------------------------------------------------
+
+SELECT
+  EXTRACT(YEAR FROM PARSE_DATE('%B %d, %Y', date_added)) AS anio,
+  COUNT(*) AS titulos_ese_anio,
+  SUM(COUNT(*)) OVER (
+    ORDER BY EXTRACT(YEAR FROM PARSE_DATE('%B %d, %Y', date_added))
+  ) AS total_acumulado
+FROM `proyecto.dataset.netflix_titles`
+WHERE date_added IS NOT NULL
+GROUP BY anio
+ORDER BY anio;
+
+
+-- ------------------------------------------------------------
+-- 4. Generos mas frecuentes
+-- (cada título puede tener varios géneros separados por coma)
+-- ------------------------------------------------------------
+
+SELECT
+  TRIM(genero) AS genero,
+  COUNT(*) AS apariciones
+FROM `proyecto.dataset.netflix_titles`,
+UNNEST(SPLIT(listed_in, ', ')) AS genero
+WHERE listed_in IS NOT NULL
+GROUP BY genero
+ORDER BY apariciones DESC
+LIMIT 15;
+
+
+-- ------------------------------------------------------------
+-- 5. Clasificacion de edad mas frecuente
+-- ------------------------------------------------------------
+
+SELECT
+  rating,
+  COUNT(*) AS total,
+  ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 1) AS porcentaje
+FROM `proyecto.dataset.netflix_titles`
+WHERE rating IS NOT NULL
+  AND rating NOT IN ('74 min', '84 min', '66 min')  -- errores de datos
+GROUP BY rating
+ORDER BY total DESC;
+
+
+-- ------------------------------------------------------------
+-- 6. Duración media de películas
+-- ------------------------------------------------------------
+
+SELECT
+  ROUND(AVG(CAST(REPLACE(duration, ' min', '') AS INT64)), 0) AS media_minutos,
+  MIN(CAST(REPLACE(duration, ' min', '') AS INT64))           AS minimo,
+  MAX(CAST(REPLACE(duration, ' min', '') AS INT64))           AS maximo,
+  COUNT(*) AS total_peliculas
+FROM `proyecto.dataset.netflix_titles`
+WHERE type = 'Movie'
+  AND duration LIKE '%min%';
+
+
+-- ------------------------------------------------------------
+-- 7. Query combinada para dashboard (tipo + año)
+-- ------------------------------------------------------------
+
+SELECT
+  type,
+  EXTRACT(YEAR FROM PARSE_DATE('%B %d, %Y', date_added)) AS anio,
+  COUNT(*) AS titulos
+FROM `proyecto.dataset.netflix_titles`
+WHERE date_added IS NOT NULL
+GROUP BY type, anio
+ORDER BY anio, type;
