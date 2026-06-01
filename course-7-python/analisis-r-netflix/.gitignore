@@ -1,0 +1,11 @@
+# Dataset de Netflix (descargarlo de Kaggle)
+*.csv
+*.zip
+
+# Output renderizado (generado localmente con Knit)
+*.html
+
+# Archivos temporales de R
+.Rhistory
+.RData
+.Rproj.user/
